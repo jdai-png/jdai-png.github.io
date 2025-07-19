@@ -3,6 +3,7 @@ layout: post
 title: "My Blueprint for Setting Up a New Mac"
 date: 2025-07-19 16:41:09 -0400
 categories: macos setup development
+tags: []
 ---
 
 Setting up a new Mac can be a chore, but with a solid plan, you can get a powerful development environment up and running quickly. Here's my personal checklist for getting a fresh macOS machine ready, from dotfiles to development tools.
