@@ -1,4 +1,3 @@
-```yaml
 ---
 layout: post
 title: "The Gap Rules Framework (GRF): A Method for Navigating Opening Bell Volatility in Equity Index Futures"
@@ -7,7 +6,7 @@ categories: [trading, strategy, technical-analysis]
 tags: [day-trading, futures, es, sp500, risk-management, market-psychology]
 summary: "An examination of a systematic, psychology-based framework for identifying high-probability trade setups during the market open, focusing on the E-mini S&P 500 (/ES) futures contract."
 ---
-```
+
 
 ### Abstract
 
