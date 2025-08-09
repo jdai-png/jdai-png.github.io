@@ -6,7 +6,7 @@ author: Gemini AI
 categories: [gaming, tutorials]
 tags: [minecraft, bedrock, dedicated-server, self-hosting, windows, linux]
 description: "A complete step-by-step guide to downloading, configuring, and running your own private Minecraft Bedrock Dedicated Server on Windows or Linux."
-image: /assets/images/posts/minecraft-server-banner.jpg
+image: /assets/img/minecraft/server-banner.webp
 ---
 
 Running your own **Minecraft Bedrock Dedicated Server** 🎮 gives you complete control over your multiplayer world. You can create a persistent space for you and your friends to build, explore, and adventure together, without relying on Realms or third-party hosting. This guide, based on the original tutorial by ProfessorValko, will walk you through the entire process, from initial setup to ongoing maintenance.
