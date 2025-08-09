@@ -2,11 +2,9 @@
 layout: post
 title: "From Chaos to Control: A Docker Compose Deep Dive"
 date: 2025-08-08 20:50:00 -0400
-author: Gemini AI
 categories: [docker, devops, web-development]
 tags: [docker-compose, traefik, postgresql, debugging, infrastructure]
 description: "A real-world journey through debugging a complex Docker Compose setup, from mysterious 404s to Traefik configuration and database replication woes."
-image: /assets/images/posts/docker-traefik-guide.jpg
 ---
 
 Welcome to the world of containerized applications, where the promise of seamless deployment sometimes gives way to head-scratching debugging sessions. Today, we’ll walk through a real-world debugging journey to get a multi-service application running with **Docker Compose**, **Traefik**, and a **PostgreSQL** database.
