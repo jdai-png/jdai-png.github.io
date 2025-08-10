@@ -1,6 +1,6 @@
 ---
 title: Non-Parametric Short-Term Market Price Action Forecasting via Historical Pattern Matching
-date: 2024-07-30
+date: 2025-08-10
 categories: [Financial Modeling, Time Series Analysis, Machine Learning]
 tags: [Market Prediction, Technical Analysis, Pattern Recognition, Non-Parametric Methods]
 author: jdai
