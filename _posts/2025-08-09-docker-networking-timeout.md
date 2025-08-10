@@ -1,10 +1,17 @@
 -----
-
-layout: post title: "Taming the Timeout: A Docker Networking Deep Dive (and Victory\!)" date: 2025-08-10 02:06:22 -0400 categories: [docker, networking, traefik, troubleshooting] tags: [gateway timeout, docker compose, reverse proxy, microservices]
-
-Welcome to the world of containerized applications, where the promise of seamless deployment sometimes gives way to head-scratching debugging sessions. Recently, I battled a particularly frustrating "**Gateway Timeout**" error when trying to access a service behind Traefik. The logs seemed to indicate everything was fine, yet requests consistently failed. This post details the steps taken to diagnose and ultimately resolve this **Docker networking puzzle**.
-
+layout: post 
+title: "Taming the 
+Timeout: A Docker Networking Deep Dive (and Victory\!)" 
+date: 2025-08-10 02:06:22 -0400 
+categories: [docker, networking, traefik, troubleshooting] 
+tags: [gateway timeout, docker compose, reverse proxy, microservices]
 -----
+
+
+
+```md
+### Welcome to the world of containerized applications, where the promise of seamless deployment sometimes gives way to head-scratching debugging sessions. Recently, I battled a particularly frustrating "**Gateway Timeout**" error when trying to access a service behind Traefik. The logs seemed to indicate everything was fine, yet requests consistently failed. This post details the steps taken to diagnose and ultimately resolve this **Docker networking puzzle**.
+```
 
 ## The Setup: A Network of Services
 

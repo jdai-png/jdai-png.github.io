@@ -3,10 +3,8 @@ title: Non-Parametric Short-Term Market Price Action Forecasting via Historical 
 date: 2025-08-10
 categories: [Financial Modeling, Time Series Analysis, Machine Learning]
 tags: [Market Prediction, Technical Analysis, Pattern Recognition, Non-Parametric Methods]
-author: jdai
 abstract: This paper explores a novel, non-parametric methodology for forecasting short-term (15-minute bar) market price action based on the identification and analysis of historical patterns of discretized price changes. The proposed approach involves defining a fixed-length pattern window of recent price movements, searching historical data for exact matches of this pattern, and subsequently calculating the empirical probabilities of the next bar's price action based on the observed outcomes following these historical matches. The technical specification for the implementation of this methodology within a software application, potentially driven by a Large Language Model (LLM), is also presented.
 image: /assets/img/markov/markov-2.webp
-
 ---
 
 ## 1. Introduction
