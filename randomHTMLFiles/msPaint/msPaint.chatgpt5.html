@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Map Drawer — Vector + Raster Hybrid (Standalone)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  :root{
+    --bg-outer: #071427;
+    --panel: #0b1220;
+    --accent: #06b6d4;
+    --muted: #94a3b8;
+    --canvas-bg: #f7fafc; /* light so shapes show */
+    --canvas-border: #cbd5e1;
+    --grid: #e6eef8;
+  }
+  html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,#071427 0%, #02101a 100%);color:#e6eef8}
+  .app {display:flex; height:100vh; gap:12px; padding:12px; box-sizing:border-box;}
+  .sidebar{
+    width:340px;
+    background:var(--panel);
+    border-radius:10px;
+    padding:14px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    border:1px solid rgba(255,255,255,0.04);
+  }
+  h1{font-size:16px;margin:0;color:var(--accent)}
+  .toolbar-section{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;display:flex;flex-direction:column;gap:8px}
+  .tool-row{display:flex;flex-wrap:wrap;gap:8px}
+  button.tool{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px;border-radius:8px;cursor:pointer}
+  button.tool.active{border-color:var(--accent);color:#e6f7fb;box-shadow:0 6px 18px rgba(6,182,212,0.06)}
+  .control{display:flex;gap:8px;align-items:center}
+  label.small{font-size:12px;color:var(--muted)}
+  input[type="color"]{width:36px;height:28px;padding:0;border:0;background:transparent}
+  input[type="range"]{width:120px}
+  .btn{background:var(--panel);border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+  .footer{margin-top:auto;font-size:12px;color:var(--muted)}
+  /* canvas area */
+  .canvas-area{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .canvas-shell{
+    position:relative;
+    flex:1;
+    background:linear-gradient(180deg,#0b1320 0%, #07111a 100%);
+    border-radius:10px;
+    padding:12px;
+    box-sizing:border-box;
+    display:flex;
+    gap:12px;
+  }
+  .canvas-panel{
+    position:relative;
+    flex:1;
+    background:var(--canvas-bg);
+    border:2px solid var(--canvas-border);
+    border-radius:6px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  /* grid overlay & rulers containers */
+  .rulers{
+    position:absolute;
+    left:12px;
+    top:12px;
+    right:12px;
+    bottom:12px;
+    pointer-events:none;
+  }
+  canvas.raster, canvas.vector, canvas.grid, canvas.rulers-top, canvas.rulers-left {
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:block;
+  }
+  /* DOM handles container */
+  .handles {
+    position:absolute; left:0; top:0; width:100%; height:100%; pointer-events:none;
+  }
+  .handle {
+    position:absolute;
+    width:14px; height:14px;
+    background:#fff; border-radius:3px;
+    border:2px solid var(--accent);
+    transform:translate(-50%,-50%);
+    pointer-events:auto;
+    touch-action:none;
+  }
+  .rotate-handle{
+    width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid rgba(255,255,255,0.85)
+  }
+  .selection-box{
+    position:absolute;border:1px dashed var(--accent);pointer-events:none;box-sizing:border-box;
+  }
+  .statusbar{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.01);font-size:13px;color:var(--muted)}
+  input[type="number"]{width:80px;padding:6px;border-radius:6px;border:1px solid rgba(0,0,0,0.08)}
+  .kbd{background:#071527;padding:6px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.03);font-size:12px}
+  /* small */
+  .muted{color:var(--muted);font-size:12px}
+  @media (max-width:1000px){ .sidebar{width:300px} }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="sidebar" aria-label="Tools">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h1>Map Drawer</h1>
+      <div class="muted">Hybrid Editor</div>
+    </div>
+
+    <div class="toolbar-section">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <label class="small">Mode</label>
+        <div class="control">
+          <button id="modeRaster" class="tool">Raster</button>
+          <button id="modeVector" class="tool active">Vector</button>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <button class="tool" id="toolSelect" data-tool="select">Select</button>
+        <button class="tool" id="toolRect" data-tool="rect">Rect</button>
+        <button class="tool" id="toolEllipse" data-tool="ellipse">Ellipse</button>
+        <button class="tool" id="toolLine" data-tool="line">Line</button>
+        <button class="tool" id="toolPoly" data-tool="polygon">Polygon</button>
+        <button class="tool" id="toolText" data-tool="text">Text</button>
+        <button class="tool" id="toolImage" data-tool="image">Image</button>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+        <label class="small">Stroke</label>
+        <input id="strokeColor" type="color" value="#1560ff"/>
+        <label class="small">W</label>
+        <input id="strokeWidth" type="number" min="1" max="80" value="3" />
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <label class="small">Raster Tools</label>
+        <div style="display:flex;gap:8px">
+          <button class="tool" id="toolFree">Free</button>
+          <button class="tool" id="toolEraser">Eraser</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar-section">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <label class="small">Grid & Snap</label>
+        <div class="muted">Rulers show units</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <label class="small">Snap</label>
+        <input type="checkbox" id="snapToggle" checked/>
+        <label class="small">Size</label>
+        <input id="gridSize" type="number" value="16" min="4" step="1" />
+        <label class="small">Visible</label>
+        <input type="checkbox" id="showGrid" checked/>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+        <label class="small">Rulers</label>
+        <input type="checkbox" id="showRulers" checked/>
+        <label class="small">Units</label>
+        <select id="unitSelect"><option value="px">px</option><option value="m">m</option></select>
+      </div>
+    </div>
+
+    <div class="toolbar-section">
+      <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+        <label class="small">Selection / Precise</label>
+        <div class="muted">Edit selected shape</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <label class="small">W</label><input id="selW" type="number" />
+        <label class="small">H</label><input id="selH" type="number" />
+        <label class="small">X</label><input id="selX" type="number" />
+        <label class="small">Y</label><input id="selY" type="number" />
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+        <button class="btn" id="bringFront">Bring Front</button>
+        <button class="btn" id="sendBack">Send Back</button>
+        <button class="btn" id="deleteSel">Delete</button>
+      </div>
+    </div>
+
+    <div class="toolbar-section" style="display:flex;flex-direction:row;gap:8px;align-items:center;justify-content:space-between">
+      <div style="display:flex;gap:8px">
+        <button class="btn" id="undoBtn">Undo</button>
+        <button class="btn" id="redoBtn">Redo</button>
+      </div>
+      <div style="display:flex;gap:8px">
+        <label class="btn" for="fileInput">Import PNG</label>
+        <input id="fileInput" type="file" accept="image/png,image/*" style="display:none" />
+        <button class="btn" id="exportBtn">Export PNG</button>
+      </div>
+    </div>
+
+    <div class="footer muted">Zoom mouse-wheel | Pan: Space+drag | Double-click image to bring front</div>
+  </div>
+
+  <div class="canvas-area">
+    <div class="canvas-shell">
+      <div class="canvas-panel" id="canvasPanel" tabindex="0">
+        <!-- Grid, raster and vector canvases stacked -->
+        <canvas id="gridCanvas" class="grid"></canvas>
+        <canvas id="rasterCanvas" class="raster"></canvas>
+        <canvas id="vectorCanvas" class="vector"></canvas>
+
+        <!-- Rulers drawn in their own canvases for crisp lines -->
+        <canvas id="rulersTop" class="rulers-top" style="height:30px;top:0"></canvas>
+        <canvas id="rulersLeft" class="rulers-left" style="width:30px;left:0"></canvas>
+
+        <!-- DOM handles layer -->
+        <div class="handles" id="handles"></div>
+
+        <!-- selection rect -->
+        <div id="selectionBox" class="selection-box" style="display:none"></div>
+      </div>
+    </div>
+
+    <div class="statusbar">
+      <div id="statusLeft" class="muted">Mode: <strong id="modeLabel">Vector</strong></div>
+      <div id="statusRight" class="muted">Zoom: <span id="zoomLabel">100%</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/*
+  Map Drawer — Hybrid Vector + Raster Editor (single file)
+  - Two canvas layers: rasterCanvas (bitmap) and vectorCanvas (overlay)
+  - Shapes stored as objects so they remain editable (vector mode)
+  - Raster mode supports freehand and eraser (pixel-erasing via destination-out)
+  - Snap-to-grid, rulers & precise dimension editing
+  - DOM handles for selection with touch support
+  - Undo/Redo supports both layers
+*/
+
+/* ----------------- Basic DOM & state ----------------- */
+const canvasPanel = document.getElementById('canvasPanel');
+const rasterCanvas = document.getElementById('rasterCanvas');
+const vectorCanvas = document.getElementById('vectorCanvas');
+const gridCanvas = document.getElementById('gridCanvas');
+const rulersTop = document.getElementById('rulersTop');
+const rulersLeft = document.getElementById('rulersLeft');
+const handlesContainer = document.getElementById('handles');
+const selectionBox = document.getElementById('selectionBox');
+
+const modeRasterBtn = document.getElementById('modeRaster');
+const modeVectorBtn = document.getElementById('modeVector');
+const modeLabel = document.getElementById('modeLabel');
+const zoomLabel = document.getElementById('zoomLabel');
+
+const strokeColorInput = document.getElementById('strokeColor');
+const strokeWidthInput = document.getElementById('strokeWidth');
+const toolButtons = {
+  select: document.getElementById('toolSelect'),
+  rect: document.getElementById('toolRect'),
+  ellipse: document.getElementById('toolEllipse'),
+  line: document.getElementById('toolLine'),
+  polygon: document.getElementById('toolPoly'),
+  text: document.getElementById('toolText'),
+  image: document.getElementById('toolImage'),
+  free: document.getElementById('toolFree'),
+  eraser: document.getElementById('toolEraser')
+};
+const snapToggle = document.getElementById('snapToggle');
+const showGridToggle = document.getElementById('showGrid');
+const gridSizeInput = document.getElementById('gridSize');
+const showRulersToggle = document.getElementById('showRulers');
+const unitSelect = document.getElementById('unitSelect');
+
+const selW = document.getElementById('selW');
+const selH = document.getElementById('selH');
+const selX = document.getElementById('selX');
+const selY = document.getElementById('selY');
+
+const undoBtn = document.getElementById('undoBtn');
+const redoBtn = document.getElementById('redoBtn');
+const exportBtn = document.getElementById('exportBtn');
+const fileInput = document.getElementById('fileInput');
+const bringFrontBtn = document.getElementById('bringFront');
+const sendBackBtn = document.getElementById('sendBack');
+const deleteSelBtn = document.getElementById('deleteSel');
+
+/* pixel ratio */
+const DPR = Math.max(1, window.devicePixelRatio || 1);
+
+/* world (canvas) size */
+let WORLD_W = 3000, WORLD_H = 2000;
+
+/* canvas contexts */
+let rasterCtx = rasterCanvas.getContext('2d', { alpha: true });
+let vectorCtx = vectorCanvas.getContext('2d', { alpha: true });
+let gridCtx = gridCanvas.getContext('2d', { alpha: true });
+let rulersTopCtx = rulersTop.getContext('2d', { alpha: true });
+let rulersLeftCtx = rulersLeft.getContext('2d', { alpha: true });
+
+/* viewport transform */
+let scale = 1;
+let offsetX = 0;
+let offsetY = 0;
+const minScale = 0.2, maxScale = 6;
+
+/* editor mode and tools */
+let mode = 'vector'; // 'raster' or 'vector'
+let currentTool = 'select'; // rect, ellipse, line, polygon, text, image, free, eraser
+let strokeColor = strokeColorInput.value;
+let strokeWidth = Number(strokeWidthInput.value);
+
+/* shapes array (vector objects): order defines z-order; images included here */
+let shapes = []; // { id, type, x,y,w,h, stroke, width, points, text, img, angle, ... }
+let selected = null;
+
+/* raster drawing path (for freehand/eraser) */
+let isDrawing = false;
+let currentPath = [];
+
+/* polygon temporary points */
+let polyPoints = [];
+
+/* handles (DOM elements) */
+let handles = [];
+
+/* undo/redo stacks */
+let undoStack = [];
+let redoStack = [];
+const UNDO_LIMIT = 60;
+
+/* grid / snap */
+let snapToGrid = snapToggle.checked;
+let showGrid = showGridToggle.checked;
+let gridSize = Number(gridSizeInput.value);
+
+/* rulers */
+let showRulers = showRulersToggle.checked;
+let unit = unitSelect.value;
+
+/* initialization */
+function setup() {
+  resizeCanvases();
+  // create initial white raster background
+  rasterCtx.setTransform(1,0,0,1,0,0);
+  rasterCtx.clearRect(0,0,rasterCanvas.width, rasterCanvas.height);
+  rasterCtx.setTransform(DPR,0,0,DPR,0,0);
+  rasterCtx.fillStyle = '#ffffff';
+  rasterCtx.fillRect(0,0,WORLD_W, WORLD_H);
+
+  attachUI();
+  attachEvents();
+  renderAll();
+  pushUndo(); // initial state
+}
+function resizeCanvases(){
+  const rect = canvasPanel.getBoundingClientRect();
+  // set canvas CSS sized to panel
+  [rasterCanvas, vectorCanvas, gridCanvas].forEach(c=>{
+    c.style.left = '0'; c.style.top = '0';
+    c.style.width = rect.width + 'px';
+    c.style.height = rect.height + 'px';
+    c.width = Math.floor(rect.width * DPR);
+    c.height = Math.floor(rect.height * DPR);
+  });
+  // rulers size
+  rulersTop.width = Math.floor(rect.width * DPR);
+  rulersTop.height = Math.floor(30 * DPR);
+  rulersTop.style.left = '0';
+  rulersTop.style.top = '0';
+  rulersTop.style.width = rect.width + 'px';
+  rulersTop.style.height = '30px';
+
+  rulersLeft.width = Math.floor(30 * DPR);
+  rulersLeft.height = Math.floor(rect.height * DPR);
+  rulersLeft.style.left = '0';
+  rulersLeft.style.top = '0';
+  rulersLeft.style.width = '30px';
+  rulersLeft.style.height = rect.height + 'px';
+
+  // transform contexts
+  rasterCtx = rasterCanvas.getContext('2d', { alpha: true });
+  rasterCtx.setTransform(DPR,0,0,DPR,0,0);
+  vectorCtx = vectorCanvas.getContext('2d', { alpha: true });
+  vectorCtx.setTransform(DPR,0,0,DPR,0,0);
+  gridCtx = gridCanvas.getContext('2d', { alpha: true });
+  gridCtx.setTransform(DPR,0,0,DPR,0,0);
+  rulersTopCtx = rulersTop.getContext('2d', { alpha: true });
+  rulersTopCtx.setTransform(DPR,0,0,DPR,0,0);
+  rulersLeftCtx = rulersLeft.getContext('2d', { alpha: true });
+  rulersLeftCtx.setTransform(DPR,0,0,DPR,0,0);
+}
+
+/* ----------------- Utilities ----------------- */
+function worldToView(wx, wy){
+  // world coords to panel CSS px
+  const vx = (wx * scale + offsetX);
+  const vy = (wy * scale + offsetY);
+  return { x: vx, y: vy };
+}
+function viewToWorld(vx, vy){
+  // panel client coords to world
+  const rect = rasterCanvas.getBoundingClientRect();
+  const x = ( (vx - rect.left) * DPR / DPR - offsetX ) / scale;
+  const y = ( (vy - rect.top) * DPR / DPR - offsetY ) / scale;
+  return { x, y };
+}
+function snap(v){
+  if(!snapToGrid) return v;
+  const gs = Number(gridSize);
+  return Math.round(v / gs) * gs;
+}
+function uid(){ return Math.random().toString(36).slice(2,9); }
+
+/* deep clone shapes (for undo) */
+function cloneState(){
+  return {
+    shapes: JSON.parse(JSON.stringify(shapes)),
+    raster: rasterCanvas.toDataURL('image/png')
+  };
+}
+
+/* push undo */
+function pushUndo(){
+  try{
+    undoStack.push(cloneState());
+    if(undoStack.length > UNDO_LIMIT) undoStack.shift();
+    redoStack = [];
+  }catch(e){
+    console.warn('pushUndo fail', e);
+  }
+}
+async function doUndo(){
+  if(undoStack.length <= 1) return;
+  redoStack.push(undoStack.pop());
+  const state = undoStack[undoStack.length-1];
+  await restoreState(state);
+}
+async function doRedo(){
+  if(redoStack.length === 0) return;
+  const state = redoStack.pop();
+  undoStack.push(state);
+  await restoreState(state);
+}
+async function restoreState(state){
+  shapes = JSON.parse(JSON.stringify(state.shapes || []));
+  // restore raster image
+  if(state.raster){
+    const img = new Image();
+    img.src = state.raster;
+    await new Promise(r => img.onload = r);
+    rasterCtx.setTransform(1,0,0,1,0,0);
+    rasterCtx.clearRect(0,0,rasterCanvas.width, rasterCanvas.height);
+    rasterCtx.setTransform(DPR,0,0,DPR,0,0);
+    rasterCtx.drawImage(img, 0,0, WORLD_W, WORLD_H);
+  }
+  selected = null;
+  removeHandles();
+  renderAll();
+}
+
+/* ----------------- Rendering ----------------- */
+function clearVectorCanvas(){
+  vectorCtx.setTransform(1,0,0,1,0,0);
+  vectorCtx.clearRect(0,0,vectorCanvas.width, vectorCanvas.height);
+  vectorCtx.setTransform(DPR,0,0,DPR,0,0);
+}
+function renderRasterLayer(){
+  // raster is already drawn to rasterCanvas; we do not redraw it here.
+  // This placeholder remains for future advanced layering.
+}
+function renderVectorLayer(){
+  clearVectorCanvas();
+  // apply viewport transform to vector context (scale & translate)
+  vectorCtx.setTransform(scale * DPR, 0, 0, scale * DPR, offsetX * DPR, offsetY * DPR);
+  // draw each shape
+  for(const s of shapes){
+    drawShapeOnContext(vectorCtx, s, s === selected ? 0.95 : 1);
+  }
+}
+function drawShapeOnContext(ctx, s, opacity=1){
+  ctx.save();
+  ctx.globalAlpha = opacity;
+  ctx.lineWidth = (s.strokeWidth || 2);
+  ctx.strokeStyle = s.stroke || '#111';
+  ctx.fillStyle = s.fill || 'rgba(0,0,0,0)';
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  if(s.type === 'rect'){
+    ctx.beginPath();
+    ctx.rect(s.x, s.y, s.w, s.h);
+    if(s.fill) ctx.fill();
+    ctx.stroke();
+  } else if(s.type === 'ellipse'){
+    ctx.beginPath();
+    ctx.ellipse(s.x + s.w/2, s.y + s.h/2, Math.abs(s.w/2), Math.abs(s.h/2), 0, 0, Math.PI*2);
+    if(s.fill) ctx.fill();
+    ctx.stroke();
+  } else if(s.type === 'line'){
+    ctx.beginPath();
+    ctx.moveTo(s.x, s.y);
+    ctx.lineTo(s.x2, s.y2);
+    ctx.stroke();
+  } else if(s.type === 'polygon'){
+    if(!s.points || s.points.length < 2) return;
+    ctx.beginPath();
+    ctx.moveTo(s.points[0].x, s.points[0].y);
+    for(let i=1;i<s.points.length;i++) ctx.lineTo(s.points[i].x, s.points[i].y);
+    if(s.closed) ctx.closePath();
+    if(s.fill) ctx.fill();
+    ctx.stroke();
+  } else if(s.type === 'image'){
+    // draw image if available
+    if(s.img){
+      try { ctx.drawImage(s.img, s.x, s.y, s.w, s.h); } catch(e){}
+    } else if(s.dataUrl){
+      const im = new Image();
+      im.src = s.dataUrl;
+      im.onload = ()=> renderAll(); // will redraw later
+      ctx.drawImage(im, s.x, s.y, s.w, s.h);
+    }
+  } else if(s.type === 'text'){
+    ctx.font = `${s.fontSize||16}px sans-serif`;
+    ctx.fillStyle = s.fill || '#000';
+    ctx.fillText(s.text || 'Text', s.x, s.y);
+  }
+  ctx.restore();
+}
+
+/* draw grid and rulers */
+function renderGrid(){
+  const rect = rasterCanvas.getBoundingClientRect();
+  gridCtx.setTransform(1,0,0,1,0,0);
+  gridCtx.clearRect(0,0,gridCanvas.width, gridCanvas.height);
+  if(!showGrid) return;
+  gridCtx.setTransform(scale * DPR, 0, 0, scale * DPR, offsetX * DPR, offsetY * DPR);
+  const gs = gridSize;
+  const left = -offsetX / scale;
+  const top = -offsetY / scale;
+  const right = left + (rect.width / scale);
+  const bottom = top + (rect.height / scale);
+  // draw vertical lines
+  gridCtx.beginPath();
+  gridCtx.strokeStyle = 'rgba(0,0,0,0.06)';
+  gridCtx.lineWidth = 1 / scale;
+  for(let x = Math.floor(left / gs) * gs; x < right; x += gs){
+    gridCtx.moveTo(x, top); gridCtx.lineTo(x, bottom);
+  }
+  for(let y = Math.floor(top / gs) * gs; y < bottom; y += gs){
+    gridCtx.moveTo(left, y); gridCtx.lineTo(right, y);
+  }
+  gridCtx.stroke();
+}
+
+/* rulers */
+function renderRulers(){
+  // top ruler
+  const rect = canvasPanel.getBoundingClientRect();
+  rulersTopCtx.setTransform(1,0,0,1,0,0);
+  rulersTopCtx.clearRect(0,0,rulersTop.width, rulersTop.height);
+  if(!showRulers) return;
+  // draw ticks in top ruler
+  rulersTopCtx.setTransform(DPR,0,0,DPR,0,0);
+  rulersTopCtx.fillStyle = '#0b1220';
+  rulersTopCtx.fillRect(0,0,rect.width,30);
+  rulersTopCtx.fillStyle = '#94a3b8';
+  rulersTopCtx.font = '11px sans-serif';
+  const stepPx = gridSize * scale;
+  // start offset
+  const start = Math.floor(-offsetX / (gridSize*scale)) * gridSize * scale + offsetX;
+  for(let vx = start; vx < rect.width; vx += stepPx){
+    const worldX = (vx - offsetX) / scale;
+    const label = Math.round(worldX);
+    const x = Math.round(vx);
+    rulersTopCtx.fillRect(x, 18, 1, 8);
+    rulersTopCtx.fillText(label + (unit==='m'?' m':''), x + 2, 12);
+  }
+
+  // left ruler
+  rulersLeftCtx.setTransform(1,0,0,1,0,0);
+  rulersLeftCtx.clearRect(0,0,rulersLeft.width, rulersLeft.height);
+  rulersLeftCtx.setTransform(DPR,0,0,DPR,0,0);
+  rulersLeftCtx.fillStyle = '#0b1220';
+  rulersLeftCtx.fillRect(0,0,30,rect.height);
+  rulersLeftCtx.fillStyle = '#94a3b8';
+  rulersLeftCtx.font = '11px sans-serif';
+  const startY = Math.floor(-offsetY / (gridSize*scale)) * gridSize * scale + offsetY;
+  for(let vy = startY; vy < rect.height; vy += stepPx){
+    const worldY = Math.round((vy - offsetY)/scale);
+    rulersLeftCtx.fillRect(22, Math.round(vy), 6, 1);
+    rulersLeftCtx.save();
+    rulersLeftCtx.translate(2, Math.round(vy)+3);
+    rulersLeftCtx.rotate(-Math.PI/2);
+    rulersLeftCtx.fillText(worldY + (unit==='m'?' m':''), 0, 0);
+    rulersLeftCtx.restore();
+  }
+}
+
+/* full render */
+function renderAll(){
+  renderGrid();
+  renderRasterLayer();
+  renderVectorLayer();
+  renderRulers();
+  updateHandles();
+  updateStatus();
+}
+
+/* ----------------- UI wiring ----------------- */
+function attachUI(){
+  // mode toggles
+  function setMode(m){
+    mode = m;
+    modeLabel.textContent = (m === 'vector' ? 'Vector' : 'Raster');
+    modeRasterBtn.classList.toggle('active', m==='raster');
+    modeVectorBtn.classList.toggle('active', m==='vector');
+    // tool defaults
+    if(mode === 'raster') currentTool = 'free';
+    else currentTool = 'select';
+    updateToolButtons();
+  }
+  modeRasterBtn.addEventListener('click', ()=> setMode('raster'));
+  modeVectorBtn.addEventListener('click', ()=> setMode('vector'));
+
+  // stroke inputs
+  strokeColorInput.addEventListener('input', ()=> strokeColor = strokeColorInput.value);
+  strokeWidthInput.addEventListener('input', ()=> strokeWidth = Number(strokeWidthInput.value));
+
+  // tool buttons
+  for(const t in toolButtons){
+    const el = toolButtons[t];
+    el.addEventListener('click', ()=> {
+      currentTool = el.dataset.tool || t;
+      updateToolButtons();
+      if(currentTool === 'image') fileInput.click();
+    });
+  }
+  function updateToolButtons(){
+    for(const k in toolButtons){
+      toolButtons[k].classList.toggle('active', (currentTool===k));
+    }
+  }
+  updateToolButtons();
+
+  // grid & snap
+  snapToggle.addEventListener('change', ()=> { snapToGrid = snapToggle.checked; });
+  gridSizeInput.addEventListener('input', ()=> { gridSize = Number(gridSizeInput.value); renderAll(); });
+  showGridToggle.addEventListener('change', ()=> { showGrid = showGridToggle.checked; renderAll(); });
+
+  // rulers
+  showRulersToggle.addEventListener('change', ()=> { showRulers = showRulersToggle.checked; renderAll(); });
+  unitSelect.addEventListener('change', ()=> { unit = unitSelect.value; renderRulers(); });
+
+  // selection precise fields
+  [selW, selH, selX, selY].forEach(i=> i.addEventListener('change', applyPreciseChanges));
+  bringFrontBtn.addEventListener('click', bringFront);
+  sendBackBtn.addEventListener('click', sendBack);
+  deleteSelBtn.addEventListener('click', deleteSelected);
+
+  // undo/redo
+  undoBtn.addEventListener('click', doUndo);
+  redoBtn.addEventListener('click', doRedo);
+
+  // export
+  exportBtn.addEventListener('click', exportPNG);
+
+  // file import
+  fileInput.addEventListener('change', async (ev)=>{
+    const f = ev.target.files[0];
+    if(!f) return;
+    const url = URL.createObjectURL(f);
+    const im = new Image();
+    await new Promise(r=> im.onload = r, im.src = url);
+    // add image as a vector shape
+    const s = { id: uid(), type: 'image', x: snap(50), y: snap(50), w: Math.min(600,im.width), h: Math.min(400,im.height), stroke: '#000', strokeWidth:1, img: im };
+    shapes.push(s);
+    pushUndo(); renderAll();
+    fileInput.value = '';
+  });
+
+  // bring/sent
+  window.addEventListener('resize', ()=> { resizeCanvases(); renderAll(); });
+}
+
+/* ----------------- mouse / touch interaction ----------------- */
+let isPointerDown = false;
+let pointerStart = null;
+let pointerLast = null;
+let draggingHandle = null;
+let draggingShape = null;
+let shapeDragOffset = null;
+let selectionMode = false;
+
+canvasPanel.addEventListener('mousedown', (ev)=> {
+  canvasPanel.focus();
+  const p = viewToWorld(ev.clientX, ev.clientY);
+  pointerStart = p; pointerLast = p;
+  isPointerDown = true;
+  if(mode === 'raster'){
+    if(currentTool === 'free'){
+      isDrawing = true;
+      currentPath = [p];
+    } else if(currentTool === 'eraser'){
+      isDrawing = true;
+      currentPath = [p];
+    }
+  } else {
+    // vector mode actions
+    if(currentTool === 'select'){
+      // hit-test shapes from top to bottom
+      const hit = hitTestShapeAt(p.x, p.y);
+      if(hit){
+        selectShape(hit);
+        // prepare drag
+        draggingShape = hit;
+        shapeDragOffset = { x: p.x - hit.x, y: p.y - hit.y };
+      } else {
+        // clear selection
+        selectShape(null);
+      }
+    } else if(['rect','ellipse','line','polygon','text','image'].includes(currentTool)){
+      // start drawing a new shape
+      if(currentTool === 'rect' || currentTool === 'ellipse' || currentTool === 'line'){
+        // create temp shape; finalize on mouseup
+        const s = {
+          id: uid(),
+          type: currentTool,
+          x: snap(p.x), y: snap(p.y),
+          w: 0, h: 0,
+          x2: p.x, y2: p.y,
+          stroke: strokeColor, strokeWidth: strokeWidth,
+        };
+        shapes.push(s); selected = s;
+        selectionMode = true;
+      } else if(currentTool === 'polygon'){
+        // accumulate points; double click to close
+        polyPoints.push({x: snap(p.x), y: snap(p.y)});
+        if(polyPoints.length === 1){
+          const s = { id: uid(), type: 'polygon', points: polyPoints.slice(), stroke: strokeColor, strokeWidth: strokeWidth, closed:false };
+          shapes.push(s); selected = s;
+        } else {
+          selected.points = polyPoints.slice();
+        }
+      } else if(currentTool === 'text'){
+        const txt = prompt('Text content','Text');
+        if(txt !== null){
+          const s = { id: uid(), type: 'text', x: snap(p.x), y: snap(p.y), text: txt, fontSize:16, fill:'#000' };
+          shapes.push(s); pushUndo(); renderAll();
+        }
+      } else if(currentTool === 'image'){
+        // file input triggered separately; ignore
+      }
+      renderAll();
+    }
+  }
+});
+
+canvasPanel.addEventListener('mousemove', (ev) => {
+  const p = viewToWorld(ev.clientX, ev.clientY);
+  if(isPointerDown){
+    if(mode === 'raster' && isDrawing){
+      currentPath.push({x: p.x, y: p.y});
+      drawRasterStroke(currentPath, currentTool === 'eraser');
+    } else if(mode === 'vector'){
+      if(draggingShape){
+        // move the shape
+        const s = draggingShape;
+        const nx = p.x - shapeDragOffset.x;
+        const ny = p.y - shapeDragOffset.y;
+        s.x = snap(nx); s.y = snap(ny);
+        renderAll();
+      } else if(selectionMode && selected){
+        // updating size for new shape drawing
+        const s = selected;
+        if(s.type === 'rect' || s.type === 'ellipse'){
+          s.w = snap(p.x - s.x);
+          s.h = snap(p.y - s.y);
+        } else if(s.type === 'line'){
+          s.x2 = p.x; s.y2 = p.y;
+        }
+        renderAll();
+      } else if(currentTool === 'polygon' && polyPoints.length > 0){
+        // show preview
+        selected.points = polyPoints.concat([{x:p.x,y:p.y}]);
+        renderAll();
+      }
+    }
+  }
+  pointerLast = p;
+});
+
+canvasPanel.addEventListener('mouseup', (ev) => {
+  const p = viewToWorld(ev.clientX, ev.clientY);
+  if(mode === 'raster' && isDrawing){
+    // commit raster stroke
+    commitRasterPath(currentPath, currentTool === 'eraser');
+    isDrawing = false;
+    currentPath = [];
+    pushUndo();
+  } else if(mode === 'vector'){
+    if(draggingShape){
+      pushUndo();
+      draggingShape = null;
+      shapeDragOffset = null;
+    }
+    if(selectionMode){
+      pushUndo();
+      selectionMode = false;
+      selected = selected; // keep
+      updatePreciseInputs();
+    }
+  }
+  isPointerDown = false;
+});
+
+/* double click for polygon close */
+canvasPanel.addEventListener('dblclick', (ev) => {
+  if(currentTool === 'polygon' && polyPoints.length >= 3){
+    // finalize polygon
+    const s = shapes[shapes.length-1];
+    s.points = polyPoints.slice();
+    s.closed = true;
+    polyPoints = [];
+    pushUndo();
+    renderAll();
+  }
+});
+
+/* wheel zoom */
+canvasPanel.addEventListener('wheel', (ev) => {
+  ev.preventDefault();
+  const delta = -ev.deltaY;
+  const factor = 1.08;
+  const rect = canvasPanel.getBoundingClientRect();
+  const cx = ev.clientX;
+  const cy = ev.clientY;
+  if(delta>0) setZoom(scale * factor, cx, cy);
+  else setZoom(scale / factor, cx, cy);
+}, { passive:false });
+
+/* spacebar pan */
+let isPanning = false;
+let panStart = null;
+window.addEventListener('keydown', (ev) => {
+  if(ev.code === 'Space') { canvasPanel.style.cursor = 'grab'; isPanning = true; }
+  if((ev.ctrlKey || ev.metaKey) && ev.key === 'z') doUndo();
+  if((ev.ctrlKey || ev.metaKey) && ev.key === 'y') doRedo();
+});
+window.addEventListener('keyup', (ev) => {
+  if(ev.code === 'Space') { canvasPanel.style.cursor = ''; isPanning = false; panStart = null; }
+});
+canvasPanel.addEventListener('mousedown', (ev) => {
+  if(isPanning){ panStart = {x: ev.clientX, y: ev.clientY}; ev.preventDefault(); }
+});
+canvasPanel.addEventListener('mousemove', (ev) => {
+  if(isPanning && panStart){
+    const dx = ev.clientX - panStart.x;
+    const dy = ev.clientY - panStart.y;
+    offsetX += dx;
+    offsetY += dy;
+    panStart = {x: ev.clientX, y: ev.clientY};
+    renderAll();
+  }
+});
+
+/* simple touch support for pan */
+canvasPanel.addEventListener('touchstart', (ev)=>{
+  if(ev.touches.length === 2){
+    // pinch zoom could be added; for now, pan with two fingers
+    panStart = {x: ev.touches[0].clientX, y: ev.touches[0].clientY};
+  }
+});
+
+/* ----------------- Raster drawing functions ----------------- */
+function drawRasterStroke(path, isEraser=false){
+  if(path.length < 2) return;
+  rasterCtx.save();
+  rasterCtx.setTransform(scale * DPR, 0, 0, scale * DPR, offsetX * DPR, offsetY * DPR);
+  rasterCtx.lineJoin = 'round';
+  rasterCtx.lineCap = 'round';
+  rasterCtx.lineWidth = isEraser ? (strokeWidth * 4) : strokeWidth;
+  rasterCtx.globalCompositeOperation = isEraser ? 'destination-out' : 'source-over';
+  rasterCtx.strokeStyle = isEraser ? 'rgba(0,0,0,1)' : strokeColor;
+  rasterCtx.beginPath();
+  rasterCtx.moveTo(path[0].x, path[0].y);
+  for(let i=1;i<path.length;i++){
+    rasterCtx.lineTo(path[i].x, path[i].y);
+  }
+  rasterCtx.stroke();
+  rasterCtx.restore();
+}
+function commitRasterPath(path, isEraser=false){
+  // nothing to do: we drew on raster canvas live. If we used an overlay we'd merge here.
+}
+
+/* ----------------- shape hit testing & selection ----------------- */
+function hitTestShapeAt(wx, wy){
+  // test from topmost shape
+  for(let i=shapes.length-1;i>=0;i--){
+    const s = shapes[i];
+    if(s.type === 'rect'){
+      if(wx >= s.x && wx <= s.x + s.w && wy >= s.y && wy <= s.y + s.h) return s;
+    } else if(s.type === 'ellipse'){
+      const cx = s.x + s.w/2, cy = s.y + s.h/2;
+      const rx = Math.abs(s.w/2), ry = Math.abs(s.h/2);
+      if(rx <= 0 || ry <= 0) continue;
+      const nx = (wx - cx)/rx, ny = (wy - cy)/ry;
+      if(nx*nx + ny*ny <= 1) return s;
+    } else if(s.type === 'line'){
+      // distance to segment
+      const d = pointToSegmentDistance(wx,wy,s.x,s.y,s.x2,s.y2);
+      if(d <= Math.max(6/scale, 4)) return s;
+    } else if(s.type === 'polygon'){
+      if(pointInPolygon({x:wx,y:wy}, s.points || [])) return s;
+    } else if(s.type === 'image'){
+      if(wx >= s.x && wx <= s.x + s.w && wy >= s.y && wy <= s.y + s.h) return s;
+    } else if(s.type === 'text'){
+      // simple box around text
+      const h = s.fontSize || 16;
+      if(wx >= s.x && wx <= s.x + 200 && wy >= s.y - h && wy <= s.y + 10) return s;
+    }
+  }
+  return null;
+}
+function pointToSegmentDistance(px,py,x1,y1,x2,y2){
+  const A = px - x1, B = py - y1, C = x2 - x1, D = y2 - y1;
+  const dot = A*C + B*D;
+  const len2 = C*C + D*D;
+  let param = len2 !== 0 ? dot / len2 : -1;
+  let xx, yy;
+  if(param < 0){ xx = x1; yy = y1; }
+  else if(param > 1){ xx = x2; yy = y2; }
+  else { xx = x1 + param * C; yy = y1 + param * D; }
+  const dx = px - xx, dy = py - yy;
+  return Math.sqrt(dx*dx + dy*dy);
+}
+function pointInPolygon(point, vs){
+  if(!vs || vs.length < 3) return false;
+  let x = point.x, y = point.y;
+  let inside = false;
+  for (let i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+    const xi = vs[i].x, yi = vs[i].y;
+    const xj = vs[j].x, yj = vs[j].y;
+    const intersect = ((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi + 0.0000001) + xi);
+    if (intersect) inside = !inside;
+  }
+  return inside;
+}
+
+/* ----------------- selection & handles ----------------- */
+function selectShape(shape){
+  selected = shape;
+  removeHandles();
+  if(shape) createHandlesForShape(shape);
+  updatePreciseInputs();
+  renderAll();
+}
+function removeHandles(){
+  handlesContainer.innerHTML = '';
+  handles = [];
+  selectionBox.style.display = 'none';
+}
+function createHandlesForShape(s){
+  if(!s) return;
+  // compute view coords of box corners
+  const tl = worldToView(s.x, s.y);
+  const tr = worldToView(s.x + s.w, s.y);
+  const bl = worldToView(s.x, s.y + s.h);
+  const br = worldToView(s.x + s.w, s.y + s.h);
+  const cx = worldToView(s.x + s.w/2, s.y + s.h/2);
+  // create 4 corner handles + center rotate handle
+  const corners = ['nw','ne','se','sw'];
+  const positions = [tl, tr, br, bl];
+  corners.forEach((name,i)=>{
+    const el = document.createElement('div');
+    el.className = 'handle';
+    el.dataset.handle = name;
+    el.style.left = positions[i].x + 'px';
+    el.style.top = positions[i].y + 'px';
+    el.style.pointerEvents = 'auto';
+    handlesContainer.appendChild(el);
+    handles.push(el);
+    // pointer events
+    attachHandlePointerEvents(el, s);
+  });
+  // draw selection box
+  const topLeft = worldToView(s.x, s.y);
+  const width = Math.abs(s.w) * scale;
+  const height = Math.abs(s.h) * scale;
+  selectionBox.style.display = 'block';
+  selectionBox.style.left = topLeft.x + 'px';
+  selectionBox.style.top = topLeft.y + 'px';
+  selectionBox.style.width = width + 'px';
+  selectionBox.style.height = height + 'px';
+}
+function updateHandles(){
+  if(!selected) return;
+  // update handles positions and selection box
+  const s = selected;
+  const topLeft = worldToView(s.x, s.y);
+  const width = Math.abs(s.w) * scale;
+  const height = Math.abs(s.h) * scale;
+  selectionBox.style.display = 'block';
+  selectionBox.style.left = topLeft.x + 'px';
+  selectionBox.style.top = topLeft.y + 'px';
+  selectionBox.style.width = width + 'px';
+  selectionBox.style.height = height + 'px';
+  // update each handle
+  const corners = [
+    worldToView(s.x, s.y), // nw
+    worldToView(s.x + s.w, s.y), // ne
+    worldToView(s.x + s.w, s.y + s.h), // se
+    worldToView(s.x, s.y + s.h) // sw
+  ];
+  for(let i=0;i<handles.length;i++){
+    const el = handles[i];
+    const pos = corners[i];
+    el.style.left = pos.x + 'px';
+    el.style.top = pos.y + 'px';
+  }
+}
+
+/* handle pointer events */
+function attachHandlePointerEvents(el, shape){
+  let dragging = false;
+  let start = null;
+  function onPointerDown(e){
+    e.preventDefault(); e.stopPropagation();
+    dragging = true;
+    const p = viewToWorld(e.clientX, e.clientY);
+    start = { x: p.x, y: p.y, sx: shape.x, sy: shape.y, sw: shape.w, sh: shape.h };
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp, { once:true });
+  }
+  function onPointerMove(e){
+    if(!dragging) return;
+    const p = viewToWorld(e.clientX, e.clientY);
+    const dx = p.x - start.x, dy = p.y - start.y;
+    const h = el.dataset.handle;
+    if(h === 'nw'){
+      shape.x = snap(start.sx + dx);
+      shape.y = snap(start.sy + dy);
+      shape.w = snap(start.sw - dx);
+      shape.h = snap(start.sh - dy);
+    } else if(h === 'ne'){
+      shape.y = snap(start.sy + dy);
+      shape.w = snap(start.sw + dx);
+      shape.h = snap(start.sh - dy);
+    } else if(h === 'se'){
+      shape.w = snap(start.sw + dx);
+      shape.h = snap(start.sh + dy);
+    } else if(h === 'sw'){
+      shape.x = snap(start.sx + dx);
+      shape.w = snap(start.sw - dx);
+      shape.h = snap(start.sh + dy);
+    }
+    updatePreciseInputs();
+    renderAll();
+  }
+  function onPointerUp(e){
+    dragging = false;
+    pushUndo();
+    window.removeEventListener('pointermove', onPointerMove);
+  }
+  el.addEventListener('pointerdown', onPointerDown);
+  // touch pointer events covered by pointer events
+}
+
+/* ----------------- precise input handlers ----------------- */
+function updatePreciseInputs(){
+  if(!selected){
+    selW.value = selH.value = selX.value = selY.value = '';
+    return;
+  }
+  selW.value = Math.round(selected.w || 0);
+  selH.value = Math.round(selected.h || 0);
+  selX.value = Math.round(selected.x || 0);
+  selY.value = Math.round(selected.y || 0);
+}
+function applyPreciseChanges(){
+  if(!selected) return;
+  const w = Number(selW.value);
+  const h = Number(selH.value);
+  const x = Number(selX.value);
+  const y = Number(selY.value);
+  if(!isNaN(w)) selected.w = snap(w);
+  if(!isNaN(h)) selected.h = snap(h);
+  if(!isNaN(x)) selected.x = snap(x);
+  if(!isNaN(y)) selected.y = snap(y);
+  pushUndo();
+  renderAll();
+}
+
+/* ----------------- bring front / send back / delete ----------------- */
+function bringFront(){
+  if(!selected) return;
+  shapes = shapes.filter(s => s !== selected);
+  shapes.push(selected);
+  pushUndo();
+  renderAll();
+}
+function sendBack(){
+  if(!selected) return;
+  shapes = shapes.filter(s => s !== selected);
+  shapes.unshift(selected);
+  pushUndo();
+  renderAll();
+}
+function deleteSelected(){
+  if(!selected) return;
+  shapes = shapes.filter(s => s !== selected);
+  selected = null;
+  removeHandles();
+  pushUndo();
+  renderAll();
+}
+
+/* ----------------- import image for shape (drag & drop) ----------------- */
+canvasPanel.addEventListener('dragover', (ev)=> ev.preventDefault());
+canvasPanel.addEventListener('drop', async (ev)=> {
+  ev.preventDefault();
+  const f = ev.dataTransfer.files && ev.dataTransfer.files[0];
+  if(!f) return;
+  if(!f.type.startsWith('image/')) return;
+  const url = URL.createObjectURL(f);
+  const img = new Image();
+  await new Promise(r => img.onload = r, img.src = url);
+  const p = viewToWorld(ev.clientX, ev.clientY);
+  const s = { id: uid(), type: 'image', x: snap(p.x), y: snap(p.y), w: Math.min(600,img.width), h: Math.min(400,img.height), img };
+  shapes.push(s);
+  pushUndo();
+  renderAll();
+});
+
+/* ----------------- export to PNG ----------------- */
+function exportPNG(){
+  // create offscreen canvas sized to WORLD_W x WORLD_H * DPR
+  const out = document.createElement('canvas');
+  out.width = Math.floor(WORLD_W * DPR);
+  out.height = Math.floor(WORLD_H * DPR);
+  const ctx = out.getContext('2d');
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  // white background
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0,0,WORLD_W,WORLD_H);
+  // raster
+  ctx.drawImage(rasterCanvas, 0,0, WORLD_W, WORLD_H);
+  // vector shapes (draw without viewport transform)
+  ctx.save();
+  ctx.setTransform(1,0,0,1,0,0);
+  for(const s of shapes) drawShapeOnContext(ctx, s, 1);
+  ctx.restore();
+  out.toBlob((blob)=>{
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'map-export.png';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }, 'image/png');
+}
+
+/* ----------------- helpers ----------------- */
+function setZoom(newScale, clientX, clientY){
+  const prev = scale;
+  newScale = Math.max(minScale, Math.min(maxScale, newScale));
+  // keep world pos under cursor stable
+  const rect = canvasPanel.getBoundingClientRect();
+  const cx = clientX || (rect.left + rect.width/2);
+  const cy = clientY || (rect.top + rect.height/2);
+  const world = viewToWorld(cx, cy);
+  scale = newScale;
+  offsetX = cx - world.x * scale;
+  offsetY = cy - world.y * scale;
+  zoomLabel.textContent = Math.round(scale*100) + '%';
+  renderAll();
+}
+
+/* point-in-rect utility */
+function normalizeRect(s){
+  if(s.w < 0){ s.x = s.x + s.w; s.w = Math.abs(s.w); }
+  if(s.h < 0){ s.y = s.y + s.h; s.h = Math.abs(s.h); }
+}
+
+/* ----------------- initial state & helpers ----------------- */
+function pushInitialShapesSample(){
+  // small sample to show functionality
+  const r = { id: uid(), type:'rect', x:50, y:50, w:200, h:120, stroke:'#1560ff', strokeWidth:3, fill:'rgba(6,182,212,0.08)' };
+  shapes.push(r);
+  const im = new Image();
+  im.src = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="120"><rect width="100%" height="100%" fill="#f6ad55"/></svg>');
+  const si = { id: uid(), type:'image', x:300, y:120, w:200, h:120, img: im };
+  shapes.push(si);
+  pushUndo();
+}
+
+/* ----------------- initialization call ----------------- */
+setup();
+pushInitialShapesSample();
+renderAll();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,3170 @@
+[
+    {
+        "ticker": "AAON",
+        "companyName": "AAON",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Timothy Wojs",
+        "priceTargetChange": "$102.00 ➝ $98.00",
+        "ratingChange": "Outperform ➝ Buy"
+    },
+    {
+        "ticker": "AAON",
+        "companyName": "AAON",
+        "action": "Target Lowered by",
+        "firm": "DA Davidson",
+        "analyst": "Brent Thielman",
+        "priceTargetChange": "$125.00 ➝ $105.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "AAP",
+        "companyName": "Advance Auto Parts",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$56.00 ➝ $58.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "AAP",
+        "companyName": "Advance Auto Parts",
+        "action": "Target Raised by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Zachary Fadem",
+        "priceTargetChange": "$35.00 ➝ $45.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "AAP",
+        "companyName": "Advance Auto Parts",
+        "action": "Target Set by",
+        "firm": "UBS Group",
+        "analyst": "Michael Lasser",
+        "priceTargetChange": "$65.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "ABBV",
+        "companyName": "AbbVie",
+        "action": "Initiated by",
+        "firm": "Piper Sandler",
+        "analyst": "David Amsellem",
+        "priceTargetChange": "$231.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "ACGL",
+        "companyName": "Arch Capital Group",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "ACHR",
+        "companyName": "Archer Aviation",
+        "action": "Reiterated by",
+        "firm": "Needham & Company LLC",
+        "analyst": "Chris Pierce",
+        "priceTargetChange": "$13.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ACHR",
+        "companyName": "Archer Aviation",
+        "action": "Reiterated by",
+        "firm": "HC Wainwright",
+        "analyst": "Amit Dayal",
+        "priceTargetChange": "$18.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ACM",
+        "companyName": "AECOM",
+        "action": "Target Raised by",
+        "firm": "Barclays",
+        "analyst": "Adam Seiden",
+        "priceTargetChange": "$120.00 ➝ $130.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Set by",
+        "firm": "Stephens",
+        "analyst": "Jeff Lick",
+        "priceTargetChange": "$16.00 ➝ $11.50",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Lowered by",
+        "firm": "Bank of America",
+        "analyst": "Curtis Nagle",
+        "priceTargetChange": "$20.00 ➝ $16.50",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Lowered by",
+        "firm": "Citigroup",
+        "analyst": "Ronald Josey",
+        "priceTargetChange": "$21.00 ➝ $17.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Lowered by",
+        "firm": "Needham & Company LLC",
+        "analyst": "Chris Pierce",
+        "priceTargetChange": "$25.00 ➝ $16.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Andrew Boone",
+        "priceTargetChange": "$20.00 ➝ $18.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "ACVA",
+        "companyName": "ACV Auctions",
+        "action": "Target Lowered by",
+        "firm": "The Goldman Sachs Group",
+        "analyst": "Eric Sheridan",
+        "priceTargetChange": "$26.00 ➝ $21.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ADC",
+        "companyName": "Agree Realty",
+        "action": "Target Raised by",
+        "firm": "UBS Group",
+        "analyst": "Michael Goldsmith",
+        "priceTargetChange": "$80.00 ➝ $82.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ADM",
+        "companyName": "Archer Daniels Midland",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Vincent Andrews",
+        "priceTargetChange": "$47.00 ➝ $57.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "ADNT",
+        "companyName": "Adient",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "priceTargetChange": "$16.00 ➝ $17.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "AFG",
+        "companyName": "American Financial Group",
+        "action": "Target Lowered by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Meyer Shields",
+        "priceTargetChange": "$127.00 ➝ $124.00",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "AHEXY",
+        "companyName": "Adecco",
+        "action": "Reiterated by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "AI",
+        "companyName": "C3.ai",
+        "action": "Downgraded by",
+        "firm": "Oppenheimer",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "AI",
+        "companyName": "C3.ai",
+        "action": "Downgraded by",
+        "firm": "Northland Securities",
+        "analyst": null,
+        "priceTargetChange": "$17.00",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "AIG",
+        "companyName": "American International Group",
+        "action": "Target Lowered by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Meyer Shields",
+        "priceTargetChange": "$97.00 ➝ $91.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "AIZ",
+        "companyName": "Assurant",
+        "action": "Initiated by",
+        "firm": "BMO Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "$238.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "AIZ",
+        "companyName": "Assurant",
+        "action": "Initiated by",
+        "firm": "Benchmark",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "AIZ",
+        "companyName": "Assurant",
+        "action": "Initiated by",
+        "firm": "Stephens",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "AIZ",
+        "companyName": "Assurant",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Tommy McJoynt",
+        "priceTargetChange": "$225.00 ➝ $235.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "AJG",
+        "companyName": "Arthur J. Gallagher & Co.",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "ALL",
+        "companyName": "Allstate",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "AMH",
+        "companyName": "American Homes 4 Rent",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$40.00 ➝ $39.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "AMN",
+        "companyName": "AMN Healthcare Services",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Constantine Davides",
+        "priceTargetChange": "$33.00 ➝ $22.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "AMPH",
+        "companyName": "Amphastar Pharmaceuticals",
+        "action": "Upgraded by",
+        "firm": "Needham & Company LLC",
+        "analyst": null,
+        "priceTargetChange": "$36.00",
+        "ratingChange": "Hold ➝ Buy"
+    },
+    {
+        "ticker": "ANAB",
+        "companyName": "AnaptysBio",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Eliana Merle",
+        "priceTargetChange": "$18.00 ➝ $20.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "AON",
+        "companyName": "AON",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "$440.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "APTV",
+        "companyName": "Aptiv",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "priceTargetChange": "$55.00 ➝ $60.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "ARCT",
+        "companyName": "Arcturus Therapeutics",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$47.00 ➝ $49.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ARCT",
+        "companyName": "Arcturus Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Yanan Zhu",
+        "priceTargetChange": "$45.00 ➝ $42.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "ASRT",
+        "companyName": "Assertio",
+        "action": "Target Lowered by",
+        "firm": "HC Wainwright",
+        "analyst": "Raghuram Selvaraju",
+        "priceTargetChange": "$3.50 ➝ $3.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ASTS",
+        "companyName": "AST SpaceMobile",
+        "action": "Reiterated by",
+        "firm": "Roth Capital",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ATLC",
+        "companyName": "Atlanticus",
+        "action": "Target Raised by",
+        "firm": "JMP Securities",
+        "analyst": "David M.",
+        "priceTargetChange": "$75.00 ➝ $78.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "ATYM",
+        "companyName": "Atalaya Mining",
+        "action": "Reiterated by",
+        "firm": "Berenberg Bank",
+        "analyst": null,
+        "priceTargetChange": "GBX 510",
+        "ratingChange": "Hold"
+    },
+    {
+        "ticker": "ATYM",
+        "companyName": "Atalaya Mining",
+        "action": "Target Lowered by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": null,
+        "priceTargetChange": "GBX 590 ➝ GBX 580",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "AVAH",
+        "companyName": "Aveanna Healthcare",
+        "action": "Target Raised by",
+        "firm": "UBS Group",
+        "analyst": "A.J. Rice",
+        "priceTargetChange": "$5.00 ➝ $6.75",
+        "ratingChange": "Sell ➝ Sell"
+    },
+    {
+        "ticker": "AVB",
+        "companyName": "AvalonBay Communities",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$241.00 ➝ $228.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "AVB",
+        "companyName": "AvalonBay Communities",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$216.00 ➝ $212.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "AVBP",
+        "companyName": "ArriVent BioPharma",
+        "action": "Reiterated by",
+        "firm": "HC Wainwright",
+        "analyst": "Robert Burns",
+        "priceTargetChange": "$40.00 ➝ $42.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "AVBP",
+        "companyName": "ArriVent BioPharma",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$40.00 ➝ $33.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "AWK",
+        "companyName": "American Water Works",
+        "action": "Target Lowered by",
+        "firm": "UBS Group",
+        "analyst": "Gregg Orrill",
+        "priceTargetChange": "$156.00 ➝ $151.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "B",
+        "companyName": "Barrick Mining",
+        "action": "Upgraded by",
+        "firm": "CIBC",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral ➝ Outperform"
+    },
+    {
+        "ticker": "BALY",
+        "companyName": "Bally's",
+        "action": "Target Lowered by",
+        "firm": "Macquarie",
+        "analyst": "Chad Beynon",
+        "priceTargetChange": "$14.00 ➝ $12.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "BALY",
+        "companyName": "Bally's",
+        "action": "Target Lowered by",
+        "firm": "Stifel Nicolaus",
+        "analyst": "Jeffrey Stantial",
+        "priceTargetChange": "$12.00 ➝ $10.00",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "BBAI",
+        "companyName": "BigBear.ai",
+        "action": "Target Lowered by",
+        "firm": "HC Wainwright",
+        "analyst": "Scott Buck",
+        "priceTargetChange": "$9.00 ➝ $8.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "BCAX",
+        "companyName": "Bicara Therapeutics",
+        "action": "Reiterated by",
+        "firm": "Wedbush",
+        "analyst": null,
+        "priceTargetChange": "$30.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "BCE",
+        "companyName": "BCE",
+        "action": "Target Set by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$35.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "BCYC",
+        "companyName": "Bicycle Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "Morgan Stanley",
+        "analyst": "Jeffrey Hung",
+        "priceTargetChange": "$17.00 ➝ $13.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "BCYC",
+        "companyName": "Bicycle Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Reni J.",
+        "priceTargetChange": "$22.00 ➝ $10.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "BEKE",
+        "companyName": "KE",
+        "action": "Target Lowered by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Alex Yao",
+        "priceTargetChange": "$24.00 ➝ $22.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "BEN",
+        "companyName": "Franklin Resources",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Michael Cyprys",
+        "priceTargetChange": "$20.00 ➝ $21.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "BG",
+        "companyName": "Bunge Global",
+        "action": "Target Set by",
+        "firm": "Morgan Stanley",
+        "analyst": "Vincent Andrews",
+        "priceTargetChange": "$74.00 ➝ $83.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "BHVN",
+        "companyName": "Biohaven",
+        "action": "Reiterated by",
+        "firm": "HC Wainwright",
+        "analyst": null,
+        "priceTargetChange": "$54.00 ➝ $30.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "BHVN",
+        "companyName": "Biohaven",
+        "action": "Target Lowered by",
+        "firm": "Bank of America",
+        "analyst": "Jason Gerberry",
+        "priceTargetChange": "$50.00 ➝ $49.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "BHVN",
+        "companyName": "Biohaven",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Brian Skorney",
+        "priceTargetChange": "$57.00 ➝ $52.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "BHVN",
+        "companyName": "Biohaven",
+        "action": "Target Lowered by",
+        "firm": "Morgan Stanley",
+        "analyst": "Terence Flynn",
+        "priceTargetChange": "$63.00 ➝ $54.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "BHVN",
+        "companyName": "Biohaven",
+        "action": "Target Lowered by",
+        "firm": "Leerink Partners",
+        "analyst": "Marc Goodman",
+        "priceTargetChange": "$60.00 ➝ $50.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "BJ",
+        "companyName": "BJ's Wholesale Club",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$115.00 ➝ $117.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "BLDP",
+        "companyName": "Ballard Power Systems",
+        "action": "Target Raised by",
+        "firm": "BMO Capital Markets",
+        "analyst": "Ameet Thakkar",
+        "priceTargetChange": "$1.00 ➝ $1.10",
+        "ratingChange": "Underperform ➝ Underperform"
+    },
+    {
+        "ticker": "BN",
+        "companyName": "Brookfield",
+        "action": "Target Raised by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Kenneth Worthington",
+        "priceTargetChange": "$70.00 ➝ $73.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "BOW",
+        "companyName": "Bowhead Specialty",
+        "action": "Target Lowered by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Meyer Sheilds",
+        "priceTargetChange": "$45.00 ➝ $42.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "BWA",
+        "companyName": "BorgWarner",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "priceTargetChange": "$40.00 ➝ $42.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "CAH",
+        "companyName": "Cardinal Health",
+        "action": "Reiterated by",
+        "firm": "Morgan Stanley",
+        "analyst": "Erin Wright",
+        "priceTargetChange": "",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "CAH",
+        "companyName": "Cardinal Health",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CAH",
+        "companyName": "Cardinal Health",
+        "action": "Target Set by",
+        "firm": "Jefferies Financial Group",
+        "analyst": "Brian Tanquilut",
+        "priceTargetChange": "$150.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "CAH",
+        "companyName": "Cardinal Health",
+        "action": "Target Set by",
+        "firm": "Leerink Partners",
+        "analyst": "Michael Cherny",
+        "priceTargetChange": "$188.00 ➝ $186.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "CARG",
+        "companyName": "CarGurus",
+        "action": "Target Lowered by",
+        "firm": "Oppenheimer",
+        "analyst": "Jed Kelly",
+        "priceTargetChange": "$42.00 ➝ $40.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "CAVA",
+        "companyName": "CAVA Group",
+        "action": "Initiated by",
+        "firm": "Barclays",
+        "analyst": "Jeffrey Bernstein",
+        "priceTargetChange": "",
+        "ratingChange": "Equal Weight ➝ Overweight"
+    },
+    {
+        "ticker": "CAVA",
+        "companyName": "CAVA Group",
+        "action": "Reiterated by",
+        "firm": "Sanford C. Bernstein",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "CB",
+        "companyName": "Chubb",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "CCA",
+        "companyName": "Cogeco Communications",
+        "action": "Downgraded by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$80.00 ➝ C$69.00",
+        "ratingChange": "Outperform ➝ Sector Perform"
+    },
+    {
+        "ticker": "CCOI",
+        "companyName": "Cogent Communications",
+        "action": "Downgraded by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$67.00 ➝ $33.00",
+        "ratingChange": "Buy ➝ Neutral"
+    },
+    {
+        "ticker": "CE",
+        "companyName": "Celanese",
+        "action": "Target Lowered by",
+        "firm": "UBS Group",
+        "analyst": "Joshua Spector",
+        "priceTargetChange": "$66.00 ➝ $49.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "CF",
+        "companyName": "Canaccord Genuity Group",
+        "action": "Upgraded by",
+        "firm": "TD Securities",
+        "analyst": null,
+        "priceTargetChange": "C$10.00 ➝ C$12.00",
+        "ratingChange": "Hold ➝ Buy"
+    },
+    {
+        "ticker": "CHRD",
+        "companyName": "Chord Energy",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Josh Silverstein",
+        "priceTargetChange": "$113.00 ➝ $120.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CION",
+        "companyName": "CION Investment",
+        "action": "Reiterated by",
+        "firm": "Wells Fargo & Company",
+        "analyst": null,
+        "priceTargetChange": "$9.00 ➝ $8.50",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "CLMT",
+        "companyName": "Calumet",
+        "action": "Target Set by",
+        "firm": "UBS Group",
+        "analyst": "Manav Gupta",
+        "priceTargetChange": "$12.00 ➝ $13.25",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "CLNE",
+        "companyName": "Clean Energy Fuels",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Manav Gupta",
+        "priceTargetChange": "$2.00 ➝ $2.75",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CMG",
+        "companyName": "Chipotle Mexican Grill",
+        "action": "Upgraded by",
+        "firm": "Piper Sandler",
+        "analyst": "Brian Mullan",
+        "priceTargetChange": "$53.00 ➝ $50.00",
+        "ratingChange": "Neutral ➝ Overweight"
+    },
+    {
+        "ticker": "CMPX",
+        "companyName": "Compass Therapeutics",
+        "action": "Target Raised by",
+        "firm": "Guggenheim",
+        "analyst": "Michael Schmidt",
+        "priceTargetChange": "$10.00 ➝ $12.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CMPX",
+        "companyName": "Compass Therapeutics",
+        "action": "Reiterated by",
+        "firm": "D. Boral Capital",
+        "analyst": "Jason Kolbert",
+        "priceTargetChange": "$32.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CMTG",
+        "companyName": "Claros Mortgage Trust",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Jade Rahmani",
+        "priceTargetChange": "$2.75 ➝ $3.00",
+        "ratingChange": "Underperform ➝ Underperform"
+    },
+    {
+        "ticker": "CNTA",
+        "companyName": "Centessa Pharmaceuticals",
+        "action": "Reiterated by",
+        "firm": "Chardan Capital",
+        "analyst": "Rudy Li",
+        "priceTargetChange": "$30.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CORZ",
+        "companyName": "Core Scientific",
+        "action": "Reiterated by",
+        "firm": "JMP Securities",
+        "analyst": "Greg P.",
+        "priceTargetChange": "",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "CPT",
+        "companyName": "Camden Property Trust",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$117.00 ➝ $114.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "CPT",
+        "companyName": "Camden Property Trust",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$137.00 ➝ $128.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "CQP",
+        "companyName": "Cheniere Energy Partners",
+        "action": "Target Lowered by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Michael Blum",
+        "priceTargetChange": "$61.00 ➝ $56.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "CRCL",
+        "companyName": "Circle Internet Group",
+        "action": "Initiated by",
+        "firm": "The Goldman Sachs Group",
+        "analyst": null,
+        "priceTargetChange": "$83.00",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "CRCL",
+        "companyName": "Circle Internet Group",
+        "action": "Initiated by",
+        "firm": "Deutsche Bank Aktiengesellschaft",
+        "analyst": null,
+        "priceTargetChange": "$155.00",
+        "ratingChange": "Hold"
+    },
+    {
+        "ticker": "CRCL",
+        "companyName": "Circle Internet Group",
+        "action": "Initiated by",
+        "firm": "Oppenheimer",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Market Perform"
+    },
+    {
+        "ticker": "CRCL",
+        "companyName": "Circle Internet Group",
+        "action": "Target Set by",
+        "firm": "Mizuho",
+        "analyst": "Dan Dolev",
+        "priceTargetChange": "$85.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "CRVO",
+        "companyName": "CervoMed",
+        "action": "Target Set by",
+        "firm": "Roth Capital",
+        "analyst": "Boobalan Pachaiyappan",
+        "priceTargetChange": "$20.00 ➝ $16.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "CVNA",
+        "companyName": "Carvana",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Montani",
+        "priceTargetChange": "$365.00 ➝ $370.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "CWAN",
+        "companyName": "Clearwater Analytics",
+        "action": "Target Lowered by",
+        "firm": "DA Davidson",
+        "analyst": "Peter Heckmann",
+        "priceTargetChange": "$36.00 ➝ $34.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "D.UN",
+        "companyName": "Dream Office Real Estate Investment Trst",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": null,
+        "priceTargetChange": "C$17.50 ➝ C$18.00",
+        "ratingChange": "Sector Perform"
+    },
+    {
+        "ticker": "D.UN",
+        "companyName": "Dream Office Real Estate Investment Trst",
+        "action": "Target Raised by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$16.50 ➝ C$17.00",
+        "ratingChange": "Sector Perform"
+    },
+    {
+        "ticker": "DBRG",
+        "companyName": "DigitalBridge Group",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Jade Rahmani",
+        "priceTargetChange": "$10.50 ➝ $11.00",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "DG",
+        "companyName": "Dollar General",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Montani",
+        "priceTargetChange": "$118.00 ➝ $120.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "DII.B",
+        "companyName": "Dorel Industries",
+        "action": "Target Lowered by",
+        "firm": "TD Securities",
+        "analyst": null,
+        "priceTargetChange": "C$1.25 ➝ C$1.00",
+        "ratingChange": "Sell"
+    },
+    {
+        "ticker": "DII.B",
+        "companyName": "Dorel Industries",
+        "action": "Target Lowered by",
+        "firm": "BMO Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "C$2.25 ➝ C$1.50",
+        "ratingChange": "Market Perform"
+    },
+    {
+        "ticker": "DLTR",
+        "companyName": "Dollar Tree",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$104.00 ➝ $108.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "DOM",
+        "companyName": "Domino's Pizza Group",
+        "action": "Downgraded by",
+        "firm": "Shore Capital",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Hold"
+    },
+    {
+        "ticker": "DSP",
+        "companyName": "Viant Technology",
+        "action": "Target Lowered by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": "Maria Ripps",
+        "priceTargetChange": "$24.00 ➝ $22.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "DSP",
+        "companyName": "Viant Technology",
+        "action": "Target Lowered by",
+        "firm": "Raymond James Financial",
+        "analyst": "Andrew Marok",
+        "priceTargetChange": "$20.00 ➝ $19.00",
+        "ratingChange": "Strong-Buy ➝ Strong-Buy"
+    },
+    {
+        "ticker": "DSP",
+        "companyName": "Viant Technology",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Andrew Boone",
+        "priceTargetChange": "$24.00 ➝ $18.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "DVN",
+        "companyName": "Devon Energy",
+        "action": "Target Set by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Hanwen Chang",
+        "priceTargetChange": "$42.00 ➝ $43.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "EG",
+        "companyName": "Everest Group",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "ENB",
+        "companyName": "Enbridge",
+        "action": "Target Raised by",
+        "firm": "Argus",
+        "analyst": "Bill Selesky",
+        "priceTargetChange": "$50.00 ➝ $54.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ENT",
+        "companyName": "Entain",
+        "action": "Reiterated by",
+        "firm": "Shore Capital",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "ENTA",
+        "companyName": "Enanta Pharmaceuticals",
+        "action": "Target Raised by",
+        "firm": "JMP Securities",
+        "analyst": "Roy Buchanan",
+        "priceTargetChange": "$24.00 ➝ $25.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "EOG",
+        "companyName": "EOG Resources",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Josh Silverstein",
+        "priceTargetChange": "$140.00 ➝ $142.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "EPR",
+        "companyName": "EPR Properties",
+        "action": "Target Raised by",
+        "firm": "Raymond James Financial",
+        "analyst": "RJ Milligan",
+        "priceTargetChange": "$57.00 ➝ $62.00",
+        "ratingChange": "Strong-Buy ➝ Strong-Buy"
+    },
+    {
+        "ticker": "EQB",
+        "companyName": "EQB",
+        "action": "Downgraded by",
+        "firm": "BMO Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "C$115.00 ➝ C$111.00",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "EQNR",
+        "companyName": "Equinor ASA",
+        "action": "Downgraded by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral ➝ Underweight"
+    },
+    {
+        "ticker": "EQR",
+        "companyName": "Equity Residential",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$72.00 ➝ $71.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "EQR",
+        "companyName": "Equity Residential",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$83.00 ➝ $81.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "ESLA",
+        "companyName": "Estrella Immunopharma",
+        "action": "Reiterated by",
+        "firm": "D. Boral Capital",
+        "analyst": "Jason Kolbert",
+        "priceTargetChange": "$16.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ESS",
+        "companyName": "Essex Property Trust",
+        "action": "Target Set by",
+        "firm": "Truist Financial",
+        "analyst": "Michael Lewis",
+        "priceTargetChange": "$295.00 ➝ $283.00",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "ESS",
+        "companyName": "Essex Property Trust",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$335.00 ➝ $298.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "ESS",
+        "companyName": "Essex Property Trust",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$285.00 ➝ $279.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "ET",
+        "companyName": "Energy Transfer",
+        "action": "Reiterated by",
+        "firm": "Wells Fargo & Company",
+        "analyst": null,
+        "priceTargetChange": "$21.00 ➝ $23.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "EU",
+        "companyName": "enCore Energy",
+        "action": "Target Raised by",
+        "firm": "HC Wainwright",
+        "analyst": "Heiko Ihle",
+        "priceTargetChange": "$2.75 ➝ $4.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "EVEX",
+        "companyName": "EVE",
+        "action": "Initiated by",
+        "firm": "BTIG Research",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "EXAS",
+        "companyName": "Exact Sciences",
+        "action": "Target Lowered by",
+        "firm": "BTIG Research",
+        "analyst": "Mark Massaro",
+        "priceTargetChange": "$65.00 ➝ $60.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "EXEL",
+        "companyName": "Exelixis",
+        "action": "Target Set by",
+        "firm": "HC Wainwright",
+        "analyst": "Robert Burns",
+        "priceTargetChange": "$53.00 ➝ $46.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "FDMT",
+        "companyName": "4D Molecular Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "Roth Capital",
+        "analyst": "Salveen Richter",
+        "priceTargetChange": "$44.00 ➝ $38.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "FDMT",
+        "companyName": "4D Molecular Therapeutics",
+        "action": "Reiterated by",
+        "firm": "Chardan Capital",
+        "analyst": "Geulah Livshits",
+        "priceTargetChange": "$25.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "FIVE",
+        "companyName": "Five Below",
+        "action": "Upgraded by",
+        "firm": "Loop Capital",
+        "analyst": null,
+        "priceTargetChange": "$130.00 ➝ $165.00",
+        "ratingChange": "Hold ➝ Buy"
+    },
+    {
+        "ticker": "FIVE",
+        "companyName": "Five Below",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Montani",
+        "priceTargetChange": "$129.00 ➝ $132.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "FLNC",
+        "companyName": "Fluence Energy",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Christine Cho",
+        "priceTargetChange": "$9.00 ➝ $8.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "FMS",
+        "companyName": "Fresenius Medical Care AG & Co. KGaA",
+        "action": "Reiterated by",
+        "firm": "Morgan Stanley",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "FND",
+        "companyName": "Floor & Decor",
+        "action": "Reiterated by",
+        "firm": "Telsey Advisory Group",
+        "analyst": "Joseph Feldman",
+        "priceTargetChange": "$92.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "FNV",
+        "companyName": "Franco-Nevada",
+        "action": "Target Raised by",
+        "firm": "HC Wainwright",
+        "analyst": "Heiko F.",
+        "priceTargetChange": "$195.00 ➝ $200.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "FNV",
+        "companyName": "Franco-Nevada",
+        "action": "Target Raised by",
+        "firm": "Raymond James Financial",
+        "analyst": null,
+        "priceTargetChange": "$186.00 ➝ $188.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "FNV",
+        "companyName": "Franco-Nevada",
+        "action": "Target Raised by",
+        "firm": "TD Securities",
+        "analyst": null,
+        "priceTargetChange": "$182.00 ➝ $184.00",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "FNV",
+        "companyName": "Franco-Nevada",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": "Tanya Jakusconek",
+        "priceTargetChange": "$182.00 ➝ $184.00",
+        "ratingChange": "Sector Perform ➝ Sector Perform"
+    },
+    {
+        "ticker": "FSLR",
+        "companyName": "First Solar",
+        "action": "Reiterated by",
+        "firm": "Glj Research",
+        "analyst": null,
+        "priceTargetChange": "$172.53 ➝ $214.06",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "FWRD",
+        "companyName": "Forward Air",
+        "action": "Target Raised by",
+        "firm": "Susquehanna",
+        "analyst": "Bascome Majors",
+        "priceTargetChange": "$40.00 ➝ $43.00",
+        "ratingChange": "Positive ➝ Positive"
+    },
+    {
+        "ticker": "GDEN",
+        "companyName": "Golden Entertainment",
+        "action": "Target Lowered by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Zachary Silverberg",
+        "priceTargetChange": "$36.00 ➝ $34.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "GDOT",
+        "companyName": "Green Dot",
+        "action": "Target Set by",
+        "firm": "Northland Securities",
+        "analyst": "Mike Grondahl",
+        "priceTargetChange": "$16.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "GENI",
+        "companyName": "Genius Sports",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$12.00 ➝ $16.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "GETY",
+        "companyName": "Getty Images",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$2.05 ➝ $1.85",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "GETY",
+        "companyName": "Getty Images",
+        "action": "Target Lowered by",
+        "firm": "Wedbush",
+        "analyst": "Alicia Reese",
+        "priceTargetChange": "$7.70 ➝ $7.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "GETY",
+        "companyName": "Getty Images",
+        "action": "Downgraded by",
+        "firm": "Benchmark",
+        "analyst": null,
+        "priceTargetChange": "$3.50",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "GLEN",
+        "companyName": "Glencore",
+        "action": "Target Lowered by",
+        "firm": "Deutsche Bank Aktiengesellschaft",
+        "analyst": null,
+        "priceTargetChange": "GBX 400 ➝ GBX 380",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "GPRO",
+        "companyName": "GoPro",
+        "action": "Reiterated by",
+        "firm": "Morgan Stanley",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "GSHD",
+        "companyName": "Goosehead Insurance",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "$125.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "H",
+        "companyName": "Hydro One",
+        "action": "Target Set by",
+        "firm": "Desjardins",
+        "analyst": null,
+        "priceTargetChange": "C$58.00",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "HG",
+        "companyName": "Hamilton Insurance Group",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Tommy McJoynt",
+        "priceTargetChange": "$25.00 ➝ $27.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "HNRG",
+        "companyName": "Hallador Energy",
+        "action": "Downgraded by",
+        "firm": "B. Riley",
+        "analyst": null,
+        "priceTargetChange": "$17.00",
+        "ratingChange": "Buy ➝ Neutral"
+    },
+    {
+        "ticker": "HNRG",
+        "companyName": "Hallador Energy",
+        "action": "Downgraded by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "HUMA",
+        "companyName": "Humacyte",
+        "action": "Target Lowered by",
+        "firm": "HC Wainwright",
+        "analyst": "Swayampakula Ramakanth",
+        "priceTargetChange": "$4.00 ➝ $3.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "HUMA",
+        "companyName": "Humacyte",
+        "action": "Target Lowered by",
+        "firm": "TD Cowen",
+        "analyst": "Joshua Jennings",
+        "priceTargetChange": "$5.00 ➝ $3.50",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "IBP",
+        "companyName": "Installed Building Products",
+        "action": "Reiterated by",
+        "firm": "DA Davidson",
+        "analyst": "Kurt Yinger",
+        "priceTargetChange": "$225.00 ➝ $252.00",
+        "ratingChange": "Buy ➝ Neutral"
+    },
+    {
+        "ticker": "IBP",
+        "companyName": "Installed Building Products",
+        "action": "Downgraded by",
+        "firm": "Danske",
+        "analyst": null,
+        "priceTargetChange": "$252.00",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "IBP",
+        "companyName": "Installed Building Products",
+        "action": "Reiterated by",
+        "firm": "Jefferies Financial Group",
+        "analyst": "Philip Ng",
+        "priceTargetChange": "$175.00 ➝ $225.00",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "IIIV",
+        "companyName": "i3 Verticals",
+        "action": "Target Set by",
+        "firm": "Morgan Stanley",
+        "analyst": "James Faucette",
+        "priceTargetChange": "$25.00 ➝ $30.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "ILMN",
+        "companyName": "Illumina",
+        "action": "Downgraded by",
+        "firm": "Daiwa Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "$94.00",
+        "ratingChange": "Outperform ➝ Neutral"
+    },
+    {
+        "ticker": "IMVT",
+        "companyName": "Immunovant",
+        "action": "Target Lowered by",
+        "firm": "Bank of America",
+        "analyst": "Jason Gerberry",
+        "priceTargetChange": "$33.00 ➝ $30.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "IMVT",
+        "companyName": "Immunovant",
+        "action": "Target Lowered by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Brian Cheng",
+        "priceTargetChange": "$40.00 ➝ $37.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "INSM",
+        "companyName": "Insmed",
+        "action": "Target Set by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Tiago Fauth",
+        "priceTargetChange": "$130.00 ➝ $140.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "INTR",
+        "companyName": "Inter & Co. Inc.",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": null,
+        "priceTargetChange": "$8.10 ➝ $9.20",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "INVH",
+        "companyName": "Invitation Home",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$40.00 ➝ $37.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "IOBT",
+        "companyName": "IO Biotech",
+        "action": "Target Lowered by",
+        "firm": "Morgan Stanley",
+        "analyst": "Matthew Harrison",
+        "priceTargetChange": "$6.00 ➝ $4.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "IONS",
+        "companyName": "Ionis Pharmaceuticals",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Esther Rajavelu",
+        "priceTargetChange": "$45.00 ➝ $46.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "IRT",
+        "companyName": "Independence Realty Trust",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$22.00 ➝ $20.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "ISO",
+        "companyName": "IsoEnergy",
+        "action": "Target Set by",
+        "firm": "Stifel Nicolaus",
+        "analyst": null,
+        "priceTargetChange": "C$22.00",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "JFU",
+        "companyName": "9F",
+        "action": "Reiterated by",
+        "firm": "Weiss Ratings",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Sell (E+) ➝ Sell (D)"
+    },
+    {
+        "ticker": "KBCSY",
+        "companyName": "KBC Group",
+        "action": "Reiterated by",
+        "firm": "Deutsche Bank Aktiengesellschaft",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "KMP.UN",
+        "companyName": "Killam Apartment REIT",
+        "action": "Target Lowered by",
+        "firm": "Scotiabank",
+        "analyst": null,
+        "priceTargetChange": "C$20.75 ➝ C$20.50",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "KMX",
+        "companyName": "CarMax",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Montani",
+        "priceTargetChange": "$82.00 ➝ $80.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "KNSL",
+        "companyName": "Kinsale Capital Group",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "KPTI",
+        "companyName": "Karyopharm Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Michael Ulz",
+        "priceTargetChange": "$42.00 ➝ $25.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "KR",
+        "companyName": "Kroger",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Montani",
+        "priceTargetChange": "$80.00 ➝ $82.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "KSS",
+        "companyName": "Kohl's",
+        "action": "Upgraded by",
+        "firm": "Gordon Haskett",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Reduce ➝ Hold"
+    },
+    {
+        "ticker": "LEGN",
+        "companyName": "Legend Biotech",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Matthew Harrison",
+        "priceTargetChange": "$81.00 ➝ $83.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "LEGN",
+        "companyName": "Legend Biotech",
+        "action": "Reiterated by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": "Leonid Timashev",
+        "priceTargetChange": "$75.00 ➝ $77.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "LGEN",
+        "companyName": "Legal & General Group",
+        "action": "Target Lowered by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": null,
+        "priceTargetChange": "GBX 220 ➝ GBX 200",
+        "ratingChange": "Underperform"
+    },
+    {
+        "ticker": "LIF",
+        "companyName": "Life360",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Mark Mahaney",
+        "priceTargetChange": "$55.00 ➝ $95.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "LIF",
+        "companyName": "Life360",
+        "action": "Target Raised by",
+        "firm": "JMP Securities",
+        "analyst": "Andrew Boone",
+        "priceTargetChange": "$62.00 ➝ $95.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "LIF",
+        "companyName": "Life360",
+        "action": "Target Raised by",
+        "firm": "Stifel Nicolaus",
+        "analyst": "Mark Kelley",
+        "priceTargetChange": "$87.00 ➝ $92.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "LIF",
+        "companyName": "Life360",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Chris Kuntarich",
+        "priceTargetChange": "$71.00 ➝ $85.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "LIF",
+        "companyName": "Life360",
+        "action": "Target Raised by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": "Maria Ripps",
+        "priceTargetChange": "$86.00 ➝ $90.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "LINE",
+        "companyName": "Lineage",
+        "action": "Target Lowered by",
+        "firm": "The Goldman Sachs Group",
+        "analyst": "Caitlin Burrows",
+        "priceTargetChange": "$57.00 ➝ $50.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "LITE",
+        "companyName": "Lumentum",
+        "action": "Target Set by",
+        "firm": "Susquehanna",
+        "analyst": "Christopher Rolland",
+        "priceTargetChange": "$125.00",
+        "ratingChange": "Positive ➝ Positive"
+    },
+    {
+        "ticker": "LITE",
+        "companyName": "Lumentum",
+        "action": "Reiterated by",
+        "firm": "Morgan Stanley",
+        "analyst": "Meta Marshall",
+        "priceTargetChange": "",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "LITE",
+        "companyName": "Lumentum",
+        "action": "Initiated by",
+        "firm": "Wolfe Research",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "LMND",
+        "companyName": "Lemonade",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "$60.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "LNG",
+        "companyName": "Cheniere Energy",
+        "action": "Target Raised by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Michael Blum",
+        "priceTargetChange": "$267.00 ➝ $284.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "LYV",
+        "companyName": "Live Nation Entertainment",
+        "action": "Target Raised by",
+        "firm": "Oppenheimer",
+        "analyst": "Jed Kelly",
+        "priceTargetChange": "$165.00 ➝ $180.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "LZ",
+        "companyName": "LegalZoom.com",
+        "action": "Target Raised by",
+        "firm": "Barclays",
+        "analyst": "Mario Lu",
+        "priceTargetChange": "$9.00 ➝ $10.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "MAA",
+        "companyName": "Mid-America Apartment Communities",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$155.00 ➝ $152.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "MAA",
+        "companyName": "Mid-America Apartment Communities",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$172.00 ➝ $156.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "MAG",
+        "companyName": "MAG Silver",
+        "action": "Target Raised by",
+        "firm": "Cormark",
+        "analyst": null,
+        "priceTargetChange": "C$25.10 ➝ C$31.70",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "MAG",
+        "companyName": "MAG Silver",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": "Ovais Habib",
+        "priceTargetChange": "$20.50 ➝ $23.00",
+        "ratingChange": "Sector Outperform ➝ Sector Outperform"
+    },
+    {
+        "ticker": "MAG",
+        "companyName": "MAG Silver",
+        "action": "Reiterated by",
+        "firm": "Scotiabank",
+        "analyst": "Ovais Habib",
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "MAG",
+        "companyName": "MAG Silver",
+        "action": "Reiterated by",
+        "firm": "Roth Capital",
+        "analyst": null,
+        "priceTargetChange": "$22.00 ➝ $23.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "MDGL",
+        "companyName": "Madrigal Pharmaceuticals",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": "Eliana Merle",
+        "priceTargetChange": "$458.00 ➝ $523.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MEC",
+        "companyName": "Mayville Engineering",
+        "action": "Upgraded by",
+        "firm": "Northland Securities",
+        "analyst": null,
+        "priceTargetChange": "$18.00",
+        "ratingChange": "Market Perform ➝ Outperform"
+    },
+    {
+        "ticker": "MHO",
+        "companyName": "M/I Homes",
+        "action": "Upgraded by",
+        "firm": "Zelman & Associates",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral ➝ Outperform"
+    },
+    {
+        "ticker": "MLM",
+        "companyName": "Martin Marietta Materials",
+        "action": "Target Raised by",
+        "firm": "Stifel Nicolaus",
+        "analyst": "Brian Brophy",
+        "priceTargetChange": "$609.00 ➝ $637.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MLNK",
+        "companyName": "MeridianLink",
+        "action": "Downgraded by",
+        "firm": "Raymond James Financial",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "MLNK",
+        "companyName": "MeridianLink",
+        "action": "Target Raised by",
+        "firm": "Barclays",
+        "analyst": "Saket Kalia",
+        "priceTargetChange": "$16.00 ➝ $20.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Citigroup",
+        "analyst": "Steven Enders",
+        "priceTargetChange": "$381.00 ➝ $326.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Bank of America",
+        "analyst": "Michael Funk",
+        "priceTargetChange": "$340.00 ➝ $240.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Upgraded by",
+        "firm": "Morgan Stanley",
+        "analyst": "Josh Baer",
+        "priceTargetChange": "$330.00 ➝ $260.00",
+        "ratingChange": "Equal Weight ➝ Overweight"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Rob Oliver",
+        "priceTargetChange": "$310.00 ➝ $240.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Raimo Lenschow",
+        "priceTargetChange": "$345.00 ➝ $258.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Reiterated by",
+        "firm": "Cowen",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "UBS Group",
+        "analyst": "Taylor McGinnis",
+        "priceTargetChange": "$310.00 ➝ $215.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Piper Sandler",
+        "analyst": "Brent Bracelin",
+        "priceTargetChange": "$325.00 ➝ $300.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "TD Cowen",
+        "analyst": "J. Derrick",
+        "priceTargetChange": "$360.00 ➝ $290.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "DA Davidson",
+        "analyst": "Lucky Schreiner",
+        "priceTargetChange": "$325.00 ➝ $275.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MNDY",
+        "companyName": "monday.com",
+        "action": "Target Lowered by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": "David Hynes",
+        "priceTargetChange": "$350.00 ➝ $255.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MRCY",
+        "companyName": "Mercury Systems",
+        "action": "Target Raised by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Seth Seifman",
+        "priceTargetChange": "$56.00 ➝ $68.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "MRCY",
+        "companyName": "Mercury Systems",
+        "action": "Target Raised by",
+        "firm": "Truist Financial",
+        "analyst": "Michael Ciarmoli",
+        "priceTargetChange": "$60.00 ➝ $71.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "MRCY",
+        "companyName": "Mercury Systems",
+        "action": "Target Raised by",
+        "firm": "Robert W. Baird",
+        "analyst": "Peter Arment",
+        "priceTargetChange": "$58.00 ➝ $70.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "MRCY",
+        "companyName": "Mercury Systems",
+        "action": "Upgraded by",
+        "firm": "Raymond James Financial",
+        "analyst": "Brian Gesuale",
+        "priceTargetChange": "$55.00 ➝ $80.00",
+        "ratingChange": "Outperform ➝ Strong-Buy"
+    },
+    {
+        "ticker": "MRVI",
+        "companyName": "Maravai LifeSciences",
+        "action": "Target Lowered by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": "Conor McNamara",
+        "priceTargetChange": "$7.00 ➝ $5.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "MSGE",
+        "companyName": "Madison Square Garden Entertainment",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Benjamin Swinburne",
+        "priceTargetChange": "$41.00 ➝ $44.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "MU",
+        "companyName": "Micron Technology",
+        "action": "Target Raised by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": null,
+        "priceTargetChange": "$165.00 ➝ $185.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "MYO",
+        "companyName": "Myomo",
+        "action": "Target Lowered by",
+        "firm": "HC Wainwright",
+        "analyst": "Sean Lee",
+        "priceTargetChange": "$9.50 ➝ $5.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "NFLX",
+        "companyName": "Netflix",
+        "action": "Reiterated by",
+        "firm": "Jefferies Financial Group",
+        "analyst": "James Heaney",
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "NNGRY",
+        "companyName": "NN Group",
+        "action": "Downgraded by",
+        "firm": "UBS Group",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "NOMD",
+        "companyName": "Nomad Foods",
+        "action": "Target Lowered by",
+        "firm": "Mizuho",
+        "analyst": "John Baumgartner",
+        "priceTargetChange": "$23.00 ➝ $20.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "NOTE",
+        "companyName": "FiscalNote",
+        "action": "Reiterated by",
+        "firm": "D. Boral Capital",
+        "analyst": "Jesse Sobelson",
+        "priceTargetChange": "$3.75",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "NPKI",
+        "companyName": "NPK International",
+        "action": "Reiterated by",
+        "firm": "Roth Capital",
+        "analyst": null,
+        "priceTargetChange": "$10.00 ➝ $12.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "NSA",
+        "companyName": "National Storage Affiliates Trust",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Wesley Golladay",
+        "priceTargetChange": "$39.00 ➝ $34.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "NXRT",
+        "companyName": "NexPoint Residential Trust",
+        "action": "Target Lowered by",
+        "firm": "Truist Financial",
+        "analyst": "Michael Lewis",
+        "priceTargetChange": "$38.00 ➝ $34.00",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "OKLO",
+        "companyName": "Oklo",
+        "action": "Target Raised by",
+        "firm": "Wedbush",
+        "analyst": "Daniel Ives",
+        "priceTargetChange": "$75.00 ➝ $80.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "OKLO",
+        "companyName": "Oklo",
+        "action": "Target Raised by",
+        "firm": "HC Wainwright",
+        "analyst": "Sameer Joshi",
+        "priceTargetChange": "$55.00 ➝ $90.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "OKLO",
+        "companyName": "Oklo",
+        "action": "Reiterated by",
+        "firm": "William Blair",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "OKLO",
+        "companyName": "Oklo",
+        "action": "Reiterated by",
+        "firm": "BTIG Research",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "OLMA",
+        "companyName": "Olema Pharmaceuticals",
+        "action": "Target Raised by",
+        "firm": "Citigroup",
+        "analyst": "Yigal Nochomovitz",
+        "priceTargetChange": "$20.00 ➝ $21.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "OMI",
+        "companyName": "Owens & Minor",
+        "action": "Target Lowered by",
+        "firm": "Robert W. Baird",
+        "analyst": "Eric Coldwell",
+        "priceTargetChange": "$10.00 ➝ $7.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "OMI",
+        "companyName": "Owens & Minor",
+        "action": "Target Lowered by",
+        "firm": "Bank of America",
+        "analyst": "Allen Lutz",
+        "priceTargetChange": "$7.50 ➝ $4.75",
+        "ratingChange": "Underperform ➝ Underperform"
+    },
+    {
+        "ticker": "OMI",
+        "companyName": "Owens & Minor",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$11.00 ➝ $7.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "ONON",
+        "companyName": "ON",
+        "action": "Reiterated by",
+        "firm": "Needham & Company LLC",
+        "analyst": "Tom Nikic",
+        "priceTargetChange": "$62.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "OPAD",
+        "companyName": "Offerpad Solutions",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Ryan Tomasello",
+        "priceTargetChange": "$1.00 ➝ $1.15",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "ORKA",
+        "companyName": "Oruka Therapeutics",
+        "action": "Reiterated by",
+        "firm": "Wedbush",
+        "analyst": null,
+        "priceTargetChange": "$40.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "ORLY",
+        "companyName": "O'Reilly Automotive",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$108.00 ➝ $110.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "OTEX",
+        "companyName": "Open Text",
+        "action": "Downgraded by",
+        "firm": "Jefferies Financial Group",
+        "analyst": null,
+        "priceTargetChange": "$33.00",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "OTEX",
+        "companyName": "Open Text",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": "Kevin Krishnaratne",
+        "priceTargetChange": "$30.00 ➝ $35.00",
+        "ratingChange": "Sector Perform ➝ Sector Perform"
+    },
+    {
+        "ticker": "PAL",
+        "companyName": "Proficient Auto Logistics",
+        "action": "Reiterated by",
+        "firm": "Barrington Research",
+        "analyst": "Alexander Paris",
+        "priceTargetChange": "$12.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "PAL",
+        "companyName": "Proficient Auto Logistics",
+        "action": "Target Set by",
+        "firm": "Stifel Nicolaus",
+        "analyst": "Bruce Chan",
+        "priceTargetChange": "$13.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "PANW",
+        "companyName": "Palo Alto Networks",
+        "action": "Target Set by",
+        "firm": "UBS Group",
+        "analyst": "Roger Boyd",
+        "priceTargetChange": "$200.00 ➝ $185.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "PANW",
+        "companyName": "Palo Alto Networks",
+        "action": "Upgraded by",
+        "firm": "Piper Sandler",
+        "analyst": null,
+        "priceTargetChange": "$200.00 ➝ $225.00",
+        "ratingChange": "Neutral ➝ Overweight"
+    },
+    {
+        "ticker": "PGR",
+        "companyName": "Progressive",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "PHIN",
+        "companyName": "PHINIA",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "priceTargetChange": "$46.00 ➝ $48.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "PKI",
+        "companyName": "Parkland",
+        "action": "Target Lowered by",
+        "firm": "Raymond James Financial",
+        "analyst": null,
+        "priceTargetChange": "C$45.00 ➝ C$44.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "PLUG",
+        "companyName": "Plug Power",
+        "action": "Target Lowered by",
+        "firm": "BMO Capital Markets",
+        "analyst": "Ameet Thakkar",
+        "priceTargetChange": "$1.10 ➝ $1.00",
+        "ratingChange": "Underperform ➝ Underperform"
+    },
+    {
+        "ticker": "PMTS",
+        "companyName": "CPI Card Group",
+        "action": "Target Lowered by",
+        "firm": "DA Davidson",
+        "analyst": "Peter Heckmann",
+        "priceTargetChange": "$38.00 ➝ $32.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "PSFE",
+        "companyName": "Paysafe",
+        "action": "Reiterated by",
+        "firm": "BTIG Research",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "PUBM",
+        "companyName": "PubMatic",
+        "action": "Reiterated by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": "Matthew Swanson",
+        "priceTargetChange": "$14.00 ➝ $11.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "PUBM",
+        "companyName": "PubMatic",
+        "action": "Target Lowered by",
+        "firm": "Scotiabank",
+        "analyst": "Nat Schindler",
+        "priceTargetChange": "$15.00 ➝ $10.00",
+        "ratingChange": "Sector Perform ➝ Sector Perform"
+    },
+    {
+        "ticker": "PUBM",
+        "companyName": "PubMatic",
+        "action": "Downgraded by",
+        "firm": "Lake Street Capital",
+        "analyst": null,
+        "priceTargetChange": "$19.00 ➝ $9.50",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "PUBM",
+        "companyName": "PubMatic",
+        "action": "Downgraded by",
+        "firm": "B. Riley",
+        "analyst": null,
+        "priceTargetChange": "$17.00 ➝ $9.00",
+        "ratingChange": "Buy ➝ Neutral"
+    },
+    {
+        "ticker": "QBR.B",
+        "companyName": "Quebecor",
+        "action": "Upgraded by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$42.00",
+        "ratingChange": "Sector Perform ➝ Outperform"
+    },
+    {
+        "ticker": "QNCX",
+        "companyName": "Quince Therapeutics",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Jonathan Wolleben",
+        "priceTargetChange": "$9.00 ➝ $8.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "QRHC",
+        "companyName": "Quest Resource",
+        "action": "Downgraded by",
+        "firm": "Northland Securities",
+        "analyst": null,
+        "priceTargetChange": "$2.25",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "RAMP",
+        "companyName": "LiveRamp",
+        "action": "Target Lowered by",
+        "firm": "Morgan Stanley",
+        "analyst": "Stan Zlotsky",
+        "priceTargetChange": "$34.00 ➝ $30.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "RAPT",
+        "companyName": "Rapt Therapeutics",
+        "action": "Target Set by",
+        "firm": "UBS Group",
+        "analyst": "Eliana Merle",
+        "priceTargetChange": "$8.00 ➝ $9.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "RC",
+        "companyName": "Ready Capital",
+        "action": "Target Lowered by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Jade Rahmani",
+        "priceTargetChange": "$4.25 ➝ $3.75",
+        "ratingChange": "Underperform ➝ Underperform"
+    },
+    {
+        "ticker": "RCI",
+        "companyName": "Rogers Communication",
+        "action": "Target Raised by",
+        "firm": "Barclays",
+        "analyst": "Kannan Venkateshwar",
+        "priceTargetChange": "$31.00 ➝ $33.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "RCI.B",
+        "companyName": "Rogers Communications",
+        "action": "Target Set by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$59.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "REMYY",
+        "companyName": "Remy Cointreau",
+        "action": "Reiterated by",
+        "firm": "Morgan Stanley",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "REZI",
+        "companyName": "Resideo Technologies",
+        "action": "Upgraded by",
+        "firm": "Morgan Stanley",
+        "analyst": null,
+        "priceTargetChange": "$24.00 ➝ $35.00",
+        "ratingChange": "Equal Weight ➝ Overweight"
+    },
+    {
+        "ticker": "RNR",
+        "companyName": "RenaissanceRe",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "RPAY",
+        "companyName": "Repay",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Sanjay Sakhrani",
+        "priceTargetChange": "$5.00 ➝ $5.75",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "RPAY",
+        "companyName": "Repay",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "James Faucette",
+        "priceTargetChange": "$4.50 ➝ $5.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "RXO",
+        "companyName": "RXO",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Brandon Oglenski",
+        "priceTargetChange": "$18.00 ➝ $17.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "RXT",
+        "companyName": "Rackspace Technology",
+        "action": "Target Lowered by",
+        "firm": "BMO Capital Markets",
+        "analyst": "Keith Bachman",
+        "priceTargetChange": "$1.75 ➝ $1.40",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "RYAN",
+        "companyName": "Ryan Specialty",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "$61.00",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "SAFE",
+        "companyName": "Safehold",
+        "action": "Target Lowered by",
+        "firm": "JMP Securities",
+        "analyst": "Mitch Germain",
+        "priceTargetChange": "$32.00 ➝ $28.00",
+        "ratingChange": "Market Outperform ➝ Market Outperform"
+    },
+    {
+        "ticker": "SBUX",
+        "companyName": "Starbucks",
+        "action": "Upgraded by",
+        "firm": "Robert W. Baird",
+        "analyst": "David Tarantino",
+        "priceTargetChange": "$100.00 ➝ $115.00",
+        "ratingChange": "Neutral ➝ Outperform"
+    },
+    {
+        "ticker": "SBUX",
+        "companyName": "Starbucks",
+        "action": "Target Set by",
+        "firm": "Loop Capital",
+        "analyst": "Anthony Chukumba",
+        "priceTargetChange": "$165.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "SE",
+        "companyName": "SEA",
+        "action": "Reiterated by",
+        "firm": "Macquarie",
+        "analyst": null,
+        "priceTargetChange": "$178.20 ➝ $219.90",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "SFM",
+        "companyName": "Sprouts Farmers Market",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Michael Morris",
+        "priceTargetChange": "$195.00 ➝ $190.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "SIEGY",
+        "companyName": "Siemens",
+        "action": "Reiterated by",
+        "firm": "Deutsche Bank Aktiengesellschaft",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Hold ➝ Hold"
+    },
+    {
+        "ticker": "SKE",
+        "companyName": "Skeena Resources",
+        "action": "Initiated by",
+        "firm": "TD Securities",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "SMMT",
+        "companyName": "Summit Therapeutics",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Cory Kasimov",
+        "priceTargetChange": "$30.00 ➝ $34.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "SMRT",
+        "companyName": "SmartRent",
+        "action": "Target Raised by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Ryan Tomasello",
+        "priceTargetChange": "$1.30 ➝ $1.45",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "SNV",
+        "companyName": "Synovus Financial",
+        "action": "Downgraded by",
+        "firm": "Keefe, Bruyette & Woods",
+        "analyst": "Brady Gailey",
+        "priceTargetChange": "$50.00",
+        "ratingChange": "Outperform ➝ Market Perform"
+    },
+    {
+        "ticker": "SPHR",
+        "companyName": "Sphere Entertainment",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Benjamin Swinburne",
+        "priceTargetChange": "$35.00 ➝ $40.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "SPX",
+        "companyName": "Spirax-Sarco Engineering",
+        "action": "Reiterated by",
+        "firm": "Shore Capital",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Under Review"
+    },
+    {
+        "ticker": "SRTS",
+        "companyName": "Sensus Healthcare",
+        "action": "Target Lowered by",
+        "firm": "HC Wainwright",
+        "analyst": "Yi Chen",
+        "priceTargetChange": "$12.00 ➝ $8.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "SRU.UN",
+        "companyName": "SmartCentres Real Estate Investment Trst",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": null,
+        "priceTargetChange": "C$26.75 ➝ C$27.50",
+        "ratingChange": "Sector Perform"
+    },
+    {
+        "ticker": "STRO",
+        "companyName": "Sutro Biopharma",
+        "action": "Target Lowered by",
+        "firm": "Wells Fargo & Company",
+        "analyst": "Derek Archila",
+        "priceTargetChange": "$4.00 ➝ $3.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "T",
+        "companyName": "TELUS",
+        "action": "Target Set by",
+        "firm": "National Bankshares",
+        "analyst": null,
+        "priceTargetChange": "C$23.00",
+        "ratingChange": "Sector Perform"
+    },
+    {
+        "ticker": "TCPC",
+        "companyName": "Blackrock Tcp Capital",
+        "action": "Reiterated by",
+        "firm": "Wells Fargo & Company",
+        "analyst": null,
+        "priceTargetChange": "$6.50 ➝ $6.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "TCRX",
+        "companyName": "TScan Therapeutics",
+        "action": "Reiterated by",
+        "firm": "Wedbush",
+        "analyst": null,
+        "priceTargetChange": "$7.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "TDS",
+        "companyName": "Telephone and Data Systems",
+        "action": "Target Raised by",
+        "firm": "Raymond James Financial",
+        "analyst": "Ric Prentiss",
+        "priceTargetChange": "$49.00 ➝ $50.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TDS",
+        "companyName": "Telephone and Data Systems",
+        "action": "Target Raised by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Sebastiano Petti",
+        "priceTargetChange": "$53.00 ➝ $54.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "TEL",
+        "companyName": "TE Connectivity",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Amit Daryanani",
+        "priceTargetChange": "$200.00 ➝ $225.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TEM",
+        "companyName": "Tempus AI",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Tejas Savant",
+        "priceTargetChange": "$65.00 ➝ $68.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "TGT",
+        "companyName": "Target",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$104.00 ➝ $108.00",
+        "ratingChange": "In-Line ➝ In-Line"
+    },
+    {
+        "ticker": "THO",
+        "companyName": "Thor Industries",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$88.00 ➝ $100.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "THX",
+        "companyName": "Thor Explorations",
+        "action": "Reiterated by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": null,
+        "priceTargetChange": "GBX 49",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "TKO",
+        "companyName": "TKO Group",
+        "action": "Target Raised by",
+        "firm": "Bank of America",
+        "analyst": "Brent Navon",
+        "priceTargetChange": "$200.00 ➝ $210.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "TKO",
+        "companyName": "TKO Group",
+        "action": "Target Set by",
+        "firm": "Roth Capital",
+        "analyst": "Eric Handler",
+        "priceTargetChange": "$208.00 ➝ $210.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "TLS",
+        "companyName": "Telos",
+        "action": "Target Raised by",
+        "firm": "Wedbush",
+        "analyst": "Daniel Ives",
+        "priceTargetChange": "$4.00 ➝ $6.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TLS",
+        "companyName": "Telos",
+        "action": "Target Set by",
+        "firm": "DA Davidson",
+        "analyst": "Rudy Kessinger",
+        "priceTargetChange": "$2.25 ➝ $4.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "TLS",
+        "companyName": "Telos",
+        "action": "Reiterated by",
+        "firm": "BMO Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "$2.25 ➝ $4.50",
+        "ratingChange": "Market Perform ➝ Market Perform"
+    },
+    {
+        "ticker": "TME",
+        "companyName": "Tencent Music Entertainment Group",
+        "action": "Reiterated by",
+        "firm": "Citigroup",
+        "analyst": null,
+        "priceTargetChange": "$23.00 ➝ $29.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "TME",
+        "companyName": "Tencent Music Entertainment Group",
+        "action": "Reiterated by",
+        "firm": "Barclays",
+        "analyst": null,
+        "priceTargetChange": "$16.00 ➝ $27.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "TME",
+        "companyName": "Tencent Music Entertainment Group",
+        "action": "Target Set by",
+        "firm": "Macquarie",
+        "analyst": "Ellie Jiang",
+        "priceTargetChange": "$29.80",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TME",
+        "companyName": "Tencent Music Entertainment Group",
+        "action": "Upgraded by",
+        "firm": "Daiwa Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral ➝ Outperform"
+    },
+    {
+        "ticker": "TOL",
+        "companyName": "Toll Brothers",
+        "action": "Target Lowered by",
+        "firm": "Wedbush",
+        "analyst": "Jay McCanless",
+        "priceTargetChange": "$175.00 ➝ $165.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TRGP",
+        "companyName": "Targa Resources",
+        "action": "Reiterated by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": "Elvira Scotto",
+        "priceTargetChange": "$205.00 ➝ $208.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "TRIN",
+        "companyName": "Trinity Capital",
+        "action": "Reiterated by",
+        "firm": "Wells Fargo & Company",
+        "analyst": null,
+        "priceTargetChange": "$13.00 ➝ $13.50",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "TRNO",
+        "companyName": "Terreno Realty",
+        "action": "Target Set by",
+        "firm": "The Goldman Sachs Group",
+        "analyst": "Caitlin Burrows",
+        "priceTargetChange": "$64.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "TRS",
+        "companyName": "TriMas",
+        "action": "Target Set by",
+        "firm": "KeyCorp",
+        "analyst": "Ken Newman",
+        "priceTargetChange": "$45.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "TRUP",
+        "companyName": "Trupanion",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Neutral"
+    },
+    {
+        "ticker": "TRV",
+        "companyName": "Travelers Companies",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "TSHA",
+        "companyName": "Taysha Gene Therapies",
+        "action": "Target Raised by",
+        "firm": "Chardan Capital",
+        "analyst": "Geulah Livshits",
+        "priceTargetChange": "$9.00 ➝ $10.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "TXG",
+        "companyName": "10x Genomics",
+        "action": "Target Lowered by",
+        "firm": "Morgan Stanley",
+        "analyst": "Tejas Savant",
+        "priceTargetChange": "$18.00 ➝ $17.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "UDR",
+        "companyName": "United Dominion Realty Trust",
+        "action": "Target Lowered by",
+        "firm": "Evercore ISI",
+        "analyst": "Steve Sakwa",
+        "priceTargetChange": "$45.00 ➝ $44.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "UDR",
+        "companyName": "United Dominion Realty Trust",
+        "action": "Target Lowered by",
+        "firm": "Barclays",
+        "analyst": "Richard Hightower",
+        "priceTargetChange": "$51.00 ➝ $48.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "ULTA",
+        "companyName": "Ulta Beauty",
+        "action": "Target Set by",
+        "firm": "Oppenheimer",
+        "analyst": "Rupesh Parikh",
+        "priceTargetChange": "$510.00 ➝ $600.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "UNP",
+        "companyName": "Union Pacific",
+        "action": "Downgraded by",
+        "firm": "Argus",
+        "analyst": null,
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "URI",
+        "companyName": "United Rentals",
+        "action": "Target Set by",
+        "firm": "Argus",
+        "analyst": "Kristina Ruggeri",
+        "priceTargetChange": "$935.00",
+        "ratingChange": ""
+    },
+    {
+        "ticker": "USM",
+        "companyName": "United States Cellular",
+        "action": "Target Raised by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Sebastiano Petti",
+        "priceTargetChange": "$85.00 ➝ $87.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "VC",
+        "companyName": "Visteon",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "priceTargetChange": "$90.00 ➝ $95.00",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    },
+    {
+        "ticker": "VHI",
+        "companyName": "Vitalhub",
+        "action": "Target Raised by",
+        "firm": "Raymond James Financial",
+        "analyst": null,
+        "priceTargetChange": "C$14.50 ➝ C$15.00",
+        "ratingChange": "Outperform"
+    },
+    {
+        "ticker": "VST",
+        "companyName": "Vistra",
+        "action": "Reiterated by",
+        "firm": "BMO Capital Markets",
+        "analyst": null,
+        "priceTargetChange": "$191.00 ➝ $229.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "WATR",
+        "companyName": "Water Intelligence",
+        "action": "Initiated by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": null,
+        "priceTargetChange": "GBX 500",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "WDAY",
+        "companyName": "Workday",
+        "action": "Target Set by",
+        "firm": "UBS Group",
+        "analyst": "Karl Keirstead",
+        "priceTargetChange": "$285.00 ➝ $250.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "WGO",
+        "companyName": "Winnebago Industries",
+        "action": "Target Raised by",
+        "firm": "Citigroup",
+        "analyst": "James Hardiman",
+        "priceTargetChange": "$33.00 ➝ $36.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "WLK",
+        "companyName": "Westlake",
+        "action": "Target Lowered by",
+        "firm": "JPMorgan Chase & Co.",
+        "analyst": "Jeffrey Zekauskas",
+        "priceTargetChange": "$75.00 ➝ $73.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "WMG",
+        "companyName": "Warner Music Group",
+        "action": "Target Raised by",
+        "firm": "The Goldman Sachs Group",
+        "analyst": "Stephen Laszczyk",
+        "priceTargetChange": "$28.00 ➝ $31.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "WMT",
+        "companyName": "Walmart",
+        "action": "Target Raised by",
+        "firm": "Evercore ISI",
+        "analyst": "Greg Melich",
+        "priceTargetChange": "$107.00 ➝ $108.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "WOW",
+        "companyName": "WideOpenWest",
+        "action": "Downgraded by",
+        "firm": "Benchmark",
+        "analyst": "Matthew Harrigan",
+        "priceTargetChange": "",
+        "ratingChange": "Buy ➝ Hold"
+    },
+    {
+        "ticker": "WOW",
+        "companyName": "WideOpenWest",
+        "action": "Reiterated by",
+        "firm": "UBS Group",
+        "analyst": null,
+        "priceTargetChange": "$4.80 ➝ $5.20",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "WPM",
+        "companyName": "Wheaton Precious Metals",
+        "action": "Target Raised by",
+        "firm": "Scotiabank",
+        "analyst": "Tanya Jakusconek",
+        "priceTargetChange": "$108.00 ➝ $109.00",
+        "ratingChange": "Sector Outperform ➝ Sector Outperform"
+    },
+    {
+        "ticker": "WRB",
+        "companyName": "W.R. Berkley",
+        "action": "Initiated by",
+        "firm": "Cantor Fitzgerald",
+        "analyst": null,
+        "priceTargetChange": "$82.00",
+        "ratingChange": "Overweight"
+    },
+    {
+        "ticker": "WYNN",
+        "companyName": "Wynn Resorts",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Stephen Grambling",
+        "priceTargetChange": "$111.00 ➝ $113.00",
+        "ratingChange": "Overweight ➝ Overweight"
+    },
+    {
+        "ticker": "XENE",
+        "companyName": "Xenon Pharmaceuticals",
+        "action": "Target Lowered by",
+        "firm": "Royal Bank Of Canada",
+        "analyst": "Brian Abrahams",
+        "priceTargetChange": "$57.00 ➝ $55.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "XENE",
+        "companyName": "Xenon Pharmaceuticals",
+        "action": "Reiterated by",
+        "firm": "Chardan Capital",
+        "analyst": "Rudy Li",
+        "priceTargetChange": "$55.00",
+        "ratingChange": "Buy ➝ Buy"
+    },
+    {
+        "ticker": "XENE",
+        "companyName": "Xenon Pharmaceuticals",
+        "action": "Target Raised by",
+        "firm": "Wedbush",
+        "analyst": "Laura Chico",
+        "priceTargetChange": "$42.00 ➝ $43.00",
+        "ratingChange": "Outperform ➝ Outperform"
+    },
+    {
+        "ticker": "XERS",
+        "companyName": "Xeris Biopharma",
+        "action": "Initiated by",
+        "firm": "HC Wainwright",
+        "analyst": "Brandon Folkes",
+        "priceTargetChange": "$10.00",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "XIFR",
+        "companyName": "XPLR Infrastructure",
+        "action": "Target Raised by",
+        "firm": "Barclays",
+        "analyst": "Betty Jing",
+        "priceTargetChange": "$9.00 ➝ $11.00",
+        "ratingChange": "Underweight ➝ Underweight"
+    },
+    {
+        "ticker": "XYZ",
+        "companyName": "Block",
+        "action": "Target Raised by",
+        "firm": "Macquarie",
+        "analyst": "Paul Golding",
+        "priceTargetChange": "$50.00 ➝ $67.00",
+        "ratingChange": "Neutral ➝ Neutral"
+    },
+    {
+        "ticker": "ZOO",
+        "companyName": "ZOO Digital Group",
+        "action": "Initiated by",
+        "firm": "Canaccord Genuity Group",
+        "analyst": null,
+        "priceTargetChange": "GBX 22",
+        "ratingChange": "Buy"
+    },
+    {
+        "ticker": "ZVIA",
+        "companyName": "Zevia PBC",
+        "action": "Target Raised by",
+        "firm": "Morgan Stanley",
+        "analyst": "Dara Mohsenian",
+        "priceTargetChange": "$2.50 ➝ $2.70",
+        "ratingChange": "Equal Weight ➝ Equal Weight"
+    }
+]

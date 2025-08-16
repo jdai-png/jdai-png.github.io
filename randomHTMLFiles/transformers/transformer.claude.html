@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Neural Stock Forecaster - v2.1.7</title>
+
+    <!-- TensorFlow.js and Plotly -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', monospace;
+            background: #000;
+            color: #00ff88;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, #001a0d 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, #001a0d 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, #002614 0%, transparent 50%);
+            z-index: -2;
+            animation: pulseBackground 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseBackground {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        /* Matrix-like grid overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .title {
+            font-family: 'Orbitron', monospace;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #00ff88;
+            text-shadow: 
+                0 0 10px #00ff88,
+                0 0 20px #00ff88,
+                0 0 40px #00ff88;
+            margin-bottom: 10px;
+            animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            from { 
+                text-shadow: 
+                    0 0 10px #00ff88,
+                    0 0 20px #00ff88,
+                    0 0 40px #00ff88;
+            }
+            to { 
+                text-shadow: 
+                    0 0 5px #00ff88,
+                    0 0 10px #00ff88,
+                    0 0 20px #00ff88;
+            }
+        }
+
+        .subtitle {
+            font-family: 'Rajdhani', monospace;
+            font-size: 1.2rem;
+            color: #66ffaa;
+            margin-bottom: 5px;
+        }
+
+        .version {
+            font-size: 0.9rem;
+            color: #44cc77;
+            opacity: 0.8;
+        }
+
+        .panel {
+            background: rgba(0, 20, 10, 0.8);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            position: relative;
+            backdrop-filter: blur(10px);
+            box-shadow: 
+                0 0 20px rgba(0, 255, 136, 0.3),
+                inset 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+
+        .panel::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(45deg, #00ff88, transparent, #00ff88);
+            border-radius: 10px;
+            z-index: -1;
+            animation: borderPulse 3s linear infinite;
+        }
+
+        @keyframes borderPulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        .disclaimer {
+            background: rgba(255, 100, 0, 0.1);
+            border: 1px solid #ff6400;
+            color: #ff8844;
+            text-align: center;
+            font-weight: 600;
+            animation: warningPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes warningPulse {
+            0%, 100% { box-shadow: 0 0 5px rgba(255, 100, 0, 0.3); }
+            50% { box-shadow: 0 0 15px rgba(255, 100, 0, 0.6); }
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .control-group {
+            position: relative;
+        }
+
+        .control-label {
+            display: block;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #66ffaa;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .control-input {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #00ff88;
+            border-radius: 5px;
+            color: #00ff88;
+            font-family: 'Rajdhani', monospace;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .control-input:focus {
+            outline: none;
+            border-color: #66ffaa;
+            box-shadow: 
+                0 0 10px rgba(0, 255, 136, 0.5),
+                inset 0 0 5px rgba(0, 255, 136, 0.2);
+            background: rgba(0, 20, 10, 0.8);
+        }
+
+        .control-input::placeholder {
+            color: #44aa66;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #00ff88, #00cc66);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            color: #000;
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 5px 15px rgba(0, 255, 136, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 8px 25px rgba(0, 255, 136, 0.6),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            background: linear-gradient(135deg, #333, #222);
+            color: #666;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:active::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .status-panel {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .status-panel.active {
+            animation: statusPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { 
+                border-color: #00ff88;
+                box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            }
+            50% { 
+                border-color: #66ffaa;
+                box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+            }
+        }
+
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 15px;
+            border: 1px solid #00ff88;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88, #66ffaa, #00ff88);
+            width: 0%;
+            transition: width 0.3s ease;
+            position: relative;
+            animation: progressGlow 2s linear infinite;
+        }
+
+        @keyframes progressGlow {
+            0% { box-shadow: 0 0 5px #00ff88; }
+            50% { box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88; }
+            100% { box-shadow: 0 0 5px #00ff88; }
+        }
+
+        .results-panel {
+            margin-top: 30px;
+        }
+
+        .results-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00ff88;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff88;
+        }
+
+        #chart {
+            width: 100%;
+            height: 500px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border: 1px solid #00ff88;
+        }
+
+        .metrics-panel {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 30, 15, 0.8);
+            border-radius: 10px;
+            border: 1px solid #44aa66;
+        }
+
+        .metrics-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #66ffaa;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .metric-item {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #00ff88;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #88ccaa;
+            margin-bottom: 5px;
+        }
+
+        .metric-value {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00ff88;
+        }
+
+        /* Terminal-like text effects */
+        .terminal-text {
+            font-family: 'Courier New', monospace;
+            color: #00ff88;
+            text-shadow: 0 0 5px #00ff88;
+        }
+
+        /* Glitch effect for errors */
+        .glitch {
+            animation: glitch 0.3s;
+            color: #ff0040;
+            text-shadow: 0 0 10px #ff0040;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">NEURAL FORECASTER</h1>
+            <div class="subtitle">Advanced Market Prediction System</div>
+            <div class="version">v2.1.7 - CLASSIFIED</div>
+        </div>
+
+        <div class="panel disclaimer">
+            <strong>⚠️ CONFIDENTIAL TRADING ALGORITHM ⚠️</strong><br>
+            Neural Network Model - Live Market Data Integration - For Research Only
+        </div>
+
+        <div class="panel">
+            <div class="controls-grid">
+                <div class="control-group">
+                    <label class="control-label" for="apiKey">API Access Key</label>
+                    <input type="password" id="apiKey" class="control-input" placeholder="Enter Alpaca LIVE API Key">
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="secretKey">Security Token</label>
+                    <input type="password" id="secretKey" class="control-input" placeholder="Enter Alpaca Secret Key">
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="symbol">Target Symbol</label>
+                    <input type="text" id="symbol" class="control-input" value="AAPL">
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="epochs">Training Cycles</label>
+                    <input type="number" id="epochs" class="control-input" value="30" min="1" max="200">
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="runButton" class="btn">Initialize Neural Network</button>
+            </div>
+        </div>
+
+        <div id="status" class="panel status-panel" style="display:none;">
+            <div class="terminal-text">System Status: Idle</div>
+            <div id="progressContainer" class="progress-container" style="display:none;">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div id="results" class="panel results-panel" style="display:none;">
+            <h2 class="results-title">MARKET ANALYSIS COMPLETE</h2>
+            <div id="chart"></div>
+            <div id="metrics" class="metrics-panel">
+                <div class="metrics-title">Performance Metrics</div>
+                <div id="metricsContent" class="metrics-grid"></div>
+            </div>
+        </div>
+    </div>
+
+<script>
+/* ========= ELEMENTS ========= */
+const runButton = document.getElementById('runButton');
+const apiKeyInput = document.getElementById('apiKey');
+const secretKeyInput = document.getElementById('secretKey');
+const statusDiv = document.getElementById('status');
+const statusPanel = statusDiv.querySelector('.terminal-text');
+const progressContainer = document.getElementById('progressContainer');
+const progressBar = document.getElementById('progressBar');
+const resultsDiv = document.getElementById('results');
+const chartDiv = document.getElementById('chart');
+const metricsDiv = document.getElementById('metricsContent');
+
+/* ====== Load saved keys (optional) ====== */
+document.addEventListener('DOMContentLoaded', () => {
+    // Note: Removed localStorage usage as per requirements
+});
+
+/* ====== MAIN BUTTON ====== */
+runButton.addEventListener('click', async () => {
+    runButton.disabled = true;
+    runButton.textContent = 'PROCESSING...';
+    statusDiv.style.display = 'block';
+    statusDiv.classList.add('active');
+    resultsDiv.style.display = 'none';
+    progressContainer.style.display = 'none';
+    statusPanel.textContent = 'System Status: Initializing Neural Network...';
+
+    try {
+        const apiKey = apiKeyInput.value.trim();
+        const secretKey = secretKeyInput.value.trim();
+        const symbol = document.getElementById('symbol').value.trim().toUpperCase();
+        const epochs = Math.max(1, parseInt(document.getElementById('epochs').value, 10) || 30);
+
+        if (!apiKey || !secretKey || !symbol) {
+            throw new Error('Authentication failed: Missing credentials or target symbol');
+        }
+
+        statusPanel.textContent = `Status: Establishing secure connection to market data feed [${symbol}]...`;
+        const { prices, dates } = await fetchAlpacaData(apiKey, secretKey, symbol);
+
+        statusPanel.textContent = 'Status: Pre-processing market data for neural network input...';
+        const { trainX, trainY, testX, scaler, sequenceLength } = prepareData(prices);
+
+        statusPanel.textContent = 'Status: Constructing deep learning architecture...';
+        const model = buildModel(sequenceLength, trainX.shape[2] || 1);
+
+        statusPanel.textContent = 'Status: Training neural network model...';
+        progressContainer.style.display = 'block';
+        await trainModel(model, trainX, trainY, epochs);
+
+        statusPanel.textContent = 'Status: Generating market predictions...';
+        const { predictions, futureForecast } = await makeForecast(model, testX, scaler, sequenceLength);
+
+        statusPanel.textContent = 'Status: Rendering visualization matrix...';
+        displayResults(dates, prices, predictions, futureForecast, testX.shape[0]);
+
+        statusDiv.classList.remove('active');
+        statusDiv.style.display = 'none';
+        resultsDiv.style.display = 'block';
+
+        // Dispose training tensors
+        trainX.dispose();
+        trainY.dispose();
+        testX.dispose();
+
+    } catch (err) {
+        statusPanel.innerHTML = `<span class="glitch">ERROR: ${err.message}</span>`;
+        statusDiv.classList.remove('active');
+        console.error(err);
+    } finally {
+        runButton.disabled = false;
+        runButton.textContent = 'Initialize Neural Network';
+        progressContainer.style.display = 'none';
+    }
+});
+
+/* ====== FETCH ALPACA DATA ====== */
+async function fetchAlpacaData(apiKey, secretKey, symbol) {
+    const endDate = new Date();
+    const startDate = new Date();
+    startDate.setFullYear(startDate.getFullYear() - 3);
+
+    const params = new URLSearchParams({
+        symbols: symbol,
+        timeframe: '1Day',
+        start: startDate.toISOString(),
+        end: endDate.toISOString(),
+        limit: 1000,
+        adjustment: 'raw',
+        feed: 'iex',
+        sort: 'asc'
+    });
+
+    const url = `https://data.alpaca.markets/v2/stocks/bars?${params.toString()}`;
+
+    const response = await fetch(url, {
+        headers: {
+            'APCA-API-KEY-ID': apiKey,
+            'APCA-API-SECRET-KEY': secretKey
+        }
+    });
+
+    if (!response.ok) {
+        throw new Error(`Network breach detected. Status: ${response.status}. Verify credentials and target symbol.`);
+    }
+
+    const data = await response.json();
+    const bars = data.bars[symbol];
+    if (!bars || bars.length === 0) throw new Error('No market data intercepted for this symbol.');
+
+    const prices = bars.map(bar => bar.c);
+    const dates = bars.map(bar => bar.t.split('T')[0]);
+    return { prices, dates };
+}
+
+/* ====== PREPARE DATA ====== */
+function prepareData(prices) {
+    const sequenceLength = 30;
+    const trainTestSplit = 0.85;
+
+    const priceTensor = tf.tensor1d(prices);
+    const minPrice = priceTensor.min().dataSync()[0];
+    const maxPrice = priceTensor.max().dataSync()[0];
+
+    const scaledPrices = Array.from(priceTensor.sub(tf.scalar(minPrice)).div(tf.scalar(maxPrice - minPrice)).dataSync());
+    priceTensor.dispose();
+
+    const scaler = { min: minPrice, max: maxPrice };
+
+    const sequences = [];
+    const labels = [];
+
+    for (let i = 0; i < scaledPrices.length - sequenceLength; i++) {
+        const seq = scaledPrices.slice(i, i + sequenceLength).map(v => [Number(v)]);
+        sequences.push(seq);
+        labels.push(Number(scaledPrices[i + sequenceLength]));
+    }
+
+    if (sequences.length === 0) throw new Error('Insufficient data matrix for sequence analysis.');
+
+    const splitIndex = Math.floor(sequences.length * trainTestSplit);
+
+    const trainSequences = sequences.slice(0, splitIndex);
+    const trainLabels = labels.slice(0, splitIndex);
+    const testSequences = sequences.slice(splitIndex);
+
+    const trainX = tf.tensor3d(trainSequences, [trainSequences.length, sequenceLength, 1]);
+    const trainY = tf.tensor2d(trainLabels, [trainLabels.length, 1]);
+    const testX = tf.tensor3d(testSequences, [testSequences.length, sequenceLength, 1]);
+
+    return { trainX, trainY, testX, scaler, sequenceLength };
+}
+
+/* ====== BUILD MODEL ====== */
+function buildModel(sequenceLength, features) {
+    const model = tf.sequential();
+    model.add(tf.layers.lstm({ units: 50, returnSequences: true, inputShape: [sequenceLength, features] }));
+    model.add(tf.layers.dropout({ rate: 0.2 }));
+    model.add(tf.layers.lstm({ units: 50, returnSequences: false }));
+    model.add(tf.layers.dropout({ rate: 0.2 }));
+    model.add(tf.layers.dense({ units: 1 }));
+
+    model.compile({ optimizer: 'adam', loss: 'meanSquaredError' });
+    return model;
+}
+
+/* ====== TRAIN MODEL ====== */
+async function trainModel(model, trainX, trainY, epochs) {
+    await model.fit(trainX, trainY, {
+        epochs,
+        batchSize: 32,
+        callbacks: {
+            onEpochEnd: async (epoch, logs) => {
+                statusPanel.textContent = `Neural Training: Cycle ${epoch + 1}/${epochs} — Loss: ${logs.loss.toFixed(6)}`;
+                progressBar.style.width = `${((epoch + 1) / epochs) * 100}%`;
+                await tf.nextFrame();
+            }
+        }
+    });
+}
+
+/* ====== MAKE FORECAST ====== */
+async function makeForecast(model, testX, scaler, sequenceLength) {
+    const predsTensor = tf.tidy(() => model.predict(testX));
+    const preds = Array.from(predsTensor.dataSync());
+    predsTensor.dispose();
+
+    const futureForecastScaled = [];
+    let lastSequence = testX.slice([testX.shape[0] - 1, 0, 0], [1, sequenceLength, 1]).clone();
+
+    try {
+        for (let i = 0; i < 30; i++) {
+            const nextPredTensor = tf.tidy(() => model.predict(lastSequence));
+            const nextPred = nextPredTensor.dataSync()[0];
+            nextPredTensor.dispose();
+
+            futureForecastScaled.push(nextPred);
+
+            const seqData = Array.from(lastSequence.dataSync());
+            seqData.shift();
+            seqData.push(nextPred);
+            lastSequence.dispose();
+            lastSequence = tf.tensor3d(seqData, [1, sequenceLength, 1]);
+        }
+    } finally {
+        lastSequence.dispose();
+    }
+
+    const unScale = (val) => val * (scaler.max - scaler.min) + scaler.min;
+    const unscaledPredictions = preds.map(unScale);
+    const unscaledFutureForecast = futureForecastScaled.map(unScale);
+
+    return { predictions: unscaledPredictions, futureForecast: unscaledFutureForecast };
+}
+
+/* ====== DISPLAY RESULTS & METRICS ======*/
+function displayResults(dates, prices, predictions, futureForecast, testSize) {
+    const trainSize = prices.length - testSize;
+
+    const traceActual = { 
+        x: dates, 
+        y: prices, 
+        mode: 'lines', 
+        name: 'Market Data',
+        line: { color: '#00ff88', width: 2 }
+    };
+    
+    const tracePredictions = { 
+        x: dates.slice(trainSize), 
+        y: predictions, 
+        mode: 'lines', 
+        name: 'Neural Prediction', 
+        line: { color: '#66ffaa', dash: 'dash', width: 2 }
+    };
+
+    const lastDate = new Date(dates[dates.length - 1]);
+    const futureDates = futureForecast.map((_, i) => {
+        const d = new Date(lastDate);
+        d.setDate(lastDate.getDate() + i + 1);
+        return d.toISOString().split('T')[0];
+    });
+    
+    const traceForecast = { 
+        x: futureDates, 
+        y: futureForecast, 
+        mode: 'lines', 
+        name: 'Future Projection', 
+        line: { color: '#ffaa00', dash: 'dot', width: 3 }
+    };
+
+    const layout = {
+        title: {
+            text: `Neural Analysis: ${document.getElementById('symbol').value.toUpperCase()}`,
+            font: { family: 'Orbitron', color: '#00ff88', size: 20 }
+        },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0.8)',
+        xaxis: { 
+            title: 'Timeline', 
+            gridcolor: '#003320',
+            color: '#00ff88',
+            font: { family: 'Rajdhani' }
+        },
+        yaxis: { 
+            title: 'Price (USD)', 
+            gridcolor: '#003320',
+            color: '#00ff88',
+            font: { family: 'Rajdhani' }
+        },
+        legend: { 
+            orientation: 'h', 
+            x: 0.02, 
+            y: 1.08,
+            font: { color: '#00ff88', family: 'Rajdhani' }
+        }
+    };
+
+    Plotly.newPlot(chartDiv, [traceActual, tracePredictions, traceForecast], layout);
+
+    // Compute metrics
+    const actualTestPrices = prices.slice(trainSize);
+    const actualTensor = tf.tensor1d(actualTestPrices);
+    const predTensor = tf.tensor1d(predictions.slice(0, actualTestPrices.length));
+
+    const maeTensor = tf.metrics.meanAbsoluteError(actualTensor, predTensor);
+    const mseTensor = tf.metrics.meanSquaredError(actualTensor, predTensor);
+
+    const mae = maeTensor.dataSync()[0];
+    const mse = mseTensor.dataSync()[0];
+    const rmse = Math.sqrt(mse);
+
+    maeTensor.dispose();
+    mseTensor.dispose();
+    actualTensor.dispose();
+    predTensor.dispose();
+
+    metricsDiv.innerHTML = `
+        <div class="metric-item">
+            <div class="metric-label">Mean Absolute Error</div>
+            <div class="metric-value">$${mae.toFixed(2)}</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">Root Mean Squared Error</div>
+            <div class="metric-value">$${rmse.toFixed(2)}</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-label">Prediction Accuracy</div>
+            <div class="metric-value">${(100 - (rmse / Math.mean(actualTestPrices)) * 100).toFixed(1)}%</div>
+        </div>
+    `;
+}
+
+// Helper function
+Math.mean = arr => arr.reduce((a, b) => a + b, 0) / arr.length;
+
+</script>
+</body>
+</html>

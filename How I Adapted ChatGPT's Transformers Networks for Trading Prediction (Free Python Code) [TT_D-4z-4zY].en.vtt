@@ -1,0 +1,4360 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.560 --> 00:00:03.429 align:start position:0%
+ 
+Hi<00:00:01.199><c> and</c><00:00:01.520><c> welcome</c><00:00:01.760><c> back.</c><00:00:02.480><c> In</c><00:00:02.639><c> this</c><00:00:02.879><c> video,</c><00:00:03.200><c> we</c>
+
+00:00:03.429 --> 00:00:03.439 align:start position:0%
+Hi and welcome back. In this video, we
+ 
+
+00:00:03.439 --> 00:00:05.430 align:start position:0%
+Hi and welcome back. In this video, we
+will<00:00:03.600><c> be</c><00:00:03.760><c> using</c><00:00:04.160><c> artificial</c><00:00:04.799><c> intelligence</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+will be using artificial intelligence
+ 
+
+00:00:05.440 --> 00:00:07.670 align:start position:0%
+will be using artificial intelligence
+models<00:00:05.920><c> to</c><00:00:06.240><c> generate</c><00:00:06.720><c> future</c><00:00:07.200><c> trading</c>
+
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+models to generate future trading
+ 
+
+00:00:07.680 --> 00:00:10.070 align:start position:0%
+models to generate future trading
+forecasts.<00:00:08.639><c> Large</c><00:00:08.960><c> language</c><00:00:09.360><c> models</c><00:00:09.760><c> like</c>
+
+00:00:10.070 --> 00:00:10.080 align:start position:0%
+forecasts. Large language models like
+ 
+
+00:00:10.080 --> 00:00:12.950 align:start position:0%
+forecasts. Large language models like
+Chad<00:00:10.400><c> GPT</c><00:00:10.960><c> use</c><00:00:11.280><c> a</c><00:00:11.599><c> powerful</c><00:00:12.160><c> architecture</c>
+
+00:00:12.950 --> 00:00:12.960 align:start position:0%
+Chad GPT use a powerful architecture
+ 
+
+00:00:12.960 --> 00:00:15.190 align:start position:0%
+Chad GPT use a powerful architecture
+called<00:00:13.200><c> the</c><00:00:13.519><c> transformer</c><00:00:14.320><c> to</c><00:00:14.559><c> predict</c><00:00:14.960><c> the</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+called the transformer to predict the
+ 
+
+00:00:15.200 --> 00:00:17.750 align:start position:0%
+called the transformer to predict the
+next<00:00:15.519><c> word</c><00:00:16.080><c> in</c><00:00:16.320><c> a</c><00:00:16.560><c> sentence.</c><00:00:17.119><c> That's</c><00:00:17.359><c> how</c><00:00:17.520><c> they</c>
+
+00:00:17.750 --> 00:00:17.760 align:start position:0%
+next word in a sentence. That's how they
+ 
+
+00:00:17.760 --> 00:00:20.070 align:start position:0%
+next word in a sentence. That's how they
+generate<00:00:18.160><c> such</c><00:00:18.400><c> a</c><00:00:18.560><c> human-like</c><00:00:19.119><c> text.</c><00:00:19.760><c> More</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+generate such a human-like text. More
+ 
+
+00:00:20.080 --> 00:00:22.630 align:start position:0%
+generate such a human-like text. More
+precisely,<00:00:20.720><c> if</c><00:00:20.960><c> we</c><00:00:21.199><c> provide</c><00:00:21.600><c> a</c><00:00:21.920><c> sequence</c><00:00:22.400><c> of</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+precisely, if we provide a sequence of
+ 
+
+00:00:22.640 --> 00:00:25.109 align:start position:0%
+precisely, if we provide a sequence of
+words,<00:00:23.279><c> the</c><00:00:23.519><c> model</c><00:00:23.840><c> will</c><00:00:24.080><c> look</c><00:00:24.240><c> for</c><00:00:24.560><c> the</c><00:00:24.800><c> most</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+words, the model will look for the most
+ 
+
+00:00:25.119 --> 00:00:27.029 align:start position:0%
+words, the model will look for the most
+probable<00:00:25.680><c> words</c><00:00:25.920><c> that</c><00:00:26.240><c> can</c><00:00:26.480><c> complete</c><00:00:26.800><c> this</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+probable words that can complete this
+ 
+
+00:00:27.039 --> 00:00:30.630 align:start position:0%
+probable words that can complete this
+sequence.<00:00:28.080><c> But</c><00:00:28.480><c> what</c><00:00:28.800><c> if</c><00:00:29.039><c> we</c><00:00:29.359><c> apply</c><00:00:30.000><c> that</c><00:00:30.320><c> same</c>
+
+00:00:30.630 --> 00:00:30.640 align:start position:0%
+sequence. But what if we apply that same
+ 
+
+00:00:30.640 --> 00:00:32.790 align:start position:0%
+sequence. But what if we apply that same
+technology<00:00:31.199><c> to</c><00:00:31.519><c> financial</c><00:00:32.000><c> markets?</c><00:00:32.480><c> Instead</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+technology to financial markets? Instead
+ 
+
+00:00:32.800 --> 00:00:34.790 align:start position:0%
+technology to financial markets? Instead
+of<00:00:33.040><c> predicting</c><00:00:33.440><c> the</c><00:00:33.680><c> next</c><00:00:33.920><c> word,</c><00:00:34.320><c> we</c><00:00:34.559><c> predict</c>
+
+00:00:34.790 --> 00:00:34.800 align:start position:0%
+of predicting the next word, we predict
+ 
+
+00:00:34.800 --> 00:00:37.190 align:start position:0%
+of predicting the next word, we predict
+the<00:00:35.040><c> next</c><00:00:35.280><c> price</c><00:00:35.600><c> or</c><00:00:35.920><c> trend.</c><00:00:36.640><c> And</c><00:00:36.800><c> that's</c><00:00:37.040><c> what</c>
+
+00:00:37.190 --> 00:00:37.200 align:start position:0%
+the next price or trend. And that's what
+ 
+
+00:00:37.200 --> 00:00:39.270 align:start position:0%
+the next price or trend. And that's what
+we<00:00:37.360><c> will</c><00:00:37.520><c> be</c><00:00:37.680><c> exploring</c><00:00:38.079><c> in</c><00:00:38.399><c> this</c><00:00:38.559><c> video.</c><00:00:39.040><c> We</c>
+
+00:00:39.270 --> 00:00:39.280 align:start position:0%
+we will be exploring in this video. We
+ 
+
+00:00:39.280 --> 00:00:41.110 align:start position:0%
+we will be exploring in this video. We
+will<00:00:39.440><c> walk</c><00:00:39.680><c> through</c><00:00:40.239><c> setting</c><00:00:40.640><c> up</c><00:00:40.800><c> a</c>
+
+00:00:41.110 --> 00:00:41.120 align:start position:0%
+will walk through setting up a
+ 
+
+00:00:41.120 --> 00:00:42.950 align:start position:0%
+will walk through setting up a
+transformer<00:00:41.760><c> model</c><00:00:42.000><c> in</c><00:00:42.239><c> Python</c><00:00:42.640><c> using</c>
+
+00:00:42.950 --> 00:00:42.960 align:start position:0%
+transformer model in Python using
+ 
+
+00:00:42.960 --> 00:00:45.510 align:start position:0%
+transformer model in Python using
+PyTorch,<00:00:43.760><c> training</c><00:00:44.160><c> it</c><00:00:44.320><c> on</c><00:00:44.719><c> historical</c><00:00:45.200><c> price</c>
+
+00:00:45.510 --> 00:00:45.520 align:start position:0%
+PyTorch, training it on historical price
+ 
+
+00:00:45.520 --> 00:00:48.229 align:start position:0%
+PyTorch, training it on historical price
+data<00:00:45.920><c> of</c><00:00:46.160><c> the</c><00:00:46.399><c> Euro</c><00:00:46.719><c> US</c><00:00:47.039><c> dollar,</c><00:00:47.600><c> and</c><00:00:47.840><c> using</c><00:00:48.079><c> it</c>
+
+00:00:48.229 --> 00:00:48.239 align:start position:0%
+data of the Euro US dollar, and using it
+ 
+
+00:00:48.239 --> 00:00:50.150 align:start position:0%
+data of the Euro US dollar, and using it
+to<00:00:48.480><c> predict</c><00:00:48.800><c> future</c><00:00:49.200><c> price</c><00:00:49.440><c> movements.</c><00:00:49.920><c> So</c>
+
+00:00:50.150 --> 00:00:50.160 align:start position:0%
+to predict future price movements. So
+ 
+
+00:00:50.160 --> 00:00:52.150 align:start position:0%
+to predict future price movements. So
+you<00:00:50.320><c> will</c><00:00:50.559><c> see</c><00:00:50.719><c> how</c><00:00:50.960><c> we</c><00:00:51.120><c> can</c><00:00:51.280><c> adapt</c><00:00:51.600><c> the</c><00:00:51.920><c> same</c>
+
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+you will see how we can adapt the same
+ 
+
+00:00:52.160 --> 00:00:54.229 align:start position:0%
+you will see how we can adapt the same
+techniques<00:00:52.559><c> that</c><00:00:52.879><c> power</c><00:00:53.440><c> large</c><00:00:53.760><c> language</c>
+
+00:00:54.229 --> 00:00:54.239 align:start position:0%
+techniques that power large language
+ 
+
+00:00:54.239 --> 00:00:56.790 align:start position:0%
+techniques that power large language
+models<00:00:54.559><c> like</c><00:00:54.879><c> Chad</c><00:00:55.199><c> GPT</c><00:00:55.680><c> to</c><00:00:55.920><c> our</c><00:00:56.160><c> own</c><00:00:56.399><c> trading</c>
+
+00:00:56.790 --> 00:00:56.800 align:start position:0%
+models like Chad GPT to our own trading
+ 
+
+00:00:56.800 --> 00:00:59.029 align:start position:0%
+models like Chad GPT to our own trading
+and<00:00:57.039><c> investing</c><00:00:57.600><c> strategies.</c><00:00:58.480><c> I'm</c><00:00:58.719><c> also</c>
+
+00:00:59.029 --> 00:00:59.039 align:start position:0%
+and investing strategies. I'm also
+ 
+
+00:00:59.039 --> 00:01:01.029 align:start position:0%
+and investing strategies. I'm also
+sharing<00:00:59.440><c> the</c><00:00:59.600><c> Python</c><00:01:00.000><c> code</c><00:01:00.320><c> I'll</c><00:01:00.640><c> be</c><00:01:00.800><c> using</c>
+
+00:01:01.029 --> 00:01:01.039 align:start position:0%
+sharing the Python code I'll be using
+ 
+
+00:01:01.039 --> 00:01:02.950 align:start position:0%
+sharing the Python code I'll be using
+today<00:01:01.440><c> in</c><00:01:01.680><c> a</c><00:01:01.920><c> link</c><00:01:02.079><c> in</c><00:01:02.239><c> the</c><00:01:02.480><c> description</c><00:01:02.800><c> of</c>
+
+00:01:02.950 --> 00:01:02.960 align:start position:0%
+today in a link in the description of
+ 
+
+00:01:02.960 --> 00:01:04.789 align:start position:0%
+today in a link in the description of
+the<00:01:03.120><c> video</c><00:01:03.359><c> so</c><00:01:03.600><c> you</c><00:01:03.760><c> can</c><00:01:03.840><c> download</c><00:01:04.239><c> it,</c><00:01:04.559><c> run</c>
+
+00:01:04.789 --> 00:01:04.799 align:start position:0%
+the video so you can download it, run
+ 
+
+00:01:04.799 --> 00:01:06.630 align:start position:0%
+the video so you can download it, run
+your<00:01:05.040><c> own</c><00:01:05.199><c> experiment</c><00:01:05.760><c> and</c><00:01:06.000><c> see</c><00:01:06.159><c> how</c><00:01:06.320><c> these</c>
+
+00:01:06.630 --> 00:01:06.640 align:start position:0%
+your own experiment and see how these
+ 
+
+00:01:06.640 --> 00:01:09.510 align:start position:0%
+your own experiment and see how these
+models<00:01:07.040><c> work.</c><00:01:07.680><c> Transformers</c><00:01:08.560><c> first</c><00:01:08.960><c> exploded</c>
+
+00:01:09.510 --> 00:01:09.520 align:start position:0%
+models work. Transformers first exploded
+ 
+
+00:01:09.520 --> 00:01:11.750 align:start position:0%
+models work. Transformers first exploded
+in<00:01:09.760><c> popularity</c><00:01:10.400><c> for</c><00:01:10.720><c> natural</c><00:01:11.200><c> language</c>
+
+00:01:11.750 --> 00:01:11.760 align:start position:0%
+in popularity for natural language
+ 
+
+00:01:11.760 --> 00:01:13.910 align:start position:0%
+in popularity for natural language
+processing<00:01:12.320><c> tasks.</c><00:01:12.960><c> Let's</c><00:01:13.200><c> imagine</c><00:01:13.600><c> you're</c>
+
+00:01:13.910 --> 00:01:13.920 align:start position:0%
+processing tasks. Let's imagine you're
+ 
+
+00:01:13.920 --> 00:01:16.469 align:start position:0%
+processing tasks. Let's imagine you're
+using<00:01:14.159><c> a</c><00:01:14.400><c> model</c><00:01:14.640><c> like</c><00:01:14.880><c> ChatgPT.</c><00:01:15.760><c> You</c><00:01:16.000><c> type</c><00:01:16.240><c> in</c>
+
+00:01:16.469 --> 00:01:16.479 align:start position:0%
+using a model like ChatgPT. You type in
+ 
+
+00:01:16.479 --> 00:01:18.870 align:start position:0%
+using a model like ChatgPT. You type in
+a<00:01:16.640><c> prompt</c><00:01:17.200><c> and</c><00:01:17.520><c> it</c><00:01:17.759><c> responds</c><00:01:18.159><c> by</c><00:01:18.479><c> predicting</c>
+
+00:01:18.870 --> 00:01:18.880 align:start position:0%
+a prompt and it responds by predicting
+ 
+
+00:01:18.880 --> 00:01:21.350 align:start position:0%
+a prompt and it responds by predicting
+the<00:01:19.200><c> most</c><00:01:19.439><c> probable</c><00:01:19.920><c> sequence</c><00:01:20.320><c> of</c><00:01:20.560><c> words.</c><00:01:21.119><c> In</c>
+
+00:01:21.350 --> 00:01:21.360 align:start position:0%
+the most probable sequence of words. In
+ 
+
+00:01:21.360 --> 00:01:23.350 align:start position:0%
+the most probable sequence of words. In
+the<00:01:21.520><c> background,</c><00:01:22.320><c> transformers</c><00:01:23.040><c> are</c>
+
+00:01:23.350 --> 00:01:23.360 align:start position:0%
+the background, transformers are
+ 
+
+00:01:23.360 --> 00:01:25.990 align:start position:0%
+the background, transformers are
+analyzing<00:01:24.080><c> all</c><00:01:24.320><c> the</c><00:01:24.560><c> words</c><00:01:24.880><c> or</c><00:01:25.200><c> tokens</c><00:01:25.759><c> in</c>
+
+00:01:25.990 --> 00:01:26.000 align:start position:0%
+analyzing all the words or tokens in
+ 
+
+00:01:26.000 --> 00:01:27.990 align:start position:0%
+analyzing all the words or tokens in
+your<00:01:26.159><c> prompt,</c><00:01:26.720><c> building</c><00:01:27.200><c> something</c><00:01:27.600><c> called</c>
+
+00:01:27.990 --> 00:01:28.000 align:start position:0%
+your prompt, building something called
+ 
+
+00:01:28.000 --> 00:01:30.230 align:start position:0%
+your prompt, building something called
+attention<00:01:28.479><c> matrices</c><00:01:29.119><c> that</c><00:01:29.360><c> determine</c><00:01:29.920><c> which</c>
+
+00:01:30.230 --> 00:01:30.240 align:start position:0%
+attention matrices that determine which
+ 
+
+00:01:30.240 --> 00:01:32.870 align:start position:0%
+attention matrices that determine which
+parts<00:01:30.560><c> of</c><00:01:30.720><c> the</c><00:01:30.960><c> prompt</c><00:01:31.360><c> are</c><00:01:31.680><c> most</c><00:01:32.000><c> important</c>
+
+00:01:32.870 --> 00:01:32.880 align:start position:0%
+parts of the prompt are most important
+ 
+
+00:01:32.880 --> 00:01:34.789 align:start position:0%
+parts of the prompt are most important
+and<00:01:33.119><c> then</c><00:01:33.360><c> generating</c><00:01:33.840><c> the</c><00:01:34.079><c> best</c><00:01:34.320><c> possible</c>
+
+00:01:34.789 --> 00:01:34.799 align:start position:0%
+and then generating the best possible
+ 
+
+00:01:34.799 --> 00:01:37.109 align:start position:0%
+and then generating the best possible
+continuation<00:01:35.439><c> of</c><00:01:35.680><c> your</c><00:01:35.920><c> text.</c><00:01:36.799><c> This</c>
+
+00:01:37.109 --> 00:01:37.119 align:start position:0%
+continuation of your text. This
+ 
+
+00:01:37.119 --> 00:01:39.270 align:start position:0%
+continuation of your text. This
+attention<00:01:37.840><c> mechanism</c><00:01:38.560><c> is</c><00:01:38.799><c> the</c><00:01:39.040><c> key</c>
+
+00:01:39.270 --> 00:01:39.280 align:start position:0%
+attention mechanism is the key
+ 
+
+00:01:39.280 --> 00:01:42.069 align:start position:0%
+attention mechanism is the key
+innovation.<00:01:40.079><c> A</c><00:01:40.400><c> transformer</c><00:01:41.200><c> uses</c><00:01:41.600><c> several</c>
+
+00:01:42.069 --> 00:01:42.079 align:start position:0%
+innovation. A transformer uses several
+ 
+
+00:01:42.079 --> 00:01:45.190 align:start position:0%
+innovation. A transformer uses several
+heads<00:01:42.560><c> or</c><00:01:42.880><c> matrices,</c><00:01:43.680><c> each</c><00:01:44.079><c> looking</c><00:01:44.560><c> at</c>
+
+00:01:45.190 --> 00:01:45.200 align:start position:0%
+heads or matrices, each looking at
+ 
+
+00:01:45.200 --> 00:01:47.510 align:start position:0%
+heads or matrices, each looking at
+different<00:01:45.680><c> relationships</c><00:01:46.399><c> in</c><00:01:46.640><c> the</c><00:01:46.880><c> sequence.</c>
+
+00:01:47.510 --> 00:01:47.520 align:start position:0%
+different relationships in the sequence.
+ 
+
+00:01:47.520 --> 00:01:49.749 align:start position:0%
+different relationships in the sequence.
+Think<00:01:47.840><c> about</c><00:01:48.079><c> a</c><00:01:48.320><c> head</c><00:01:48.640><c> as</c><00:01:48.880><c> a</c><00:01:49.040><c> matrix</c><00:01:49.520><c> of</c>
+
+00:01:49.749 --> 00:01:49.759 align:start position:0%
+Think about a head as a matrix of
+ 
+
+00:01:49.759 --> 00:01:51.590 align:start position:0%
+Think about a head as a matrix of
+parameters<00:01:50.399><c> providing</c><00:01:50.799><c> the</c><00:01:51.040><c> importance</c>
+
+00:01:51.590 --> 00:01:51.600 align:start position:0%
+parameters providing the importance
+ 
+
+00:01:51.600 --> 00:01:54.710 align:start position:0%
+parameters providing the importance
+value<00:01:52.079><c> or</c><00:01:52.399><c> weight</c><00:01:52.960><c> of</c><00:01:53.280><c> each</c><00:01:53.600><c> word.</c><00:01:54.240><c> If</c><00:01:54.399><c> we're</c>
+
+00:01:54.710 --> 00:01:54.720 align:start position:0%
+value or weight of each word. If we're
+ 
+
+00:01:54.720 --> 00:01:57.030 align:start position:0%
+value or weight of each word. If we're
+talking<00:01:54.960><c> about</c><00:01:55.280><c> text,</c><00:01:55.840><c> one</c><00:01:56.079><c> attention</c><00:01:56.640><c> head</c>
+
+00:01:57.030 --> 00:01:57.040 align:start position:0%
+talking about text, one attention head
+ 
+
+00:01:57.040 --> 00:01:59.510 align:start position:0%
+talking about text, one attention head
+might<00:01:57.520><c> look,</c><00:01:57.840><c> for</c><00:01:57.920><c> example,</c><00:01:58.399><c> at</c><00:01:58.640><c> how</c><00:01:58.960><c> nouns</c>
+
+00:01:59.510 --> 00:01:59.520 align:start position:0%
+might look, for example, at how nouns
+ 
+
+00:01:59.520 --> 00:02:02.389 align:start position:0%
+might look, for example, at how nouns
+connect<00:01:59.840><c> to</c><00:02:00.000><c> verbs,</c><00:02:00.880><c> while</c><00:02:01.280><c> another</c><00:02:01.759><c> head</c>
+
+00:02:02.389 --> 00:02:02.399 align:start position:0%
+connect to verbs, while another head
+ 
+
+00:02:02.399 --> 00:02:04.870 align:start position:0%
+connect to verbs, while another head
+could<00:02:02.719><c> track</c><00:02:03.119><c> pronouns</c><00:02:03.759><c> referencing</c><00:02:04.399><c> earlier</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+could track pronouns referencing earlier
+ 
+
+00:02:04.880 --> 00:02:07.190 align:start position:0%
+could track pronouns referencing earlier
+subjects,<00:02:05.439><c> and</c><00:02:05.680><c> so</c><00:02:05.840><c> on.</c><00:02:06.399><c> By</c><00:02:06.719><c> splitting</c>
+
+00:02:07.190 --> 00:02:07.200 align:start position:0%
+subjects, and so on. By splitting
+ 
+
+00:02:07.200 --> 00:02:10.070 align:start position:0%
+subjects, and so on. By splitting
+attention<00:02:08.000><c> across</c><00:02:08.479><c> multiple</c><00:02:09.039><c> heads</c><00:02:09.840><c> which</c>
+
+00:02:10.070 --> 00:02:10.080 align:start position:0%
+attention across multiple heads which
+ 
+
+00:02:10.080 --> 00:02:12.710 align:start position:0%
+attention across multiple heads which
+are<00:02:10.479><c> basically</c><00:02:10.959><c> matrices,</c><00:02:11.840><c> the</c><00:02:12.160><c> model</c><00:02:12.480><c> can</c>
+
+00:02:12.710 --> 00:02:12.720 align:start position:0%
+are basically matrices, the model can
+ 
+
+00:02:12.720 --> 00:02:15.630 align:start position:0%
+are basically matrices, the model can
+track<00:02:13.040><c> a</c><00:02:13.280><c> wide</c><00:02:13.599><c> variety</c><00:02:14.080><c> of</c><00:02:14.400><c> relationships</c>
+
+00:02:15.630 --> 00:02:15.640 align:start position:0%
+track a wide variety of relationships
+ 
+
+00:02:15.640 --> 00:02:18.470 align:start position:0%
+track a wide variety of relationships
+simultaneously.<00:02:16.640><c> Now</c><00:02:17.120><c> why</c><00:02:17.440><c> is</c><00:02:17.599><c> that</c><00:02:18.000><c> relevant</c>
+
+00:02:18.470 --> 00:02:18.480 align:start position:0%
+simultaneously. Now why is that relevant
+ 
+
+00:02:18.480 --> 00:02:20.630 align:start position:0%
+simultaneously. Now why is that relevant
+for<00:02:18.720><c> time</c><00:02:19.040><c> series</c><00:02:19.440><c> predictions</c><00:02:19.920><c> like</c><00:02:20.239><c> forex</c>
+
+00:02:20.630 --> 00:02:20.640 align:start position:0%
+for time series predictions like forex
+ 
+
+00:02:20.640 --> 00:02:23.910 align:start position:0%
+for time series predictions like forex
+or<00:02:20.959><c> stock</c><00:02:21.280><c> prices?</c><00:02:22.239><c> Well,</c><00:02:22.720><c> price</c><00:02:23.120><c> data</c><00:02:23.599><c> is</c>
+
+00:02:23.910 --> 00:02:23.920 align:start position:0%
+or stock prices? Well, price data is
+ 
+
+00:02:23.920 --> 00:02:26.309 align:start position:0%
+or stock prices? Well, price data is
+also<00:02:24.239><c> a</c><00:02:24.480><c> sequence</c><00:02:25.040><c> just</c><00:02:25.280><c> like</c><00:02:25.520><c> text.</c><00:02:26.080><c> But</c>
+
+00:02:26.309 --> 00:02:26.319 align:start position:0%
+also a sequence just like text. But
+ 
+
+00:02:26.319 --> 00:02:28.869 align:start position:0%
+also a sequence just like text. But
+instead<00:02:26.720><c> of</c><00:02:26.879><c> words,</c><00:02:27.440><c> we</c><00:02:27.760><c> have</c><00:02:28.000><c> candle</c><00:02:28.400><c> values</c>
+
+00:02:28.869 --> 00:02:28.879 align:start position:0%
+instead of words, we have candle values
+ 
+
+00:02:28.879 --> 00:02:31.750 align:start position:0%
+instead of words, we have candle values
+over<00:02:29.280><c> time.</c><00:02:29.840><c> In</c><00:02:30.080><c> theory,</c><00:02:30.560><c> a</c><00:02:30.879><c> transformer</c><00:02:31.520><c> can</c>
+
+00:02:31.750 --> 00:02:31.760 align:start position:0%
+over time. In theory, a transformer can
+ 
+
+00:02:31.760 --> 00:02:33.670 align:start position:0%
+over time. In theory, a transformer can
+be<00:02:31.840><c> adapted</c><00:02:32.319><c> so</c><00:02:32.480><c> that</c><00:02:32.720><c> instead</c><00:02:33.040><c> of</c><00:02:33.200><c> predicting</c>
+
+00:02:33.670 --> 00:02:33.680 align:start position:0%
+be adapted so that instead of predicting
+ 
+
+00:02:33.680 --> 00:02:36.229 align:start position:0%
+be adapted so that instead of predicting
+the<00:02:33.920><c> next</c><00:02:34.239><c> word,</c><00:02:34.959><c> it</c><00:02:35.200><c> predicts</c><00:02:35.680><c> the</c><00:02:36.000><c> next</c>
+
+00:02:36.229 --> 00:02:36.239 align:start position:0%
+the next word, it predicts the next
+ 
+
+00:02:36.239 --> 00:02:38.949 align:start position:0%
+the next word, it predicts the next
+price<00:02:36.720><c> or</c><00:02:36.959><c> a</c><00:02:37.200><c> range</c><00:02:37.360><c> of</c><00:02:37.599><c> future</c><00:02:38.000><c> prices.</c><00:02:38.720><c> The</c>
+
+00:02:38.949 --> 00:02:38.959 align:start position:0%
+price or a range of future prices. The
+ 
+
+00:02:38.959 --> 00:02:41.750 align:start position:0%
+price or a range of future prices. The
+same<00:02:39.200><c> concept</c><00:02:39.680><c> of</c><00:02:39.920><c> attention</c><00:02:40.560><c> applies.</c><00:02:41.440><c> Each</c>
+
+00:02:41.750 --> 00:02:41.760 align:start position:0%
+same concept of attention applies. Each
+ 
+
+00:02:41.760 --> 00:02:44.309 align:start position:0%
+same concept of attention applies. Each
+time<00:02:42.080><c> step</c><00:02:42.480><c> in</c><00:02:42.720><c> the</c><00:02:42.959><c> sequence</c><00:02:43.599><c> can</c><00:02:43.840><c> learn</c><00:02:44.080><c> how</c>
+
+00:02:44.309 --> 00:02:44.319 align:start position:0%
+time step in the sequence can learn how
+ 
+
+00:02:44.319 --> 00:02:46.229 align:start position:0%
+time step in the sequence can learn how
+to<00:02:44.480><c> weight</c><00:02:44.720><c> the</c><00:02:44.959><c> importance</c><00:02:45.440><c> of</c><00:02:45.760><c> previous</c>
+
+00:02:46.229 --> 00:02:46.239 align:start position:0%
+to weight the importance of previous
+ 
+
+00:02:46.239 --> 00:02:48.869 align:start position:0%
+to weight the importance of previous
+time<00:02:46.560><c> steps.</c><00:02:47.360><c> In</c><00:02:47.519><c> other</c><00:02:47.760><c> words,</c><00:02:48.319><c> the</c><00:02:48.560><c> model</c>
+
+00:02:48.869 --> 00:02:48.879 align:start position:0%
+time steps. In other words, the model
+ 
+
+00:02:48.879 --> 00:02:51.509 align:start position:0%
+time steps. In other words, the model
+learns<00:02:49.360><c> which</c><00:02:49.760><c> past</c><00:02:50.239><c> price</c><00:02:50.640><c> movements</c><00:02:51.200><c> are</c>
+
+00:02:51.509 --> 00:02:51.519 align:start position:0%
+learns which past price movements are
+ 
+
+00:02:51.519 --> 00:02:53.509 align:start position:0%
+learns which past price movements are
+most<00:02:51.920><c> relevant</c><00:02:52.400><c> for</c><00:02:52.800><c> forecasting</c><00:02:53.280><c> the</c>
+
+00:02:53.509 --> 00:02:53.519 align:start position:0%
+most relevant for forecasting the
+ 
+
+00:02:53.519 --> 00:02:56.550 align:start position:0%
+most relevant for forecasting the
+future.<00:02:54.319><c> In</c><00:02:54.640><c> practical</c><00:02:55.120><c> terms,</c><00:02:55.840><c> we</c><00:02:56.000><c> will</c><00:02:56.239><c> feed</c>
+
+00:02:56.550 --> 00:02:56.560 align:start position:0%
+future. In practical terms, we will feed
+ 
+
+00:02:56.560 --> 00:02:59.030 align:start position:0%
+future. In practical terms, we will feed
+our<00:02:56.879><c> past</c><00:02:57.280><c> prices</c><00:02:58.000><c> and</c><00:02:58.319><c> any</c><00:02:58.560><c> technical</c>
+
+00:02:59.030 --> 00:02:59.040 align:start position:0%
+our past prices and any technical
+ 
+
+00:02:59.040 --> 00:03:01.670 align:start position:0%
+our past prices and any technical
+indicators<00:02:59.760><c> into</c><00:03:00.080><c> the</c><00:03:00.440><c> transformer.</c><00:03:01.440><c> The</c>
+
+00:03:01.670 --> 00:03:01.680 align:start position:0%
+indicators into the transformer. The
+ 
+
+00:03:01.680 --> 00:03:03.509 align:start position:0%
+indicators into the transformer. The
+model<00:03:01.920><c> will</c><00:03:02.159><c> look</c><00:03:02.400><c> across</c><00:03:02.720><c> these</c><00:03:03.040><c> historical</c>
+
+00:03:03.509 --> 00:03:03.519 align:start position:0%
+model will look across these historical
+ 
+
+00:03:03.519 --> 00:03:06.229 align:start position:0%
+model will look across these historical
+windows<00:03:04.080><c> and</c><00:03:04.400><c> figure</c><00:03:04.640><c> out</c><00:03:04.959><c> which</c><00:03:05.680><c> signals</c>
+
+00:03:06.229 --> 00:03:06.239 align:start position:0%
+windows and figure out which signals
+ 
+
+00:03:06.239 --> 00:03:08.949 align:start position:0%
+windows and figure out which signals
+matter<00:03:06.640><c> most.</c><00:03:07.360><c> Then</c><00:03:07.680><c> it</c><00:03:07.920><c> outputs</c><00:03:08.480><c> the</c><00:03:08.640><c> most</c>
+
+00:03:08.949 --> 00:03:08.959 align:start position:0%
+matter most. Then it outputs the most
+ 
+
+00:03:08.959 --> 00:03:11.430 align:start position:0%
+matter most. Then it outputs the most
+probable<00:03:09.360><c> next</c><00:03:09.760><c> price</c><00:03:10.080><c> or</c><00:03:10.400><c> price</c><00:03:10.720><c> sequence,</c>
+
+00:03:11.430 --> 00:03:11.440 align:start position:0%
+probable next price or price sequence,
+ 
+
+00:03:11.440 --> 00:03:13.830 align:start position:0%
+probable next price or price sequence,
+similarly<00:03:11.920><c> to</c><00:03:12.239><c> how</c><00:03:12.560><c> CH</c><00:03:12.800><c> GPT</c><00:03:13.280><c> picks</c><00:03:13.519><c> up</c><00:03:13.680><c> the</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+similarly to how CH GPT picks up the
+ 
+
+00:03:13.840 --> 00:03:17.110 align:start position:0%
+similarly to how CH GPT picks up the
+most<00:03:14.159><c> likely</c><00:03:14.800><c> next</c><00:03:15.200><c> words.</c><00:03:15.840><c> Results</c><00:03:16.400><c> can</c><00:03:16.720><c> vary</c>
+
+00:03:17.110 --> 00:03:17.120 align:start position:0%
+most likely next words. Results can vary
+ 
+
+00:03:17.120 --> 00:03:19.190 align:start position:0%
+most likely next words. Results can vary
+depending<00:03:17.519><c> on</c><00:03:17.800><c> hyperparameters,</c><00:03:18.800><c> data</c>
+
+00:03:19.190 --> 00:03:19.200 align:start position:0%
+depending on hyperparameters, data
+ 
+
+00:03:19.200 --> 00:03:20.869 align:start position:0%
+depending on hyperparameters, data
+quality,<00:03:19.599><c> and</c><00:03:19.840><c> market</c><00:03:20.159><c> conditions.</c><00:03:20.640><c> But</c>
+
+00:03:20.869 --> 00:03:20.879 align:start position:0%
+quality, and market conditions. But
+ 
+
+00:03:20.879 --> 00:03:22.710 align:start position:0%
+quality, and market conditions. But
+there's<00:03:21.120><c> no</c><00:03:21.360><c> doubt</c><00:03:21.599><c> that</c><00:03:21.920><c> transformers</c>
+
+00:03:22.710 --> 00:03:22.720 align:start position:0%
+there's no doubt that transformers
+ 
+
+00:03:22.720 --> 00:03:24.710 align:start position:0%
+there's no doubt that transformers
+represent<00:03:23.120><c> a</c><00:03:23.360><c> major</c><00:03:23.760><c> leap</c><00:03:24.000><c> forward</c><00:03:24.400><c> for</c>
+
+00:03:24.710 --> 00:03:24.720 align:start position:0%
+represent a major leap forward for
+ 
+
+00:03:24.720 --> 00:03:26.949 align:start position:0%
+represent a major leap forward for
+advanced<00:03:25.120><c> sequence</c><00:03:25.680><c> modeling.</c><00:03:26.560><c> They</c><00:03:26.800><c> can</c>
+
+00:03:26.949 --> 00:03:26.959 align:start position:0%
+advanced sequence modeling. They can
+ 
+
+00:03:26.959 --> 00:03:29.430 align:start position:0%
+advanced sequence modeling. They can
+capture<00:03:27.440><c> the</c><00:03:27.680><c> long-term</c><00:03:28.319><c> dependencies</c><00:03:29.120><c> more</c>
+
+00:03:29.430 --> 00:03:29.440 align:start position:0%
+capture the long-term dependencies more
+ 
+
+00:03:29.440 --> 00:03:31.670 align:start position:0%
+capture the long-term dependencies more
+effectively<00:03:30.000><c> than</c><00:03:30.400><c> older</c><00:03:30.879><c> architectures</c>
+
+00:03:31.670 --> 00:03:31.680 align:start position:0%
+effectively than older architectures
+ 
+
+00:03:31.680 --> 00:03:34.149 align:start position:0%
+effectively than older architectures
+like<00:03:32.080><c> LSTMs</c><00:03:32.879><c> or</c><00:03:33.120><c> traditional</c><00:03:33.599><c> recurrent</c>
+
+00:03:34.149 --> 00:03:34.159 align:start position:0%
+like LSTMs or traditional recurrent
+ 
+
+00:03:34.159 --> 00:03:36.789 align:start position:0%
+like LSTMs or traditional recurrent
+neural<00:03:34.560><c> networks.</c><00:03:35.440><c> And</c><00:03:35.599><c> I</c><00:03:35.840><c> decided</c><00:03:36.239><c> to</c><00:03:36.480><c> try</c>
+
+00:03:36.789 --> 00:03:36.799 align:start position:0%
+neural networks. And I decided to try
+ 
+
+00:03:36.799 --> 00:03:39.430 align:start position:0%
+neural networks. And I decided to try
+this<00:03:37.200><c> on</c><00:03:37.599><c> trading</c><00:03:38.000><c> to</c><00:03:38.239><c> try</c><00:03:38.480><c> transformers</c><00:03:39.200><c> on</c>
+
+00:03:39.430 --> 00:03:39.440 align:start position:0%
+this on trading to try transformers on
+ 
+
+00:03:39.440 --> 00:03:41.990 align:start position:0%
+this on trading to try transformers on
+trading<00:03:39.840><c> data</c><00:03:40.480><c> and</c><00:03:40.799><c> share</c><00:03:41.040><c> it</c><00:03:41.280><c> here</c><00:03:41.680><c> on</c>
+
+00:03:41.990 --> 00:03:42.000 align:start position:0%
+trading data and share it here on
+ 
+
+00:03:42.000 --> 00:03:44.470 align:start position:0%
+trading data and share it here on
+YouTube<00:03:42.480><c> today.</c><00:03:43.120><c> Now</c><00:03:43.360><c> let's</c><00:03:43.599><c> jump</c><00:03:43.920><c> into</c><00:03:44.239><c> the</c>
+
+00:03:44.470 --> 00:03:44.480 align:start position:0%
+YouTube today. Now let's jump into the
+ 
+
+00:03:44.480 --> 00:03:46.869 align:start position:0%
+YouTube today. Now let's jump into the
+code<00:03:44.959><c> and</c><00:03:45.280><c> see</c><00:03:45.360><c> how</c><00:03:45.599><c> these</c><00:03:45.840><c> transformers</c><00:03:46.640><c> work</c>
+
+00:03:46.869 --> 00:03:46.879 align:start position:0%
+code and see how these transformers work
+ 
+
+00:03:46.879 --> 00:03:49.190 align:start position:0%
+code and see how these transformers work
+for<00:03:47.200><c> trading</c><00:03:47.599><c> applications.</c><00:03:48.640><c> Grab</c><00:03:48.959><c> your</c>
+
+00:03:49.190 --> 00:03:49.200 align:start position:0%
+for trading applications. Grab your
+ 
+
+00:03:49.200 --> 00:03:51.110 align:start position:0%
+for trading applications. Grab your
+coffee,<00:03:49.680><c> fire</c><00:03:49.920><c> up</c><00:03:50.080><c> your</c><00:03:50.239><c> code</c><00:03:50.480><c> editor</c><00:03:50.959><c> and</c>
+
+00:03:51.110 --> 00:03:51.120 align:start position:0%
+coffee, fire up your code editor and
+ 
+
+00:03:51.120 --> 00:03:53.430 align:start position:0%
+coffee, fire up your code editor and
+let's<00:03:51.360><c> get</c><00:03:51.599><c> started.</c><00:03:52.400><c> So</c><00:03:52.720><c> this</c><00:03:52.959><c> is</c><00:03:53.120><c> our</c>
+
+00:03:53.430 --> 00:03:53.440 align:start position:0%
+let's get started. So this is our
+ 
+
+00:03:53.440 --> 00:03:56.070 align:start position:0%
+let's get started. So this is our
+Jupyter<00:03:53.920><c> notebook.</c><00:03:54.799><c> We</c><00:03:54.959><c> will</c><00:03:55.200><c> start</c><00:03:55.440><c> by</c>
+
+00:03:56.070 --> 00:03:56.080 align:start position:0%
+Jupyter notebook. We will start by
+ 
+
+00:03:56.080 --> 00:03:58.670 align:start position:0%
+Jupyter notebook. We will start by
+installing<00:03:56.799><c> torch</c><00:03:57.280><c> pandas</c><00:03:57.760><c> numpy</c>
+
+00:03:58.670 --> 00:03:58.680 align:start position:0%
+installing torch pandas numpy
+ 
+
+00:03:58.680 --> 00:04:01.589 align:start position:0%
+installing torch pandas numpy
+scikitlearn<00:03:59.680><c> and</c><00:04:00.080><c> ta</c><00:04:00.400><c> or</c><00:04:00.560><c> pandas</c><00:04:01.040><c> ta</c><00:04:01.360><c> for</c>
+
+00:04:01.589 --> 00:04:01.599 align:start position:0%
+scikitlearn and ta or pandas ta for
+ 
+
+00:04:01.599 --> 00:04:03.429 align:start position:0%
+scikitlearn and ta or pandas ta for
+technical<00:04:02.000><c> analysis</c><00:04:02.480><c> just</c><00:04:02.640><c> to</c><00:04:02.799><c> compute</c><00:04:03.200><c> some</c>
+
+00:04:03.429 --> 00:04:03.439 align:start position:0%
+technical analysis just to compute some
+ 
+
+00:04:03.439 --> 00:04:04.830 align:start position:0%
+technical analysis just to compute some
+technical
+
+00:04:04.830 --> 00:04:04.840 align:start position:0%
+technical
+ 
+
+00:04:04.840 --> 00:04:06.949 align:start position:0%
+technical
+indicators.<00:04:05.840><c> Now</c><00:04:06.000><c> we</c><00:04:06.159><c> can</c><00:04:06.319><c> start</c><00:04:06.560><c> defining</c>
+
+00:04:06.949 --> 00:04:06.959 align:start position:0%
+indicators. Now we can start defining
+ 
+
+00:04:06.959 --> 00:04:08.710 align:start position:0%
+indicators. Now we can start defining
+some<00:04:07.120><c> functions</c><00:04:07.519><c> that</c><00:04:07.680><c> we'll</c><00:04:08.000><c> be</c><00:04:08.159><c> using</c><00:04:08.400><c> later</c>
+
+00:04:08.710 --> 00:04:08.720 align:start position:0%
+some functions that we'll be using later
+ 
+
+00:04:08.720 --> 00:04:11.830 align:start position:0%
+some functions that we'll be using later
+on<00:04:08.879><c> in</c><00:04:09.120><c> the</c><00:04:09.280><c> program.</c><00:04:10.080><c> So</c><00:04:10.400><c> load</c><00:04:10.879><c> forex</c><00:04:11.360><c> data</c>
+
+00:04:11.830 --> 00:04:11.840 align:start position:0%
+on in the program. So load forex data
+ 
+
+00:04:11.840 --> 00:04:14.470 align:start position:0%
+on in the program. So load forex data
+that<00:04:12.080><c> takes</c><00:04:12.239><c> a</c><00:04:12.480><c> CSV</c><00:04:12.959><c> file.</c><00:04:13.280><c> It</c><00:04:13.519><c> reads</c><00:04:13.760><c> a</c><00:04:13.920><c> CSV</c>
+
+00:04:14.470 --> 00:04:14.480 align:start position:0%
+that takes a CSV file. It reads a CSV
+ 
+
+00:04:14.480 --> 00:04:17.590 align:start position:0%
+that takes a CSV file. It reads a CSV
+file,<00:04:15.120><c> puts</c><00:04:15.439><c> it</c><00:04:15.599><c> into</c><00:04:15.760><c> a</c><00:04:16.000><c> data</c><00:04:16.320><c> frame.</c><00:04:17.440><c> uh</c>
+
+00:04:17.590 --> 00:04:17.600 align:start position:0%
+file, puts it into a data frame. uh
+ 
+
+00:04:17.600 --> 00:04:20.550 align:start position:0%
+file, puts it into a data frame. uh
+cleaning<00:04:18.000><c> and</c><00:04:18.239><c> casting</c><00:04:18.720><c> to</c><00:04:18.959><c> date</c><00:04:19.440><c> time</c><00:04:19.919><c> format</c>
+
+00:04:20.550 --> 00:04:20.560 align:start position:0%
+cleaning and casting to date time format
+ 
+
+00:04:20.560 --> 00:04:23.670 align:start position:0%
+cleaning and casting to date time format
+the<00:04:20.880><c> uh</c><00:04:21.040><c> GMT</c><00:04:21.519><c> time</c><00:04:22.160><c> column</c><00:04:23.040><c> and</c><00:04:23.280><c> then</c><00:04:23.440><c> we're</c>
+
+00:04:23.670 --> 00:04:23.680 align:start position:0%
+the uh GMT time column and then we're
+ 
+
+00:04:23.680 --> 00:04:26.629 align:start position:0%
+the uh GMT time column and then we're
+sorting<00:04:24.080><c> the</c><00:04:24.320><c> value</c><00:04:24.720><c> by</c><00:04:25.120><c> date</c><00:04:26.000><c> uh</c><00:04:26.160><c> just</c><00:04:26.400><c> in</c>
+
+00:04:26.629 --> 00:04:26.639 align:start position:0%
+sorting the value by date uh just in
+ 
+
+00:04:26.639 --> 00:04:28.950 align:start position:0%
+sorting the value by date uh just in
+case<00:04:27.280><c> we're</c><00:04:27.600><c> resetting</c><00:04:28.000><c> the</c><00:04:28.160><c> index</c><00:04:28.560><c> and</c><00:04:28.800><c> we</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+case we're resetting the index and we
+ 
+
+00:04:28.960 --> 00:04:31.270 align:start position:0%
+case we're resetting the index and we
+return<00:04:29.280><c> the</c><00:04:29.520><c> data</c><00:04:29.840><c> frame.</c><00:04:30.479><c> Second</c><00:04:30.800><c> function</c>
+
+00:04:31.270 --> 00:04:31.280 align:start position:0%
+return the data frame. Second function
+ 
+
+00:04:31.280 --> 00:04:33.990 align:start position:0%
+return the data frame. Second function
+is<00:04:31.759><c> adding</c><00:04:32.400><c> technical</c><00:04:32.960><c> indicators.</c><00:04:33.680><c> It</c><00:04:33.840><c> takes</c>
+
+00:04:33.990 --> 00:04:34.000 align:start position:0%
+is adding technical indicators. It takes
+ 
+
+00:04:34.000 --> 00:04:36.950 align:start position:0%
+is adding technical indicators. It takes
+the<00:04:34.160><c> data</c><00:04:34.479><c> frame</c><00:04:34.800><c> and</c><00:04:35.040><c> it</c><00:04:35.199><c> computes</c><00:04:35.680><c> the</c><00:04:35.960><c> RSI</c>
+
+00:04:36.950 --> 00:04:36.960 align:start position:0%
+the data frame and it computes the RSI
+ 
+
+00:04:36.960 --> 00:04:39.110 align:start position:0%
+the data frame and it computes the RSI
+ballinger<00:04:37.440><c> bands</c><00:04:37.759><c> high</c><00:04:38.000><c> and</c><00:04:38.240><c> low</c><00:04:38.720><c> the</c><00:04:38.880><c> moving</c>
+
+00:04:39.110 --> 00:04:39.120 align:start position:0%
+ballinger bands high and low the moving
+ 
+
+00:04:39.120 --> 00:04:42.870 align:start position:0%
+ballinger bands high and low the moving
+average<00:04:39.720><c> 20</c><00:04:40.720><c> and</c><00:04:41.120><c> the</c><00:04:41.360><c> moving</c><00:04:41.759><c> average</c><00:04:42.400><c> slope.</c>
+
+00:04:42.870 --> 00:04:42.880 align:start position:0%
+average 20 and the moving average slope.
+ 
+
+00:04:42.880 --> 00:04:45.030 align:start position:0%
+average 20 and the moving average slope.
+So<00:04:43.120><c> that's</c><00:04:43.440><c> just</c><00:04:43.600><c> the</c><00:04:43.840><c> difference</c><00:04:44.240><c> between</c>
+
+00:04:45.030 --> 00:04:45.040 align:start position:0%
+So that's just the difference between
+ 
+
+00:04:45.040 --> 00:04:47.110 align:start position:0%
+So that's just the difference between
+the<00:04:45.440><c> uh</c><00:04:45.600><c> current</c><00:04:45.919><c> moving</c><00:04:46.320><c> average</c><00:04:46.639><c> and</c><00:04:46.880><c> the</c>
+
+00:04:47.110 --> 00:04:47.120 align:start position:0%
+the uh current moving average and the
+ 
+
+00:04:47.120 --> 00:04:49.830 align:start position:0%
+the uh current moving average and the
+previous<00:04:47.520><c> one.</c><00:04:48.320><c> Two</c><00:04:48.720><c> different</c><00:04:49.199><c> rows</c><00:04:49.360><c> or</c><00:04:49.600><c> two</c>
+
+00:04:49.830 --> 00:04:49.840 align:start position:0%
+previous one. Two different rows or two
+ 
+
+00:04:49.840 --> 00:04:52.870 align:start position:0%
+previous one. Two different rows or two
+consecutive<00:04:50.600><c> rows.</c><00:04:51.600><c> We</c><00:04:51.840><c> apply</c><00:04:52.160><c> some</c><00:04:52.400><c> cleaning</c>
+
+00:04:52.870 --> 00:04:52.880 align:start position:0%
+consecutive rows. We apply some cleaning
+ 
+
+00:04:52.880 --> 00:04:54.790 align:start position:0%
+consecutive rows. We apply some cleaning
+filling<00:04:53.440><c> missing</c><00:04:53.840><c> values</c><00:04:54.240><c> and</c><00:04:54.479><c> then</c><00:04:54.639><c> we</c>
+
+00:04:54.790 --> 00:04:54.800 align:start position:0%
+filling missing values and then we
+ 
+
+00:04:54.800 --> 00:04:57.270 align:start position:0%
+filling missing values and then we
+return<00:04:55.120><c> the</c><00:04:55.280><c> data</c><00:04:55.600><c> frame</c><00:04:56.320><c> with</c><00:04:56.639><c> these</c>
+
+00:04:57.270 --> 00:04:57.280 align:start position:0%
+return the data frame with these
+ 
+
+00:04:57.280 --> 00:05:00.310 align:start position:0%
+return the data frame with these
+technical<00:04:57.840><c> indicators.</c><00:04:58.720><c> Now</c><00:04:59.120><c> if</c><00:04:59.440><c> you</c><00:04:59.759><c> want</c><00:05:00.000><c> to</c>
+
+00:05:00.310 --> 00:05:00.320 align:start position:0%
+technical indicators. Now if you want to
+ 
+
+00:05:00.320 --> 00:05:03.830 align:start position:0%
+technical indicators. Now if you want to
+enhance<00:05:01.040><c> this</c><00:05:01.360><c> part,</c><00:05:02.080><c> this</c><00:05:02.320><c> is</c><00:05:02.479><c> where</c><00:05:02.800><c> you</c><00:05:03.040><c> can</c>
+
+00:05:03.830 --> 00:05:03.840 align:start position:0%
+enhance this part, this is where you can
+ 
+
+00:05:03.840 --> 00:05:06.870 align:start position:0%
+enhance this part, this is where you can
+add<00:05:04.160><c> on</c><00:05:04.880><c> your</c><00:05:05.199><c> own</c><00:05:05.440><c> indicators.</c><00:05:06.479><c> Maybe</c><00:05:06.720><c> you</c>
+
+00:05:06.870 --> 00:05:06.880 align:start position:0%
+add on your own indicators. Maybe you
+ 
+
+00:05:06.880 --> 00:05:08.390 align:start position:0%
+add on your own indicators. Maybe you
+want<00:05:07.039><c> to</c><00:05:07.199><c> add,</c><00:05:07.600><c> I</c><00:05:07.759><c> don't</c><00:05:07.840><c> know,</c><00:05:08.080><c> different</c>
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+want to add, I don't know, different
+ 
+
+00:05:08.400 --> 00:05:10.469 align:start position:0%
+want to add, I don't know, different
+moving<00:05:08.720><c> averages</c><00:05:09.199><c> with</c><00:05:09.520><c> different</c><00:05:09.759><c> length,</c>
+
+00:05:10.469 --> 00:05:10.479 align:start position:0%
+moving averages with different length,
+ 
+
+00:05:10.479 --> 00:05:12.790 align:start position:0%
+moving averages with different length,
+the<00:05:10.800><c> exponential</c><00:05:11.360><c> moving</c><00:05:11.680><c> average</c><00:05:12.320><c> or</c><00:05:12.560><c> any</c>
+
+00:05:12.790 --> 00:05:12.800 align:start position:0%
+the exponential moving average or any
+ 
+
+00:05:12.800 --> 00:05:15.350 align:start position:0%
+the exponential moving average or any
+other<00:05:13.039><c> technical</c><00:05:13.520><c> indicator</c><00:05:14.479><c> that</c><00:05:14.880><c> you</c><00:05:15.199><c> want</c>
+
+00:05:15.350 --> 00:05:15.360 align:start position:0%
+other technical indicator that you want
+ 
+
+00:05:15.360 --> 00:05:18.629 align:start position:0%
+other technical indicator that you want
+to<00:05:15.600><c> include</c><00:05:16.080><c> in</c><00:05:16.639><c> uh</c><00:05:17.120><c> in</c><00:05:17.440><c> your</c><00:05:17.680><c> study</c><00:05:18.240><c> so</c><00:05:18.400><c> that</c>
+
+00:05:18.629 --> 00:05:18.639 align:start position:0%
+to include in uh in your study so that
+ 
+
+00:05:18.639 --> 00:05:21.029 align:start position:0%
+to include in uh in your study so that
+the<00:05:18.880><c> transformer</c><00:05:19.440><c> will</c><00:05:19.680><c> read</c><00:05:19.919><c> it</c><00:05:20.240><c> and</c><00:05:20.560><c> try</c><00:05:20.800><c> to</c>
+
+00:05:21.029 --> 00:05:21.039 align:start position:0%
+the transformer will read it and try to
+ 
+
+00:05:21.039 --> 00:05:22.870 align:start position:0%
+the transformer will read it and try to
+understand<00:05:21.360><c> the</c><00:05:21.600><c> data</c><00:05:21.919><c> or</c><00:05:22.320><c> the</c><00:05:22.560><c> price</c>
+
+00:05:22.870 --> 00:05:22.880 align:start position:0%
+understand the data or the price
+ 
+
+00:05:22.880 --> 00:05:25.590 align:start position:0%
+understand the data or the price
+movement<00:05:23.360><c> based</c><00:05:23.680><c> on</c><00:05:23.840><c> these</c><00:05:24.320><c> uh</c><00:05:24.600><c> indicators.</c>
+
+00:05:25.590 --> 00:05:25.600 align:start position:0%
+movement based on these uh indicators.
+ 
+
+00:05:25.600 --> 00:05:28.070 align:start position:0%
+movement based on these uh indicators.
+For<00:05:26.160><c> this</c><00:05:26.400><c> video,</c><00:05:26.720><c> I</c><00:05:26.960><c> just</c><00:05:27.120><c> kept</c><00:05:27.440><c> it</c><00:05:27.600><c> simple.</c>
+
+00:05:28.070 --> 00:05:28.080 align:start position:0%
+For this video, I just kept it simple.
+ 
+
+00:05:28.080 --> 00:05:30.469 align:start position:0%
+For this video, I just kept it simple.
+I'm<00:05:28.400><c> using</c><00:05:28.960><c> those</c><00:05:29.360><c> two.</c><00:05:29.680><c> So,</c><00:05:29.840><c> I'm</c><00:05:30.000><c> using</c><00:05:30.320><c> all</c>
+
+00:05:30.469 --> 00:05:30.479 align:start position:0%
+I'm using those two. So, I'm using all
+ 
+
+00:05:30.479 --> 00:05:32.310 align:start position:0%
+I'm using those two. So, I'm using all
+three<00:05:30.720><c> indicators.</c><00:05:31.280><c> I'm</c><00:05:31.440><c> using</c><00:05:31.600><c> the</c><00:05:31.759><c> RSI,</c>
+
+00:05:32.310 --> 00:05:32.320 align:start position:0%
+three indicators. I'm using the RSI,
+ 
+
+00:05:32.320 --> 00:05:35.830 align:start position:0%
+three indicators. I'm using the RSI,
+Ballinger<00:05:32.720><c> bands,</c><00:05:33.039><c> and</c><00:05:33.120><c> the</c><00:05:33.280><c> moving</c><00:05:33.600><c> average.</c>
+
+00:05:35.830 --> 00:05:35.840 align:start position:0%
+Ballinger bands, and the moving average.
+ 
+
+00:05:35.840 --> 00:05:37.749 align:start position:0%
+Ballinger bands, and the moving average.
+Now<00:05:36.240><c> this</c><00:05:36.479><c> function</c><00:05:36.960><c> select</c><00:05:37.280><c> and</c><00:05:37.520><c> scale</c>
+
+00:05:37.749 --> 00:05:37.759 align:start position:0%
+Now this function select and scale
+ 
+
+00:05:37.759 --> 00:05:40.150 align:start position:0%
+Now this function select and scale
+features<00:05:38.320><c> will</c><00:05:38.560><c> take</c><00:05:38.720><c> the</c><00:05:38.960><c> data</c><00:05:39.280><c> frame</c><00:05:39.840><c> and</c>
+
+00:05:40.150 --> 00:05:40.160 align:start position:0%
+features will take the data frame and
+ 
+
+00:05:40.160 --> 00:05:42.230 align:start position:0%
+features will take the data frame and
+the<00:05:40.400><c> names</c><00:05:40.720><c> of</c><00:05:40.880><c> the</c><00:05:41.120><c> features</c><00:05:41.440><c> or</c><00:05:41.680><c> the</c><00:05:41.840><c> columns</c>
+
+00:05:42.230 --> 00:05:42.240 align:start position:0%
+the names of the features or the columns
+ 
+
+00:05:42.240 --> 00:05:44.390 align:start position:0%
+the names of the features or the columns
+we<00:05:42.479><c> would</c><00:05:42.560><c> like</c><00:05:42.720><c> to</c><00:05:42.880><c> include</c><00:05:43.120><c> in</c><00:05:43.360><c> our</c><00:05:43.600><c> study.</c>
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+we would like to include in our study.
+ 
+
+00:05:44.400 --> 00:05:47.350 align:start position:0%
+we would like to include in our study.
+We're<00:05:44.639><c> going</c><00:05:44.880><c> to</c><00:05:45.840><c> uh</c><00:05:46.000><c> take</c><00:05:46.560><c> by</c><00:05:46.800><c> default</c><00:05:47.120><c> the</c>
+
+00:05:47.350 --> 00:05:47.360 align:start position:0%
+We're going to uh take by default the
+ 
+
+00:05:47.360 --> 00:05:49.749 align:start position:0%
+We're going to uh take by default the
+open<00:05:47.680><c> high</c><00:05:47.919><c> low</c><00:05:48.240><c> close</c><00:05:48.560><c> the</c><00:05:48.720><c> RSI</c><00:05:49.280><c> Ballinger</c>
+
+00:05:49.749 --> 00:05:49.759 align:start position:0%
+open high low close the RSI Ballinger
+ 
+
+00:05:49.759 --> 00:05:52.710 align:start position:0%
+open high low close the RSI Ballinger
+band<00:05:50.080><c> high</c><00:05:50.639><c> low</c><00:05:51.280><c> moving</c><00:05:51.600><c> average</c><00:05:52.080><c> 20</c><00:05:52.479><c> and</c>
+
+00:05:52.710 --> 00:05:52.720 align:start position:0%
+band high low moving average 20 and
+ 
+
+00:05:52.720 --> 00:05:55.110 align:start position:0%
+band high low moving average 20 and
+moving<00:05:53.120><c> average</c><00:05:53.759><c> 20</c><00:05:54.160><c> slope.</c><00:05:54.560><c> So</c><00:05:54.720><c> that's</c><00:05:54.880><c> the</c>
+
+00:05:55.110 --> 00:05:55.120 align:start position:0%
+moving average 20 slope. So that's the
+ 
+
+00:05:55.120 --> 00:05:57.430 align:start position:0%
+moving average 20 slope. So that's the
+slope<00:05:55.440><c> of</c><00:05:55.600><c> the</c><00:05:55.840><c> moving</c><00:05:56.160><c> average.</c><00:05:57.039><c> And</c><00:05:57.199><c> then</c>
+
+00:05:57.430 --> 00:05:57.440 align:start position:0%
+slope of the moving average. And then
+ 
+
+00:05:57.440 --> 00:05:59.830 align:start position:0%
+slope of the moving average. And then
+we're<00:05:57.680><c> going</c><00:05:57.840><c> to</c><00:05:58.000><c> apply</c><00:05:58.720><c> the</c><00:05:58.960><c> minimum</c><00:05:59.360><c> maximum</c>
+
+00:05:59.830 --> 00:05:59.840 align:start position:0%
+we're going to apply the minimum maximum
+ 
+
+00:05:59.840 --> 00:06:01.749 align:start position:0%
+we're going to apply the minimum maximum
+scaler<00:06:00.320><c> to</c><00:06:00.479><c> these</c><00:06:00.720><c> features</c><00:06:01.360><c> to</c><00:06:01.520><c> these</c>
+
+00:06:01.749 --> 00:06:01.759 align:start position:0%
+scaler to these features to these
+ 
+
+00:06:01.759 --> 00:06:04.029 align:start position:0%
+scaler to these features to these
+columns.<00:06:02.400><c> going</c><00:06:02.639><c> to</c><00:06:02.800><c> apply</c><00:06:03.120><c> the</c><00:06:03.440><c> uh</c><00:06:03.600><c> fit</c>
+
+00:06:04.029 --> 00:06:04.039 align:start position:0%
+columns. going to apply the uh fit
+ 
+
+00:06:04.039 --> 00:06:07.510 align:start position:0%
+columns. going to apply the uh fit
+transform<00:06:05.240><c> function</c><00:06:06.240><c> with</c><00:06:06.560><c> the</c><00:06:06.880><c> uh</c><00:06:07.120><c> scaler</c>
+
+00:06:07.510 --> 00:06:07.520 align:start position:0%
+transform function with the uh scaler
+ 
+
+00:06:07.520 --> 00:06:10.070 align:start position:0%
+transform function with the uh scaler
+the<00:06:07.680><c> minimum</c><00:06:08.000><c> maximum</c><00:06:08.400><c> scaler</c><00:06:08.880><c> on</c><00:06:09.120><c> the</c><00:06:09.280><c> data.</c>
+
+00:06:10.070 --> 00:06:10.080 align:start position:0%
+the minimum maximum scaler on the data.
+ 
+
+00:06:10.080 --> 00:06:13.110 align:start position:0%
+the minimum maximum scaler on the data.
+So<00:06:10.479><c> what</c><00:06:10.800><c> this</c><00:06:11.120><c> does</c><00:06:11.440><c> actually</c><00:06:11.759><c> it</c><00:06:12.000><c> will</c><00:06:12.240><c> scale</c>
+
+00:06:13.110 --> 00:06:13.120 align:start position:0%
+So what this does actually it will scale
+ 
+
+00:06:13.120 --> 00:06:16.390 align:start position:0%
+So what this does actually it will scale
+the<00:06:13.680><c> um</c><00:06:14.319><c> uh</c><00:06:14.400><c> the</c><00:06:14.639><c> values</c><00:06:14.960><c> of</c><00:06:15.199><c> these</c><00:06:15.440><c> columns</c><00:06:16.080><c> in</c>
+
+00:06:16.390 --> 00:06:16.400 align:start position:0%
+the um uh the values of these columns in
+ 
+
+00:06:16.400 --> 00:06:19.110 align:start position:0%
+the um uh the values of these columns in
+between<00:06:16.960><c> two</c><00:06:17.199><c> boundaries</c><00:06:17.919><c> so</c><00:06:18.160><c> that</c><00:06:18.319><c> no</c><00:06:18.639><c> column</c>
+
+00:06:19.110 --> 00:06:19.120 align:start position:0%
+between two boundaries so that no column
+ 
+
+00:06:19.120 --> 00:06:22.469 align:start position:0%
+between two boundaries so that no column
+takes<00:06:19.520><c> more</c><00:06:19.759><c> importance</c><00:06:20.240><c> or</c><00:06:20.560><c> more</c><00:06:20.800><c> weight.</c>
+
+00:06:22.469 --> 00:06:22.479 align:start position:0%
+takes more importance or more weight.
+ 
+
+00:06:22.479 --> 00:06:26.230 align:start position:0%
+takes more importance or more weight.
+Then<00:06:22.960><c> from</c><00:06:23.280><c> torch</c><00:06:24.280><c> utils</c><00:06:25.280><c> data</c><00:06:25.919><c> we're</c><00:06:26.160><c> going</c>
+
+00:06:26.230 --> 00:06:26.240 align:start position:0%
+Then from torch utils data we're going
+ 
+
+00:06:26.240 --> 00:06:30.070 align:start position:0%
+Then from torch utils data we're going
+to<00:06:26.400><c> import</c><00:06:26.960><c> data</c><00:06:27.440><c> set</c><00:06:27.759><c> and</c><00:06:28.080><c> data</c><00:06:28.600><c> loader</c><00:06:29.600><c> and</c>
+
+00:06:30.070 --> 00:06:30.080 align:start position:0%
+to import data set and data loader and
+ 
+
+00:06:30.080 --> 00:06:32.390 align:start position:0%
+to import data set and data loader and
+we're<00:06:30.400><c> going</c><00:06:30.560><c> to</c><00:06:30.720><c> define</c><00:06:31.120><c> a</c><00:06:31.360><c> new</c><00:06:31.600><c> class</c><00:06:32.080><c> forex</c>
+
+00:06:32.390 --> 00:06:32.400 align:start position:0%
+we're going to define a new class forex
+ 
+
+00:06:32.400 --> 00:06:35.189 align:start position:0%
+we're going to define a new class forex
+data<00:06:32.800><c> set</c><00:06:32.960><c> that</c><00:06:33.280><c> inherits</c><00:06:33.840><c> from</c><00:06:34.080><c> data</c><00:06:34.479><c> set.</c>
+
+00:06:35.189 --> 00:06:35.199 align:start position:0%
+data set that inherits from data set.
+ 
+
+00:06:35.199 --> 00:06:37.990 align:start position:0%
+data set that inherits from data set.
+This<00:06:35.440><c> is</c><00:06:35.600><c> basically</c><00:06:36.080><c> preparing</c><00:06:36.639><c> the</c><00:06:37.039><c> uh</c><00:06:37.360><c> data</c>
+
+00:06:37.990 --> 00:06:38.000 align:start position:0%
+This is basically preparing the uh data
+ 
+
+00:06:38.000 --> 00:06:40.710 align:start position:0%
+This is basically preparing the uh data
+so<00:06:38.240><c> that</c><00:06:38.479><c> it</c><00:06:38.800><c> can</c><00:06:39.039><c> be</c><00:06:39.520><c> understood</c><00:06:40.080><c> and</c><00:06:40.319><c> read</c>
+
+00:06:40.710 --> 00:06:40.720 align:start position:0%
+so that it can be understood and read
+ 
+
+00:06:40.720 --> 00:06:43.629 align:start position:0%
+so that it can be understood and read
+well<00:06:41.039><c> by</c><00:06:41.600><c> the</c><00:06:42.000><c> uh</c><00:06:42.160><c> transformer</c>
+
+00:06:43.629 --> 00:06:43.639 align:start position:0%
+well by the uh transformer
+ 
+
+00:06:43.639 --> 00:06:47.029 align:start position:0%
+well by the uh transformer
+model<00:06:44.639><c> and</c><00:06:45.120><c> these</c><00:06:45.919><c> parameters</c><00:06:46.479><c> actually</c><00:06:46.800><c> are</c>
+
+00:06:47.029 --> 00:06:47.039 align:start position:0%
+model and these parameters actually are
+ 
+
+00:06:47.039 --> 00:06:48.710 align:start position:0%
+model and these parameters actually are
+very<00:06:47.280><c> important</c><00:06:47.600><c> at</c><00:06:47.919><c> this</c><00:06:48.080><c> point.</c><00:06:48.319><c> So</c><00:06:48.479><c> the</c>
+
+00:06:48.710 --> 00:06:48.720 align:start position:0%
+very important at this point. So the
+ 
+
+00:06:48.720 --> 00:06:50.870 align:start position:0%
+very important at this point. So the
+sequence<00:06:49.199><c> length</c><00:06:49.520><c> is</c><00:06:49.840><c> by</c><00:06:50.080><c> default</c><00:06:50.400><c> it's</c><00:06:50.639><c> equal</c>
+
+00:06:50.870 --> 00:06:50.880 align:start position:0%
+sequence length is by default it's equal
+ 
+
+00:06:50.880 --> 00:06:53.270 align:start position:0%
+sequence length is by default it's equal
+to<00:06:51.120><c> 60.</c><00:06:51.680><c> That's</c><00:06:52.000><c> how</c><00:06:52.319><c> many</c><00:06:52.720><c> rows</c><00:06:52.880><c> we're</c><00:06:53.199><c> going</c>
+
+00:06:53.270 --> 00:06:53.280 align:start position:0%
+to 60. That's how many rows we're going
+ 
+
+00:06:53.280 --> 00:06:54.790 align:start position:0%
+to 60. That's how many rows we're going
+to<00:06:53.440><c> read.</c><00:06:53.759><c> The</c><00:06:53.919><c> transformer</c><00:06:54.319><c> is</c><00:06:54.560><c> going</c><00:06:54.720><c> to</c>
+
+00:06:54.790 --> 00:06:54.800 align:start position:0%
+to read. The transformer is going to
+ 
+
+00:06:54.800 --> 00:06:57.029 align:start position:0%
+to read. The transformer is going to
+read<00:06:55.039><c> before</c><00:06:55.360><c> trying</c><00:06:55.600><c> to</c><00:06:55.759><c> predict</c><00:06:56.160><c> the</c><00:06:56.479><c> next</c>
+
+00:06:57.029 --> 00:06:57.039 align:start position:0%
+read before trying to predict the next
+ 
+
+00:06:57.039 --> 00:06:59.749 align:start position:0%
+read before trying to predict the next
+row.<00:06:57.600><c> And</c><00:06:57.759><c> then</c><00:06:57.919><c> the</c><00:06:58.080><c> prediction</c><00:06:58.560><c> length</c><00:06:59.280><c> is</c>
+
+00:06:59.749 --> 00:06:59.759 align:start position:0%
+row. And then the prediction length is
+ 
+
+00:06:59.759 --> 00:07:01.909 align:start position:0%
+row. And then the prediction length is
+one.<00:07:00.240><c> So</c><00:07:00.400><c> we're</c><00:07:00.639><c> going</c><00:07:00.800><c> to</c><00:07:00.960><c> predict</c><00:07:01.599><c> one</c>
+
+00:07:01.909 --> 00:07:01.919 align:start position:0%
+one. So we're going to predict one
+ 
+
+00:07:01.919 --> 00:07:04.670 align:start position:0%
+one. So we're going to predict one
+candle<00:07:02.479><c> in</c><00:07:02.720><c> the</c><00:07:02.919><c> future.</c><00:07:03.919><c> The</c><00:07:04.160><c> feature</c>
+
+00:07:04.670 --> 00:07:04.680 align:start position:0%
+candle in the future. The feature
+ 
+
+00:07:04.680 --> 00:07:07.430 align:start position:0%
+candle in the future. The feature
+dimension<00:07:05.680><c> by</c><00:07:05.919><c> default</c><00:07:06.400><c> it's</c><00:07:06.720><c> equal</c><00:07:06.960><c> to</c><00:07:07.120><c> four.</c>
+
+00:07:07.430 --> 00:07:07.440 align:start position:0%
+dimension by default it's equal to four.
+ 
+
+00:07:07.440 --> 00:07:10.390 align:start position:0%
+dimension by default it's equal to four.
+But<00:07:07.599><c> it</c><00:07:07.759><c> can</c><00:07:07.919><c> be</c><00:07:08.080><c> changed</c><00:07:08.479><c> to</c><00:07:08.880><c> 9.</c><00:07:09.360><c> I</c><00:07:09.599><c> think</c><00:07:09.840><c> 1</c><00:07:10.160><c> 2</c>
+
+00:07:10.390 --> 00:07:10.400 align:start position:0%
+But it can be changed to 9. I think 1 2
+ 
+
+00:07:10.400 --> 00:07:14.390 align:start position:0%
+But it can be changed to 9. I think 1 2
+3<00:07:10.800><c> 4</c><00:07:11.199><c> 5</c><00:07:11.599><c> 6</c><00:07:11.919><c> 7</c><00:07:12.240><c> 8</c><00:07:12.560><c> 9.</c><00:07:12.880><c> So</c><00:07:13.039><c> we</c><00:07:13.199><c> have</c><00:07:13.360><c> nine</c><00:07:13.680><c> features</c>
+
+00:07:14.390 --> 00:07:14.400 align:start position:0%
+3 4 5 6 7 8 9. So we have nine features
+ 
+
+00:07:14.400 --> 00:07:16.790 align:start position:0%
+3 4 5 6 7 8 9. So we have nine features
+at<00:07:14.720><c> this</c><00:07:14.880><c> point</c><00:07:15.120><c> that</c><00:07:15.360><c> we</c><00:07:15.599><c> can</c><00:07:15.919><c> choose</c><00:07:16.240><c> to</c><00:07:16.479><c> use</c>
+
+00:07:16.790 --> 00:07:16.800 align:start position:0%
+at this point that we can choose to use
+ 
+
+00:07:16.800 --> 00:07:18.870 align:start position:0%
+at this point that we can choose to use
+part<00:07:17.039><c> of</c><00:07:17.199><c> these</c><00:07:17.520><c> or</c><00:07:17.840><c> all</c><00:07:18.080><c> of</c><00:07:18.240><c> these</c><00:07:18.479><c> at</c><00:07:18.720><c> the</c>
+
+00:07:18.870 --> 00:07:18.880 align:start position:0%
+part of these or all of these at the
+ 
+
+00:07:18.880 --> 00:07:21.589 align:start position:0%
+part of these or all of these at the
+same<00:07:19.039><c> time.</c><00:07:19.680><c> And</c><00:07:19.840><c> then</c><00:07:20.000><c> the</c><00:07:20.240><c> target</c><00:07:20.960><c> column</c>
+
+00:07:21.589 --> 00:07:21.599 align:start position:0%
+same time. And then the target column
+ 
+
+00:07:21.599 --> 00:07:24.629 align:start position:0%
+same time. And then the target column
+index<00:07:22.160><c> is</c><00:07:22.479><c> three</c><00:07:23.360><c> because</c><00:07:24.000><c> we're</c><00:07:24.240><c> going</c><00:07:24.400><c> to</c>
+
+00:07:24.629 --> 00:07:24.639 align:start position:0%
+index is three because we're going to
+ 
+
+00:07:24.639 --> 00:07:26.550 align:start position:0%
+index is three because we're going to
+target<00:07:24.960><c> the</c><00:07:25.280><c> closing</c><00:07:25.599><c> price.</c><00:07:26.000><c> So</c><00:07:26.160><c> what</c><00:07:26.319><c> we're</c>
+
+00:07:26.550 --> 00:07:26.560 align:start position:0%
+target the closing price. So what we're
+ 
+
+00:07:26.560 --> 00:07:28.390 align:start position:0%
+target the closing price. So what we're
+going<00:07:26.639><c> to</c><00:07:26.800><c> predict</c><00:07:27.199><c> is</c><00:07:27.440><c> actually</c><00:07:27.759><c> the</c><00:07:28.000><c> closing</c>
+
+00:07:28.390 --> 00:07:28.400 align:start position:0%
+going to predict is actually the closing
+ 
+
+00:07:28.400 --> 00:07:31.469 align:start position:0%
+going to predict is actually the closing
+price<00:07:28.800><c> of</c><00:07:29.520><c> the</c><00:07:29.759><c> very</c><00:07:30.080><c> next</c><00:07:30.319><c> candle.</c><00:07:31.199><c> We're</c>
+
+00:07:31.469 --> 00:07:31.479 align:start position:0%
+price of the very next candle. We're
+ 
+
+00:07:31.479 --> 00:07:34.150 align:start position:0%
+price of the very next candle. We're
+just<00:07:32.479><c> applying</c><00:07:33.039><c> one</c><00:07:33.280><c> candle</c><00:07:33.680><c> in</c><00:07:33.840><c> the</c><00:07:33.919><c> future</c>
+
+00:07:34.150 --> 00:07:34.160 align:start position:0%
+just applying one candle in the future
+ 
+
+00:07:34.160 --> 00:07:36.390 align:start position:0%
+just applying one candle in the future
+for<00:07:34.479><c> prediction</c><00:07:34.880><c> length</c><00:07:35.759><c> and</c><00:07:36.000><c> then</c><00:07:36.160><c> we're</c>
+
+00:07:36.390 --> 00:07:36.400 align:start position:0%
+for prediction length and then we're
+ 
+
+00:07:36.400 --> 00:07:38.309 align:start position:0%
+for prediction length and then we're
+going<00:07:36.479><c> to</c><00:07:36.639><c> predict</c><00:07:37.039><c> the</c><00:07:37.360><c> closing</c><00:07:37.759><c> price</c><00:07:38.080><c> of</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+going to predict the closing price of
+ 
+
+00:07:38.319 --> 00:07:39.710 align:start position:0%
+going to predict the closing price of
+that<00:07:38.639><c> particular</c>
+
+00:07:39.710 --> 00:07:39.720 align:start position:0%
+that particular
+ 
+
+00:07:39.720 --> 00:07:42.150 align:start position:0%
+that particular
+candle.<00:07:40.720><c> And</c><00:07:40.880><c> then</c><00:07:41.120><c> that's</c><00:07:41.360><c> it.</c><00:07:41.759><c> Actually</c>
+
+00:07:42.150 --> 00:07:42.160 align:start position:0%
+candle. And then that's it. Actually
+ 
+
+00:07:42.160 --> 00:07:45.510 align:start position:0%
+candle. And then that's it. Actually
+this<00:07:42.400><c> is</c><00:07:42.479><c> the</c><00:07:42.720><c> data</c><00:07:43.440><c> defined</c><00:07:43.840><c> here</c><00:07:44.720><c> and</c><00:07:45.360><c> uh</c>
+
+00:07:45.510 --> 00:07:45.520 align:start position:0%
+this is the data defined here and uh
+ 
+
+00:07:45.520 --> 00:07:48.550 align:start position:0%
+this is the data defined here and uh
+we're<00:07:45.840><c> going</c><00:07:46.080><c> to</c><00:07:46.960><c> uh</c><00:07:47.120><c> define</c><00:07:47.440><c> the</c><00:07:47.759><c> x</c><00:07:48.240><c> the</c>
+
+00:07:48.550 --> 00:07:48.560 align:start position:0%
+we're going to uh define the x the
+ 
+
+00:07:48.560 --> 00:07:51.189 align:start position:0%
+we're going to uh define the x the
+input.<00:07:49.120><c> So</c><00:07:49.440><c> that's</c><00:07:49.759><c> the</c><00:07:50.000><c> sequence</c><00:07:50.639><c> that</c><00:07:50.960><c> we're</c>
+
+00:07:51.189 --> 00:07:51.199 align:start position:0%
+input. So that's the sequence that we're
+ 
+
+00:07:51.199 --> 00:07:53.189 align:start position:0%
+input. So that's the sequence that we're
+looking<00:07:51.440><c> to</c><00:07:51.680><c> the</c><00:07:51.919><c> cro</c><00:07:52.400><c> closing</c><00:07:52.800><c> prices</c>
+
+00:07:53.189 --> 00:07:53.199 align:start position:0%
+looking to the cro closing prices
+ 
+
+00:07:53.199 --> 00:07:55.430 align:start position:0%
+looking to the cro closing prices
+actually<00:07:53.440><c> of</c><00:07:53.680><c> the</c><00:07:53.840><c> last</c><00:07:54.160><c> 60</c><00:07:54.720><c> candles</c><00:07:55.199><c> by</c>
+
+00:07:55.430 --> 00:07:55.440 align:start position:0%
+actually of the last 60 candles by
+ 
+
+00:07:55.440 --> 00:07:58.869 align:start position:0%
+actually of the last 60 candles by
+default.<00:07:56.319><c> So</c><00:07:56.560><c> that's</c><00:07:56.879><c> the</c><00:07:57.280><c> uh</c><00:07:57.520><c> x</c><00:07:57.840><c> part</c><00:07:58.479><c> and</c><00:07:58.720><c> the</c>
+
+00:07:58.869 --> 00:07:58.879 align:start position:0%
+default. So that's the uh x part and the
+ 
+
+00:07:58.879 --> 00:08:02.629 align:start position:0%
+default. So that's the uh x part and the
+y<00:07:59.199><c> part</c><00:07:59.759><c> the</c><00:08:00.000><c> future</c><00:08:00.400><c> price</c><00:08:01.280><c> is</c><00:08:01.599><c> the</c><00:08:01.759><c> very</c><00:08:02.000><c> next</c>
+
+00:08:02.629 --> 00:08:02.639 align:start position:0%
+y part the future price is the very next
+ 
+
+00:08:02.639 --> 00:08:05.430 align:start position:0%
+y part the future price is the very next
+uh<00:08:02.800><c> candle</c><00:08:03.280><c> closing</c><00:08:03.680><c> price.</c><00:08:04.560><c> So</c><00:08:04.879><c> we're</c><00:08:05.199><c> going</c>
+
+00:08:05.430 --> 00:08:05.440 align:start position:0%
+uh candle closing price. So we're going
+ 
+
+00:08:05.440 --> 00:08:08.469 align:start position:0%
+uh candle closing price. So we're going
+to<00:08:05.919><c> put</c><00:08:06.160><c> these</c><00:08:06.560><c> as</c><00:08:06.879><c> labels</c><00:08:07.360><c> for</c><00:08:07.599><c> the</c><00:08:07.840><c> training.</c>
+
+00:08:08.469 --> 00:08:08.479 align:start position:0%
+to put these as labels for the training.
+ 
+
+00:08:08.479 --> 00:08:11.350 align:start position:0%
+to put these as labels for the training.
+The<00:08:08.720><c> model</c><00:08:09.120><c> will</c><00:08:09.360><c> be</c><00:08:09.680><c> uh</c><00:08:10.080><c> looking</c><00:08:10.400><c> at</c><00:08:10.639><c> X</c><00:08:11.120><c> but</c>
+
+00:08:11.350 --> 00:08:11.360 align:start position:0%
+The model will be uh looking at X but
+ 
+
+00:08:11.360 --> 00:08:15.589 align:start position:0%
+The model will be uh looking at X but
+also<00:08:11.680><c> at</c><00:08:11.919><c> Y</c><00:08:12.720><c> values</c><00:08:13.520><c> to</c><00:08:13.759><c> learn</c><00:08:14.160><c> and</c><00:08:14.479><c> fit</c><00:08:15.360><c> what</c>
+
+00:08:15.589 --> 00:08:15.599 align:start position:0%
+also at Y values to learn and fit what
+ 
+
+00:08:15.599 --> 00:08:17.670 align:start position:0%
+also at Y values to learn and fit what
+kind<00:08:15.759><c> of</c><00:08:15.919><c> sequences</c><00:08:16.479><c> will</c><00:08:16.720><c> yield</c><00:08:17.120><c> what</c><00:08:17.360><c> kind</c>
+
+00:08:17.670 --> 00:08:17.680 align:start position:0%
+kind of sequences will yield what kind
+ 
+
+00:08:17.680 --> 00:08:20.469 align:start position:0%
+kind of sequences will yield what kind
+of<00:08:18.000><c> future</c><00:08:18.400><c> price</c><00:08:18.720><c> or</c><00:08:18.960><c> closing</c><00:08:19.360><c> prices</c><00:08:20.240><c> and</c>
+
+00:08:20.469 --> 00:08:20.479 align:start position:0%
+of future price or closing prices and
+ 
+
+00:08:20.479 --> 00:08:22.950 align:start position:0%
+of future price or closing prices and
+then<00:08:21.280><c> when</c><00:08:21.520><c> we</c><00:08:21.759><c> are</c><00:08:21.919><c> validating</c><00:08:22.400><c> or</c><00:08:22.639><c> testing</c>
+
+00:08:22.950 --> 00:08:22.960 align:start position:0%
+then when we are validating or testing
+ 
+
+00:08:22.960 --> 00:08:25.749 align:start position:0%
+then when we are validating or testing
+the<00:08:23.199><c> model</c><00:08:23.599><c> we</c><00:08:23.840><c> just</c><00:08:24.080><c> provide</c><00:08:24.960><c> the</c><00:08:25.280><c> previous</c>
+
+00:08:25.749 --> 00:08:25.759 align:start position:0%
+the model we just provide the previous
+ 
+
+00:08:25.759 --> 00:08:27.670 align:start position:0%
+the model we just provide the previous
+sequences<00:08:26.479><c> and</c><00:08:26.720><c> then</c><00:08:26.879><c> the</c><00:08:27.039><c> model</c><00:08:27.360><c> has</c><00:08:27.520><c> to</c>
+
+00:08:27.670 --> 00:08:27.680 align:start position:0%
+sequences and then the model has to
+ 
+
+00:08:27.680 --> 00:08:29.830 align:start position:0%
+sequences and then the model has to
+guess<00:08:28.000><c> the</c><00:08:28.240><c> future</c><00:08:28.560><c> price.</c><00:08:29.199><c> So</c><00:08:29.440><c> for</c><00:08:29.680><c> the</c>
+
+00:08:29.830 --> 00:08:29.840 align:start position:0%
+guess the future price. So for the
+ 
+
+00:08:29.840 --> 00:08:31.510 align:start position:0%
+guess the future price. So for the
+training<00:08:30.240><c> phase</c><00:08:30.560><c> though</c><00:08:30.800><c> we</c><00:08:30.960><c> need</c><00:08:31.120><c> to</c><00:08:31.280><c> provide</c>
+
+00:08:31.510 --> 00:08:31.520 align:start position:0%
+training phase though we need to provide
+ 
+
+00:08:31.520 --> 00:08:33.269 align:start position:0%
+training phase though we need to provide
+the<00:08:31.680><c> labels.</c><00:08:32.159><c> This</c><00:08:32.320><c> is</c><00:08:32.399><c> called</c><00:08:32.640><c> supervised</c>
+
+00:08:33.269 --> 00:08:33.279 align:start position:0%
+the labels. This is called supervised
+ 
+
+00:08:33.279 --> 00:08:36.790 align:start position:0%
+the labels. This is called supervised
+learning<00:08:33.680><c> in</c><00:08:34.399><c> uh</c><00:08:34.560><c> machine</c><00:08:34.880><c> learning.</c>
+
+00:08:36.790 --> 00:08:36.800 align:start position:0%
+learning in uh machine learning.
+ 
+
+00:08:36.800 --> 00:08:39.829 align:start position:0%
+learning in uh machine learning.
+And<00:08:37.039><c> notice</c><00:08:37.599><c> the</c><00:08:37.919><c> return</c><00:08:38.320><c> format</c><00:08:38.800><c> is</c><00:08:38.959><c> a</c><00:08:39.200><c> torch</c>
+
+00:08:39.829 --> 00:08:39.839 align:start position:0%
+And notice the return format is a torch
+ 
+
+00:08:39.839 --> 00:08:42.550 align:start position:0%
+And notice the return format is a torch
+tensor.<00:08:40.479><c> So</c><00:08:40.640><c> we're</c><00:08:40.880><c> not</c><00:08:41.039><c> working</c><00:08:41.360><c> with</c><00:08:41.599><c> numpy</c>
+
+00:08:42.550 --> 00:08:42.560 align:start position:0%
+tensor. So we're not working with numpy
+ 
+
+00:08:42.560 --> 00:08:44.870 align:start position:0%
+tensor. So we're not working with numpy
+arrays<00:08:43.039><c> anymore.</c><00:08:43.680><c> We're</c><00:08:43.919><c> just</c><00:08:44.159><c> using</c><00:08:44.480><c> torch</c>
+
+00:08:44.870 --> 00:08:44.880 align:start position:0%
+arrays anymore. We're just using torch
+ 
+
+00:08:44.880 --> 00:08:47.269 align:start position:0%
+arrays anymore. We're just using torch
+tensors<00:08:45.360><c> because</c><00:08:45.600><c> this</c><00:08:45.760><c> is</c><00:08:45.920><c> what</c><00:08:46.080><c> we</c><00:08:46.320><c> will</c><00:08:46.480><c> be</c>
+
+00:08:47.269 --> 00:08:47.279 align:start position:0%
+tensors because this is what we will be
+ 
+
+00:08:47.279 --> 00:08:51.230 align:start position:0%
+tensors because this is what we will be
+um<00:08:48.080><c> providing</c><00:08:48.560><c> for</c><00:08:48.800><c> the</c><00:08:49.040><c> transformer</c><00:08:49.760><c> neural</c>
+
+00:08:51.230 --> 00:08:51.240 align:start position:0%
+um providing for the transformer neural
+ 
+
+00:08:51.240 --> 00:08:53.829 align:start position:0%
+um providing for the transformer neural
+networks.<00:08:52.240><c> Okay.</c><00:08:52.640><c> And</c><00:08:52.800><c> now</c><00:08:52.959><c> we</c><00:08:53.120><c> will</c><00:08:53.279><c> define</c>
+
+00:08:53.829 --> 00:08:53.839 align:start position:0%
+networks. Okay. And now we will define
+ 
+
+00:08:53.839 --> 00:08:57.430 align:start position:0%
+networks. Okay. And now we will define
+our<00:08:54.240><c> transformer</c><00:08:55.040><c> model.</c><00:08:55.920><c> So</c><00:08:56.560><c> the</c><00:08:56.880><c> class</c><00:08:57.120><c> is</c>
+
+00:08:57.430 --> 00:08:57.440 align:start position:0%
+our transformer model. So the class is
+ 
+
+00:08:57.440 --> 00:08:59.829 align:start position:0%
+our transformer model. So the class is
+time<00:08:57.680><c> series</c><00:08:58.120><c> transformer.</c><00:08:59.120><c> It</c><00:08:59.279><c> inherits</c>
+
+00:08:59.829 --> 00:08:59.839 align:start position:0%
+time series transformer. It inherits
+ 
+
+00:08:59.839 --> 00:09:03.190 align:start position:0%
+time series transformer. It inherits
+from<00:09:00.080><c> neural</c><00:09:01.000><c> networks.module</c><00:09:02.000><c> from</c><00:09:02.320><c> torch.</c>
+
+00:09:03.190 --> 00:09:03.200 align:start position:0%
+from neural networks.module from torch.
+ 
+
+00:09:03.200 --> 00:09:05.670 align:start position:0%
+from neural networks.module from torch.
+And<00:09:03.440><c> these</c><00:09:03.680><c> are</c><00:09:03.839><c> the</c><00:09:04.000><c> parameters</c><00:09:04.640><c> of</c><00:09:05.120><c> the</c><00:09:05.440><c> uh</c>
+
+00:09:05.670 --> 00:09:05.680 align:start position:0%
+And these are the parameters of the uh
+ 
+
+00:09:05.680 --> 00:09:07.509 align:start position:0%
+And these are the parameters of the uh
+transformer.<00:09:06.240><c> So</c><00:09:06.480><c> the</c><00:09:06.640><c> feature</c><00:09:06.959><c> size</c><00:09:07.279><c> is</c>
+
+00:09:07.509 --> 00:09:07.519 align:start position:0%
+transformer. So the feature size is
+ 
+
+00:09:07.519 --> 00:09:09.509 align:start position:0%
+transformer. So the feature size is
+nine.<00:09:08.000><c> Remember</c><00:09:08.240><c> we</c><00:09:08.480><c> have</c><00:09:08.560><c> nine</c><00:09:08.800><c> features</c><00:09:09.279><c> by</c>
+
+00:09:09.509 --> 00:09:09.519 align:start position:0%
+nine. Remember we have nine features by
+ 
+
+00:09:09.519 --> 00:09:12.790 align:start position:0%
+nine. Remember we have nine features by
+default.<00:09:10.399><c> Uh</c><00:09:10.640><c> we</c><00:09:10.880><c> have</c><00:09:11.120><c> two</c><00:09:11.600><c> hidden</c><00:09:12.160><c> layers</c><00:09:12.560><c> of</c>
+
+00:09:12.790 --> 00:09:12.800 align:start position:0%
+default. Uh we have two hidden layers of
+ 
+
+00:09:12.800 --> 00:09:17.030 align:start position:0%
+default. Uh we have two hidden layers of
+neural<00:09:13.200><c> networks.</c><00:09:13.839><c> We</c><00:09:14.080><c> have</c><00:09:14.240><c> a</c><00:09:14.640><c> dmodel</c><00:09:15.600><c> of</c><00:09:16.040><c> 64.</c>
+
+00:09:17.030 --> 00:09:17.040 align:start position:0%
+neural networks. We have a dmodel of 64.
+ 
+
+00:09:17.040 --> 00:09:20.150 align:start position:0%
+neural networks. We have a dmodel of 64.
+Number<00:09:17.279><c> of</c><00:09:17.519><c> heads</c><00:09:18.000><c> 8.</c><00:09:18.959><c> The</c><00:09:19.360><c> dimensional</c><00:09:19.839><c> feed</c>
+
+00:09:20.150 --> 00:09:20.160 align:start position:0%
+Number of heads 8. The dimensional feed
+ 
+
+00:09:20.160 --> 00:09:23.509 align:start position:0%
+Number of heads 8. The dimensional feed
+forward<00:09:20.480><c> is</c><00:09:20.920><c> 256.</c><00:09:21.920><c> Now</c><00:09:22.080><c> if</c><00:09:22.399><c> you</c><00:09:22.800><c> have</c><00:09:23.120><c> noticed</c>
+
+00:09:23.509 --> 00:09:23.519 align:start position:0%
+forward is 256. Now if you have noticed
+ 
+
+00:09:23.519 --> 00:09:30.430 align:start position:0%
+forward is 256. Now if you have noticed
+that<00:09:23.920><c> 8</c><00:09:24.399><c> *</c><00:09:24.880><c> 8</c><00:09:25.200><c> is</c><00:09:25.440><c> 64.</c><00:09:26.160><c> 64</c><00:09:26.920><c> *</c><00:09:27.920><c> 4</c><00:09:28.720><c> is</c>
+
+00:09:30.430 --> 00:09:30.440 align:start position:0%
+that 8 * 8 is 64. 64 * 4 is
+ 
+
+00:09:30.440 --> 00:09:34.070 align:start position:0%
+that 8 * 8 is 64. 64 * 4 is
+256.<00:09:31.440><c> And</c><00:09:31.600><c> they</c><00:09:31.839><c> are</c><00:09:32.160><c> all</c><00:09:32.880><c> multiples</c><00:09:33.440><c> of</c><00:09:33.760><c> two.</c>
+
+00:09:34.070 --> 00:09:34.080 align:start position:0%
+256. And they are all multiples of two.
+ 
+
+00:09:34.080 --> 00:09:36.470 align:start position:0%
+256. And they are all multiples of two.
+These<00:09:34.399><c> are</c><00:09:34.560><c> the</c><00:09:34.800><c> rule</c><00:09:35.120><c> of</c><00:09:35.279><c> thumbs</c><00:09:36.000><c> actually</c>
+
+00:09:36.470 --> 00:09:36.480 align:start position:0%
+These are the rule of thumbs actually
+ 
+
+00:09:36.480 --> 00:09:39.509 align:start position:0%
+These are the rule of thumbs actually
+followed<00:09:36.959><c> by</c><00:09:37.839><c> data</c><00:09:38.160><c> scientists</c><00:09:38.720><c> and</c><00:09:39.040><c> AI</c>
+
+00:09:39.509 --> 00:09:39.519 align:start position:0%
+followed by data scientists and AI
+ 
+
+00:09:39.519 --> 00:09:42.150 align:start position:0%
+followed by data scientists and AI
+engineers<00:09:40.160><c> while</c><00:09:40.480><c> defining</c><00:09:41.040><c> such</c><00:09:41.360><c> kind</c><00:09:41.600><c> of</c><00:09:42.000><c> uh</c>
+
+00:09:42.150 --> 00:09:42.160 align:start position:0%
+engineers while defining such kind of uh
+ 
+
+00:09:42.160 --> 00:09:44.230 align:start position:0%
+engineers while defining such kind of uh
+neural<00:09:42.560><c> network</c><00:09:42.959><c> architectures.</c><00:09:43.839><c> Now</c><00:09:44.080><c> there</c>
+
+00:09:44.230 --> 00:09:44.240 align:start position:0%
+neural network architectures. Now there
+ 
+
+00:09:44.240 --> 00:09:46.550 align:start position:0%
+neural network architectures. Now there
+is<00:09:44.480><c> no</c><00:09:44.640><c> theory</c><00:09:45.120><c> behind</c><00:09:45.760><c> there</c><00:09:46.000><c> is</c><00:09:46.080><c> no</c><00:09:46.320><c> clear</c>
+
+00:09:46.550 --> 00:09:46.560 align:start position:0%
+is no theory behind there is no clear
+ 
+
+00:09:46.560 --> 00:09:49.590 align:start position:0%
+is no theory behind there is no clear
+theory<00:09:46.959><c> behind</c><00:09:47.440><c> actually</c><00:09:48.160><c> but</c><00:09:48.800><c> these</c><00:09:49.120><c> are</c>
+
+00:09:49.590 --> 00:09:49.600 align:start position:0%
+theory behind actually but these are
+ 
+
+00:09:49.600 --> 00:09:52.470 align:start position:0%
+theory behind actually but these are
+good<00:09:50.000><c> values</c><00:09:50.560><c> for</c><00:09:50.880><c> this</c><00:09:51.200><c> kind</c><00:09:51.440><c> of</c><00:09:51.600><c> study.</c><00:09:52.240><c> Now</c>
+
+00:09:52.470 --> 00:09:52.480 align:start position:0%
+good values for this kind of study. Now
+ 
+
+00:09:52.480 --> 00:09:54.710 align:start position:0%
+good values for this kind of study. Now
+we<00:09:52.720><c> can</c><00:09:53.200><c> increase</c><00:09:53.600><c> one</c><00:09:53.839><c> of</c><00:09:54.000><c> these</c><00:09:54.320><c> but</c><00:09:54.560><c> we</c>
+
+00:09:54.710 --> 00:09:54.720 align:start position:0%
+we can increase one of these but we
+ 
+
+00:09:54.720 --> 00:09:56.310 align:start position:0%
+we can increase one of these but we
+would<00:09:54.880><c> have</c><00:09:55.040><c> to</c><00:09:55.279><c> increase</c><00:09:55.519><c> the</c><00:09:55.760><c> others.</c><00:09:56.080><c> It's</c>
+
+00:09:56.310 --> 00:09:56.320 align:start position:0%
+would have to increase the others. It's
+ 
+
+00:09:56.320 --> 00:09:59.509 align:start position:0%
+would have to increase the others. It's
+not<00:09:56.480><c> mandatory</c><00:09:57.120><c> but</c><00:09:57.440><c> it</c><00:09:57.680><c> is</c><00:09:58.240><c> recommended.</c>
+
+00:09:59.509 --> 00:09:59.519 align:start position:0%
+not mandatory but it is recommended.
+ 
+
+00:09:59.519 --> 00:10:01.829 align:start position:0%
+not mandatory but it is recommended.
+Then<00:10:00.080><c> in</c><00:10:00.320><c> order</c><00:10:00.560><c> then</c><00:10:00.880><c> in</c><00:10:01.120><c> order</c><00:10:01.200><c> to</c><00:10:01.440><c> avoid</c>
+
+00:10:01.829 --> 00:10:01.839 align:start position:0%
+Then in order then in order to avoid
+ 
+
+00:10:01.839 --> 00:10:04.630 align:start position:0%
+Then in order then in order to avoid
+overfitting<00:10:02.480><c> we</c><00:10:02.640><c> have</c><00:10:02.720><c> a</c><00:10:02.880><c> dropout</c><00:10:03.200><c> of</c><00:10:03.640><c> 0.1.</c>
+
+00:10:04.630 --> 00:10:04.640 align:start position:0%
+overfitting we have a dropout of 0.1.
+ 
+
+00:10:04.640 --> 00:10:07.110 align:start position:0%
+overfitting we have a dropout of 0.1.
+Sequence<00:10:05.200><c> length</c><00:10:05.680><c> I've</c><00:10:05.920><c> shortened</c><00:10:06.240><c> it</c><00:10:06.399><c> to</c><00:10:06.720><c> 30</c>
+
+00:10:07.110 --> 00:10:07.120 align:start position:0%
+Sequence length I've shortened it to 30
+ 
+
+00:10:07.120 --> 00:10:09.990 align:start position:0%
+Sequence length I've shortened it to 30
+here<00:10:07.519><c> instead</c><00:10:07.839><c> of</c><00:10:08.080><c> 60</c><00:10:08.800><c> to</c><00:10:09.120><c> make</c><00:10:09.360><c> things</c><00:10:09.600><c> a</c><00:10:09.839><c> bit</c>
+
+00:10:09.990 --> 00:10:10.000 align:start position:0%
+here instead of 60 to make things a bit
+ 
+
+00:10:10.000 --> 00:10:11.829 align:start position:0%
+here instead of 60 to make things a bit
+faster<00:10:10.320><c> while</c><00:10:10.720><c> training</c><00:10:11.120><c> and</c><00:10:11.360><c> using</c><00:10:11.600><c> the</c>
+
+00:10:11.829 --> 00:10:11.839 align:start position:0%
+faster while training and using the
+ 
+
+00:10:11.839 --> 00:10:14.069 align:start position:0%
+faster while training and using the
+model.<00:10:12.320><c> And</c><00:10:12.480><c> the</c><00:10:12.720><c> prediction</c><00:10:13.279><c> length</c><00:10:13.760><c> is</c>
+
+00:10:14.069 --> 00:10:14.079 align:start position:0%
+model. And the prediction length is
+ 
+
+00:10:14.079 --> 00:10:15.750 align:start position:0%
+model. And the prediction length is
+equal<00:10:14.399><c> to</c><00:10:14.560><c> one</c><00:10:14.800><c> because</c><00:10:15.040><c> we're</c><00:10:15.279><c> predicting</c>
+
+00:10:15.750 --> 00:10:15.760 align:start position:0%
+equal to one because we're predicting
+ 
+
+00:10:15.760 --> 00:10:19.110 align:start position:0%
+equal to one because we're predicting
+just<00:10:16.320><c> one</c><00:10:16.880><c> step</c><00:10:17.200><c> ahead</c><00:10:18.160><c> not</c><00:10:18.320><c> more</c><00:10:18.560><c> than</c><00:10:18.800><c> that.</c>
+
+00:10:19.110 --> 00:10:19.120 align:start position:0%
+just one step ahead not more than that.
+ 
+
+00:10:19.120 --> 00:10:20.949 align:start position:0%
+just one step ahead not more than that.
+So<00:10:19.279><c> we're</c><00:10:19.519><c> going</c><00:10:19.600><c> to</c><00:10:19.839><c> predict</c><00:10:20.320><c> just</c><00:10:20.640><c> one</c>
+
+00:10:20.949 --> 00:10:20.959 align:start position:0%
+So we're going to predict just one
+ 
+
+00:10:20.959 --> 00:10:25.509 align:start position:0%
+So we're going to predict just one
+value.<00:10:21.680><c> Remember</c><00:10:22.279><c> that</c><00:10:23.279><c> in</c><00:10:23.600><c> chat</c><00:10:24.120><c> GPT</c><00:10:25.120><c> it</c><00:10:25.360><c> can</c>
+
+00:10:25.509 --> 00:10:25.519 align:start position:0%
+value. Remember that in chat GPT it can
+ 
+
+00:10:25.519 --> 00:10:27.829 align:start position:0%
+value. Remember that in chat GPT it can
+predict<00:10:25.920><c> a</c><00:10:26.240><c> sequence</c><00:10:26.800><c> which</c><00:10:27.040><c> is</c><00:10:27.200><c> a</c><00:10:27.440><c> sentence.</c>
+
+00:10:27.829 --> 00:10:27.839 align:start position:0%
+predict a sequence which is a sentence.
+ 
+
+00:10:27.839 --> 00:10:30.150 align:start position:0%
+predict a sequence which is a sentence.
+So<00:10:28.079><c> you</c><00:10:28.320><c> write</c><00:10:28.560><c> five</c><00:10:28.880><c> or</c><00:10:29.120><c> six</c><00:10:29.360><c> words</c><00:10:29.680><c> and</c><00:10:29.920><c> it's</c>
+
+00:10:30.150 --> 00:10:30.160 align:start position:0%
+So you write five or six words and it's
+ 
+
+00:10:30.160 --> 00:10:32.790 align:start position:0%
+So you write five or six words and it's
+going<00:10:30.399><c> to</c><00:10:31.120><c> uh</c><00:10:31.279><c> predict</c><00:10:31.680><c> the</c><00:10:31.920><c> next</c><00:10:32.240><c> six</c><00:10:32.560><c> or</c>
+
+00:10:32.790 --> 00:10:32.800 align:start position:0%
+going to uh predict the next six or
+ 
+
+00:10:32.800 --> 00:10:35.269 align:start position:0%
+going to uh predict the next six or
+seven<00:10:33.120><c> words.</c><00:10:34.000><c> We're</c><00:10:34.320><c> trying</c><00:10:34.560><c> to</c><00:10:34.800><c> predict</c>
+
+00:10:35.269 --> 00:10:35.279 align:start position:0%
+seven words. We're trying to predict
+ 
+
+00:10:35.279 --> 00:10:38.150 align:start position:0%
+seven words. We're trying to predict
+only<00:10:35.839><c> one</c><00:10:36.240><c> future</c><00:10:36.720><c> value</c><00:10:37.040><c> here</c><00:10:37.279><c> to</c><00:10:37.600><c> make</c><00:10:37.680><c> it</c><00:10:37.920><c> as</c>
+
+00:10:38.150 --> 00:10:38.160 align:start position:0%
+only one future value here to make it as
+ 
+
+00:10:38.160 --> 00:10:40.710 align:start position:0%
+only one future value here to make it as
+simple<00:10:38.480><c> as</c><00:10:38.720><c> possible.</c><00:10:39.600><c> Now</c><00:10:39.920><c> I</c><00:10:40.079><c> will</c><00:10:40.240><c> not</c><00:10:40.480><c> go</c>
+
+00:10:40.710 --> 00:10:40.720 align:start position:0%
+simple as possible. Now I will not go
+ 
+
+00:10:40.720 --> 00:10:43.190 align:start position:0%
+simple as possible. Now I will not go
+through<00:10:41.040><c> all</c><00:10:41.279><c> the</c><00:10:41.519><c> technical</c><00:10:42.079><c> details</c><00:10:42.640><c> here.</c>
+
+00:10:43.190 --> 00:10:43.200 align:start position:0%
+through all the technical details here.
+ 
+
+00:10:43.200 --> 00:10:45.910 align:start position:0%
+through all the technical details here.
+But<00:10:43.360><c> this</c><00:10:43.519><c> is</c><00:10:43.680><c> where</c><00:10:43.920><c> our</c><00:10:44.440><c> transformer</c><00:10:45.440><c> is</c>
+
+00:10:45.910 --> 00:10:45.920 align:start position:0%
+But this is where our transformer is
+ 
+
+00:10:45.920 --> 00:10:48.870 align:start position:0%
+But this is where our transformer is
+defined<00:10:46.480><c> using</c><00:10:47.399><c> PyTorch.</c><00:10:48.399><c> So</c><00:10:48.560><c> that's</c>
+
+00:10:48.870 --> 00:10:48.880 align:start position:0%
+defined using PyTorch. So that's
+ 
+
+00:10:48.880 --> 00:10:51.430 align:start position:0%
+defined using PyTorch. So that's
+basically<00:10:49.279><c> the</c><00:10:49.519><c> encoder</c><00:10:50.399><c> here</c><00:10:50.800><c> with</c><00:10:51.040><c> all</c><00:10:51.200><c> the</c>
+
+00:10:51.430 --> 00:10:51.440 align:start position:0%
+basically the encoder here with all the
+ 
+
+00:10:51.440 --> 00:10:53.350 align:start position:0%
+basically the encoder here with all the
+parameters.<00:10:52.079><c> So</c><00:10:52.240><c> the</c><00:10:52.480><c> number</c><00:10:52.640><c> of</c><00:10:52.959><c> layers,</c>
+
+00:10:53.350 --> 00:10:53.360 align:start position:0%
+parameters. So the number of layers,
+ 
+
+00:10:53.360 --> 00:10:55.269 align:start position:0%
+parameters. So the number of layers,
+number<00:10:53.519><c> of</c><00:10:53.680><c> heads,</c><00:10:54.079><c> the</c><00:10:54.240><c> attention</c><00:10:54.720><c> heads</c><00:10:55.120><c> and</c>
+
+00:10:55.269 --> 00:10:55.279 align:start position:0%
+number of heads, the attention heads and
+ 
+
+00:10:55.279 --> 00:10:57.350 align:start position:0%
+number of heads, the attention heads and
+so<00:10:55.440><c> on.</c><00:10:55.600><c> Remember</c><00:10:56.000><c> that</c><00:10:56.240><c> we</c><00:10:56.480><c> have</c><00:10:56.959><c> mentioned</c>
+
+00:10:57.350 --> 00:10:57.360 align:start position:0%
+so on. Remember that we have mentioned
+ 
+
+00:10:57.360 --> 00:11:00.230 align:start position:0%
+so on. Remember that we have mentioned
+the<00:10:57.560><c> attention</c><00:10:58.560><c> mechanism</c><00:10:59.519><c> and</c><00:10:59.839><c> that</c><00:11:00.079><c> was</c>
+
+00:11:00.230 --> 00:11:00.240 align:start position:0%
+the attention mechanism and that was
+ 
+
+00:11:00.240 --> 00:11:02.310 align:start position:0%
+the attention mechanism and that was
+actually<00:11:00.560><c> published</c><00:11:01.040><c> by</c><00:11:01.440><c> Google</c><00:11:01.760><c> I</c><00:11:02.079><c> think</c>
+
+00:11:02.310 --> 00:11:02.320 align:start position:0%
+actually published by Google I think
+ 
+
+00:11:02.320 --> 00:11:05.269 align:start position:0%
+actually published by Google I think
+with<00:11:02.640><c> the</c><00:11:02.959><c> uh</c><00:11:03.120><c> paper</c><00:11:03.560><c> entitled</c><00:11:04.560><c> attention</c><00:11:04.959><c> is</c>
+
+00:11:05.269 --> 00:11:05.279 align:start position:0%
+with the uh paper entitled attention is
+ 
+
+00:11:05.279 --> 00:11:07.190 align:start position:0%
+with the uh paper entitled attention is
+all<00:11:05.519><c> you</c><00:11:05.680><c> need</c><00:11:06.399><c> and</c><00:11:06.640><c> this</c><00:11:06.800><c> is</c><00:11:06.959><c> the</c>
+
+00:11:07.190 --> 00:11:07.200 align:start position:0%
+all you need and this is the
+ 
+
+00:11:07.200 --> 00:11:10.389 align:start position:0%
+all you need and this is the
+architecture<00:11:07.680><c> that</c><00:11:07.920><c> was</c><00:11:08.160><c> used</c><00:11:08.480><c> by</c><00:11:09.519><c> uh</c><00:11:09.839><c> GPT</c>
+
+00:11:10.389 --> 00:11:10.399 align:start position:0%
+architecture that was used by uh GPT
+ 
+
+00:11:10.399 --> 00:11:13.190 align:start position:0%
+architecture that was used by uh GPT
+open<00:11:10.800><c> AI</c><00:11:11.200><c> and</c><00:11:11.360><c> so</c><00:11:11.519><c> on</c><00:11:11.680><c> and</c><00:11:11.839><c> so</c><00:11:12.000><c> on.</c><00:11:12.560><c> So</c><00:11:12.959><c> the</c>
+
+00:11:13.190 --> 00:11:13.200 align:start position:0%
+open AI and so on and so on. So the
+ 
+
+00:11:13.200 --> 00:11:14.470 align:start position:0%
+open AI and so on and so on. So the
+number<00:11:13.360><c> of</c><00:11:13.519><c> heads</c><00:11:13.839><c> is</c><00:11:14.000><c> the</c><00:11:14.160><c> number</c><00:11:14.320><c> of</c>
+
+00:11:14.470 --> 00:11:14.480 align:start position:0%
+number of heads is the number of
+ 
+
+00:11:14.480 --> 00:11:17.030 align:start position:0%
+number of heads is the number of
+attention<00:11:14.880><c> heads.</c><00:11:15.600><c> We're</c><00:11:15.920><c> going</c><00:11:16.079><c> to</c><00:11:16.320><c> use</c>
+
+00:11:17.030 --> 00:11:17.040 align:start position:0%
+attention heads. We're going to use
+ 
+
+00:11:17.040 --> 00:11:19.910 align:start position:0%
+attention heads. We're going to use
+eight<00:11:17.680><c> and</c><00:11:17.920><c> not</c><00:11:18.079><c> more.</c><00:11:18.720><c> So</c><00:11:18.959><c> we</c><00:11:19.200><c> could</c><00:11:19.600><c> increase</c>
+
+00:11:19.910 --> 00:11:19.920 align:start position:0%
+eight and not more. So we could increase
+ 
+
+00:11:19.920 --> 00:11:22.470 align:start position:0%
+eight and not more. So we could increase
+these<00:11:20.240><c> again</c><00:11:20.640><c> just</c><00:11:20.880><c> to</c><00:11:21.279><c> um</c><00:11:21.920><c> check</c><00:11:22.160><c> the</c>
+
+00:11:22.470 --> 00:11:22.480 align:start position:0%
+these again just to um check the
+ 
+
+00:11:22.480 --> 00:11:24.470 align:start position:0%
+these again just to um check the
+relationships.<00:11:23.200><c> Each</c><00:11:23.440><c> head</c><00:11:23.680><c> will</c><00:11:23.920><c> focus</c><00:11:24.160><c> on</c><00:11:24.320><c> a</c>
+
+00:11:24.470 --> 00:11:24.480 align:start position:0%
+relationships. Each head will focus on a
+ 
+
+00:11:24.480 --> 00:11:27.030 align:start position:0%
+relationships. Each head will focus on a
+relationship<00:11:25.120><c> of</c><00:11:25.440><c> the</c><00:11:26.079><c> price,</c><00:11:26.480><c> the</c><00:11:26.720><c> current</c>
+
+00:11:27.030 --> 00:11:27.040 align:start position:0%
+relationship of the price, the current
+ 
+
+00:11:27.040 --> 00:11:30.470 align:start position:0%
+relationship of the price, the current
+price<00:11:27.839><c> and</c><00:11:28.160><c> the</c><00:11:28.480><c> previous</c><00:11:29.040><c> prices</c><00:11:29.440><c> or</c><00:11:30.160><c> a</c>
+
+00:11:30.470 --> 00:11:30.480 align:start position:0%
+price and the previous prices or a
+ 
+
+00:11:30.480 --> 00:11:33.030 align:start position:0%
+price and the previous prices or a
+certain<00:11:30.800><c> sequence</c><00:11:31.200><c> of</c><00:11:31.440><c> previous</c><00:11:32.040><c> prices.</c>
+
+00:11:33.030 --> 00:11:33.040 align:start position:0%
+certain sequence of previous prices.
+ 
+
+00:11:33.040 --> 00:11:35.990 align:start position:0%
+certain sequence of previous prices.
+What<00:11:33.360><c> comes</c><00:11:34.000><c> before</c><00:11:34.640><c> is</c><00:11:34.959><c> basically</c><00:11:35.360><c> reshaping</c>
+
+00:11:35.990 --> 00:11:36.000 align:start position:0%
+What comes before is basically reshaping
+ 
+
+00:11:36.000 --> 00:11:39.509 align:start position:0%
+What comes before is basically reshaping
+the<00:11:36.320><c> data</c><00:11:36.640><c> and</c><00:11:37.040><c> preparing</c><00:11:38.079><c> um</c><00:11:38.240><c> the</c><00:11:38.560><c> input</c><00:11:38.959><c> of</c>
+
+00:11:39.509 --> 00:11:39.519 align:start position:0%
+the data and preparing um the input of
+ 
+
+00:11:39.519 --> 00:11:42.949 align:start position:0%
+the data and preparing um the input of
+the<00:11:39.839><c> model.</c><00:11:40.560><c> But</c><00:11:40.720><c> then</c><00:11:40.959><c> this</c><00:11:41.200><c> is</c><00:11:41.360><c> the</c><00:11:41.959><c> model</c>
+
+00:11:42.949 --> 00:11:42.959 align:start position:0%
+the model. But then this is the model
+ 
+
+00:11:42.959 --> 00:11:45.430 align:start position:0%
+the model. But then this is the model
+and<00:11:43.200><c> then</c><00:11:43.360><c> we</c><00:11:43.680><c> have</c><00:11:43.839><c> the</c><00:11:44.160><c> output</c><00:11:44.640><c> of</c><00:11:44.880><c> the</c><00:11:45.040><c> model</c>
+
+00:11:45.430 --> 00:11:45.440 align:start position:0%
+and then we have the output of the model
+ 
+
+00:11:45.440 --> 00:11:48.389 align:start position:0%
+and then we have the output of the model
+right<00:11:46.120><c> here.</c><00:11:47.120><c> Again,</c><00:11:47.440><c> I'll</c><00:11:47.760><c> not</c><00:11:47.920><c> go</c><00:11:48.160><c> through</c>
+
+00:11:48.389 --> 00:11:48.399 align:start position:0%
+right here. Again, I'll not go through
+ 
+
+00:11:48.399 --> 00:11:50.630 align:start position:0%
+right here. Again, I'll not go through
+all<00:11:48.640><c> these</c><00:11:48.959><c> details.</c><00:11:49.440><c> It</c><00:11:49.680><c> might</c><00:11:49.839><c> get</c><00:11:50.079><c> boring</c>
+
+00:11:50.630 --> 00:11:50.640 align:start position:0%
+all these details. It might get boring
+ 
+
+00:11:50.640 --> 00:11:53.350 align:start position:0%
+all these details. It might get boring
+as<00:11:50.880><c> a</c><00:11:51.120><c> YouTube</c><00:11:51.440><c> video,</c><00:11:52.160><c> but</c><00:11:52.640><c> the</c><00:11:52.880><c> architecture</c>
+
+00:11:53.350 --> 00:11:53.360 align:start position:0%
+as a YouTube video, but the architecture
+ 
+
+00:11:53.360 --> 00:11:55.750 align:start position:0%
+as a YouTube video, but the architecture
+is<00:11:53.600><c> summarized</c><00:11:54.079><c> here</c><00:11:54.399><c> for</c><00:11:54.640><c> now</c><00:11:54.880><c> as</c><00:11:55.120><c> is.</c><00:11:55.600><c> And</c>
+
+00:11:55.750 --> 00:11:55.760 align:start position:0%
+is summarized here for now as is. And
+ 
+
+00:11:55.760 --> 00:11:57.790 align:start position:0%
+is summarized here for now as is. And
+we're<00:11:56.000><c> going</c><00:11:56.079><c> to</c><00:11:56.240><c> use</c><00:11:56.480><c> this</c><00:11:56.720><c> part</c><00:11:57.040><c> for</c><00:11:57.360><c> our</c>
+
+00:11:57.790 --> 00:11:57.800 align:start position:0%
+we're going to use this part for our
+ 
+
+00:11:57.800 --> 00:12:00.710 align:start position:0%
+we're going to use this part for our
+trading.<00:11:58.800><c> Now,</c><00:11:59.440><c> this</c><00:11:59.680><c> is</c><00:11:59.920><c> where</c><00:12:00.240><c> we're</c><00:12:00.560><c> going</c>
+
+00:12:00.710 --> 00:12:00.720 align:start position:0%
+trading. Now, this is where we're going
+ 
+
+00:12:00.720 --> 00:12:02.790 align:start position:0%
+trading. Now, this is where we're going
+to<00:12:00.880><c> train</c><00:12:01.200><c> the</c><00:12:01.440><c> transformer</c><00:12:02.079><c> model.</c><00:12:02.320><c> To</c><00:12:02.560><c> train</c>
+
+00:12:02.790 --> 00:12:02.800 align:start position:0%
+to train the transformer model. To train
+ 
+
+00:12:02.800 --> 00:12:06.310 align:start position:0%
+to train the transformer model. To train
+the<00:12:03.040><c> model</c><00:12:03.519><c> actually</c><00:12:04.040><c> is</c><00:12:05.040><c> let</c><00:12:05.279><c> it</c><00:12:05.519><c> read</c><00:12:06.000><c> the</c>
+
+00:12:06.310 --> 00:12:06.320 align:start position:0%
+the model actually is let it read the
+ 
+
+00:12:06.320 --> 00:12:08.870 align:start position:0%
+the model actually is let it read the
+sequences<00:12:06.880><c> of</c><00:12:07.200><c> data,</c><00:12:07.600><c> the</c><00:12:07.839><c> closing</c><00:12:08.240><c> prices</c>
+
+00:12:08.870 --> 00:12:08.880 align:start position:0%
+sequences of data, the closing prices
+ 
+
+00:12:08.880 --> 00:12:11.190 align:start position:0%
+sequences of data, the closing prices
+with<00:12:09.200><c> all</c><00:12:09.440><c> the</c><00:12:09.920><c> uh</c><00:12:10.079><c> input</c><00:12:10.480><c> features,</c><00:12:10.800><c> the</c><00:12:10.959><c> nine</c>
+
+00:12:11.190 --> 00:12:11.200 align:start position:0%
+with all the uh input features, the nine
+ 
+
+00:12:11.200 --> 00:12:13.509 align:start position:0%
+with all the uh input features, the nine
+features,<00:12:11.600><c> the</c><00:12:11.760><c> RSI,</c><00:12:12.560><c> the</c><00:12:12.800><c> ballinger</c><00:12:13.279><c> bands,</c>
+
+00:12:13.509 --> 00:12:13.519 align:start position:0%
+features, the RSI, the ballinger bands,
+ 
+
+00:12:13.519 --> 00:12:15.030 align:start position:0%
+features, the RSI, the ballinger bands,
+the<00:12:13.680><c> moving</c><00:12:14.000><c> average,</c><00:12:14.320><c> the</c><00:12:14.480><c> slope</c><00:12:14.720><c> of</c><00:12:14.880><c> the</c>
+
+00:12:15.030 --> 00:12:15.040 align:start position:0%
+the moving average, the slope of the
+ 
+
+00:12:15.040 --> 00:12:16.949 align:start position:0%
+the moving average, the slope of the
+moving<00:12:15.279><c> average,</c><00:12:15.600><c> and</c><00:12:15.760><c> so</c><00:12:15.920><c> on.</c><00:12:16.320><c> and</c><00:12:16.639><c> also</c>
+
+00:12:16.949 --> 00:12:16.959 align:start position:0%
+moving average, and so on. and also
+ 
+
+00:12:16.959 --> 00:12:19.190 align:start position:0%
+moving average, and so on. and also
+letting<00:12:17.279><c> it</c><00:12:17.600><c> read</c><00:12:17.839><c> the</c><00:12:18.160><c> future</c><00:12:18.720><c> closing</c>
+
+00:12:19.190 --> 00:12:19.200 align:start position:0%
+letting it read the future closing
+ 
+
+00:12:19.200 --> 00:12:21.829 align:start position:0%
+letting it read the future closing
+price,<00:12:19.920><c> the</c><00:12:20.240><c> next</c><00:12:20.560><c> step,</c><00:12:20.959><c> just</c><00:12:21.279><c> one</c><00:12:21.600><c> step</c>
+
+00:12:21.829 --> 00:12:21.839 align:start position:0%
+price, the next step, just one step
+ 
+
+00:12:21.839 --> 00:12:25.030 align:start position:0%
+price, the next step, just one step
+ahead.<00:12:22.800><c> Why?</c><00:12:23.200><c> Because</c><00:12:23.760><c> it's</c><00:12:24.079><c> going</c><00:12:24.320><c> to</c><00:12:24.560><c> fit</c>
+
+00:12:25.030 --> 00:12:25.040 align:start position:0%
+ahead. Why? Because it's going to fit
+ 
+
+00:12:25.040 --> 00:12:27.110 align:start position:0%
+ahead. Why? Because it's going to fit
+the<00:12:25.360><c> parameters</c><00:12:25.839><c> of</c><00:12:26.079><c> the</c><00:12:26.240><c> neural</c><00:12:26.639><c> networks.</c>
+
+00:12:27.110 --> 00:12:27.120 align:start position:0%
+the parameters of the neural networks.
+ 
+
+00:12:27.120 --> 00:12:30.629 align:start position:0%
+the parameters of the neural networks.
+It's<00:12:27.360><c> going</c><00:12:27.600><c> to</c><00:12:27.839><c> learn</c><00:12:28.639><c> from</c><00:12:28.959><c> this</c><00:12:29.320><c> data</c><00:12:30.320><c> what</c>
+
+00:12:30.629 --> 00:12:30.639 align:start position:0%
+It's going to learn from this data what
+ 
+
+00:12:30.639 --> 00:12:33.509 align:start position:0%
+It's going to learn from this data what
+kind<00:12:30.880><c> of</c><00:12:31.320><c> sequence</c><00:12:32.320><c> and</c><00:12:32.639><c> what</c><00:12:32.880><c> to</c><00:12:33.040><c> expect,</c>
+
+00:12:33.509 --> 00:12:33.519 align:start position:0%
+kind of sequence and what to expect,
+ 
+
+00:12:33.519 --> 00:12:35.990 align:start position:0%
+kind of sequence and what to expect,
+what<00:12:33.760><c> kind</c><00:12:33.920><c> of</c><00:12:34.079><c> sequences</c><00:12:34.720><c> we</c><00:12:34.959><c> could</c><00:12:35.200><c> have</c><00:12:35.760><c> and</c>
+
+00:12:35.990 --> 00:12:36.000 align:start position:0%
+what kind of sequences we could have and
+ 
+
+00:12:36.000 --> 00:12:38.230 align:start position:0%
+what kind of sequences we could have and
+what<00:12:36.240><c> kind</c><00:12:36.480><c> of</c><00:12:36.639><c> future</c><00:12:37.200><c> values</c><00:12:37.760><c> we</c><00:12:38.079><c> could</c>
+
+00:12:38.230 --> 00:12:38.240 align:start position:0%
+what kind of future values we could
+ 
+
+00:12:38.240 --> 00:12:41.430 align:start position:0%
+what kind of future values we could
+expect<00:12:38.720><c> after</c><00:12:39.120><c> these</c><00:12:39.760><c> sequences.</c><00:12:40.639><c> So</c><00:12:40.959><c> in</c><00:12:41.200><c> the</c>
+
+00:12:41.430 --> 00:12:41.440 align:start position:0%
+expect after these sequences. So in the
+ 
+
+00:12:41.440 --> 00:12:43.509 align:start position:0%
+expect after these sequences. So in the
+future<00:12:42.079><c> whenever</c><00:12:42.480><c> we</c><00:12:42.720><c> have</c><00:12:43.040><c> similar</c>
+
+00:12:43.509 --> 00:12:43.519 align:start position:0%
+future whenever we have similar
+ 
+
+00:12:43.519 --> 00:12:46.310 align:start position:0%
+future whenever we have similar
+sequences<00:12:44.079><c> or</c><00:12:44.320><c> similar</c><00:12:44.839><c> patterns</c><00:12:45.839><c> it's</c><00:12:46.160><c> going</c>
+
+00:12:46.310 --> 00:12:46.320 align:start position:0%
+sequences or similar patterns it's going
+ 
+
+00:12:46.320 --> 00:12:48.949 align:start position:0%
+sequences or similar patterns it's going
+to<00:12:46.639><c> know</c><00:12:47.120><c> how</c><00:12:47.360><c> to</c><00:12:47.519><c> predict</c><00:12:48.240><c> what's</c><00:12:48.560><c> the</c><00:12:48.720><c> most</c>
+
+00:12:48.949 --> 00:12:48.959 align:start position:0%
+to know how to predict what's the most
+ 
+
+00:12:48.959 --> 00:12:52.069 align:start position:0%
+to know how to predict what's the most
+probable<00:12:49.440><c> next</c><00:12:49.839><c> closing</c><00:12:50.360><c> price</c><00:12:51.360><c> and</c><00:12:51.600><c> this</c><00:12:51.839><c> is</c>
+
+00:12:52.069 --> 00:12:52.079 align:start position:0%
+probable next closing price and this is
+ 
+
+00:12:52.079 --> 00:12:53.990 align:start position:0%
+probable next closing price and this is
+where<00:12:52.399><c> it's</c><00:12:52.720><c> happening.</c><00:12:53.120><c> It's</c><00:12:53.360><c> in</c><00:12:53.519><c> the</c><00:12:53.680><c> train</c>
+
+00:12:53.990 --> 00:12:54.000 align:start position:0%
+where it's happening. It's in the train
+ 
+
+00:12:54.000 --> 00:12:56.310 align:start position:0%
+where it's happening. It's in the train
+transformer<00:12:54.639><c> model</c><00:12:55.000><c> function.</c><00:12:56.000><c> This</c>
+
+00:12:56.310 --> 00:12:56.320 align:start position:0%
+transformer model function. This
+ 
+
+00:12:56.320 --> 00:12:59.190 align:start position:0%
+transformer model function. This
+function<00:12:56.720><c> takes</c><00:12:57.040><c> the</c><00:12:57.360><c> model</c><00:12:57.680><c> as</c><00:12:57.920><c> a</c><00:12:58.200><c> parameter</c>
+
+00:12:59.190 --> 00:12:59.200 align:start position:0%
+function takes the model as a parameter
+ 
+
+00:12:59.200 --> 00:13:02.150 align:start position:0%
+function takes the model as a parameter
+the<00:12:59.600><c> value</c><00:12:59.920><c> loader</c><00:13:00.639><c> the</c><00:13:00.880><c> learning</c><00:13:01.200><c> rate</c><00:13:01.680><c> 10</c><00:13:02.000><c> to</c>
+
+00:13:02.150 --> 00:13:02.160 align:start position:0%
+the value loader the learning rate 10 to
+ 
+
+00:13:02.160 --> 00:13:04.870 align:start position:0%
+the value loader the learning rate 10 to
+minus<00:13:02.480><c> 3</c><00:13:02.880><c> number</c><00:13:03.120><c> of</c><00:13:03.360><c> epochs</c><00:13:04.079><c> how</c><00:13:04.320><c> many</c><00:13:04.560><c> times</c>
+
+00:13:04.870 --> 00:13:04.880 align:start position:0%
+minus 3 number of epochs how many times
+ 
+
+00:13:04.880 --> 00:13:07.750 align:start position:0%
+minus 3 number of epochs how many times
+we're<00:13:05.120><c> going</c><00:13:05.360><c> to</c><00:13:06.000><c> keep</c><00:13:06.399><c> repeating</c><00:13:06.959><c> for</c><00:13:07.360><c> for</c>
+
+00:13:07.750 --> 00:13:07.760 align:start position:0%
+we're going to keep repeating for for
+ 
+
+00:13:07.760 --> 00:13:11.110 align:start position:0%
+we're going to keep repeating for for
+the<00:13:07.920><c> learning</c><00:13:08.480><c> uh</c><00:13:08.639><c> process.</c><00:13:09.200><c> So</c><00:13:09.600><c> 20.</c><00:13:10.480><c> And</c><00:13:10.880><c> now</c>
+
+00:13:11.110 --> 00:13:11.120 align:start position:0%
+the learning uh process. So 20. And now
+ 
+
+00:13:11.120 --> 00:13:13.190 align:start position:0%
+the learning uh process. So 20. And now
+I'm<00:13:11.440><c> training</c><00:13:11.760><c> on</c><00:13:12.000><c> the</c><00:13:12.160><c> CPU.</c><00:13:12.639><c> If</c><00:13:12.800><c> you</c><00:13:12.959><c> have</c><00:13:13.040><c> a</c>
+
+00:13:13.190 --> 00:13:13.200 align:start position:0%
+I'm training on the CPU. If you have a
+ 
+
+00:13:13.200 --> 00:13:15.190 align:start position:0%
+I'm training on the CPU. If you have a
+GPU,<00:13:13.680><c> you</c><00:13:13.839><c> might</c><00:13:14.000><c> want</c><00:13:14.240><c> to</c><00:13:14.399><c> switch</c><00:13:14.639><c> this</c><00:13:14.880><c> to</c><00:13:15.040><c> a</c>
+
+00:13:15.190 --> 00:13:15.200 align:start position:0%
+GPU, you might want to switch this to a
+ 
+
+00:13:15.200 --> 00:13:18.230 align:start position:0%
+GPU, you might want to switch this to a
+GPU,<00:13:16.160><c> but</c><00:13:16.800><c> I've</c><00:13:17.120><c> tried</c><00:13:17.279><c> it</c><00:13:17.440><c> on</c><00:13:17.600><c> CPU.</c><00:13:18.079><c> It's</c>
+
+00:13:18.230 --> 00:13:18.240 align:start position:0%
+GPU, but I've tried it on CPU. It's
+ 
+
+00:13:18.240 --> 00:13:20.150 align:start position:0%
+GPU, but I've tried it on CPU. It's
+working<00:13:18.480><c> on</c><00:13:18.720><c> mine.</c><00:13:19.279><c> So</c><00:13:19.440><c> I'm</c><00:13:19.680><c> not</c><00:13:19.839><c> going</c><00:13:19.920><c> to</c>
+
+00:13:20.150 --> 00:13:20.160 align:start position:0%
+working on mine. So I'm not going to
+ 
+
+00:13:20.160 --> 00:13:21.310 align:start position:0%
+working on mine. So I'm not going to
+touch<00:13:20.399><c> it</c><00:13:20.560><c> for</c>
+
+00:13:21.310 --> 00:13:21.320 align:start position:0%
+touch it for
+ 
+
+00:13:21.320 --> 00:13:25.110 align:start position:0%
+touch it for
+now.<00:13:22.320><c> Now,</c><00:13:22.639><c> after</c><00:13:23.120><c> training</c><00:13:23.600><c> the</c><00:13:24.120><c> model,</c>
+
+00:13:25.110 --> 00:13:25.120 align:start position:0%
+now. Now, after training the model,
+ 
+
+00:13:25.120 --> 00:13:27.430 align:start position:0%
+now. Now, after training the model,
+we're<00:13:25.360><c> going</c><00:13:25.519><c> to</c><00:13:26.000><c> return</c><00:13:26.320><c> the</c><00:13:26.639><c> trained</c><00:13:26.959><c> model.</c>
+
+00:13:27.430 --> 00:13:27.440 align:start position:0%
+we're going to return the trained model.
+ 
+
+00:13:27.440 --> 00:13:29.030 align:start position:0%
+we're going to return the trained model.
+So<00:13:27.600><c> that</c><00:13:27.839><c> function</c><00:13:28.160><c> is</c><00:13:28.399><c> going</c><00:13:28.480><c> to</c><00:13:28.639><c> train</c><00:13:28.880><c> the</c>
+
+00:13:29.030 --> 00:13:29.040 align:start position:0%
+So that function is going to train the
+ 
+
+00:13:29.040 --> 00:13:31.110 align:start position:0%
+So that function is going to train the
+model<00:13:29.279><c> on</c><00:13:29.440><c> the</c><00:13:29.600><c> data</c><00:13:29.920><c> and</c><00:13:30.160><c> it</c><00:13:30.320><c> will</c><00:13:30.639><c> it</c><00:13:30.959><c> will</c>
+
+00:13:31.110 --> 00:13:31.120 align:start position:0%
+model on the data and it will it will
+ 
+
+00:13:31.120 --> 00:13:34.230 align:start position:0%
+model on the data and it will it will
+return<00:13:31.440><c> actually</c><00:13:31.760><c> the</c><00:13:32.200><c> model.</c><00:13:33.200><c> And</c><00:13:33.680><c> now</c><00:13:33.920><c> we</c>
+
+00:13:34.230 --> 00:13:34.240 align:start position:0%
+return actually the model. And now we
+ 
+
+00:13:34.240 --> 00:13:38.150 align:start position:0%
+return actually the model. And now we
+have<00:13:34.480><c> to</c><00:13:34.800><c> evaluate</c><00:13:35.360><c> the</c><00:13:35.600><c> model.</c>
+
+00:13:38.150 --> 00:13:38.160 align:start position:0%
+have to evaluate the model.
+ 
+
+00:13:38.160 --> 00:13:40.230 align:start position:0%
+have to evaluate the model.
+So<00:13:38.320><c> to</c><00:13:38.639><c> evaluate</c><00:13:39.040><c> the</c><00:13:39.279><c> model</c><00:13:39.680><c> we</c><00:13:39.920><c> need</c><00:13:40.079><c> to</c>
+
+00:13:40.230 --> 00:13:40.240 align:start position:0%
+So to evaluate the model we need to
+ 
+
+00:13:40.240 --> 00:13:43.110 align:start position:0%
+So to evaluate the model we need to
+provide<00:13:40.480><c> the</c><00:13:40.720><c> model</c><00:13:41.120><c> the</c><00:13:41.360><c> trained</c><00:13:42.079><c> model</c><00:13:42.800><c> the</c>
+
+00:13:43.110 --> 00:13:43.120 align:start position:0%
+provide the model the trained model the
+ 
+
+00:13:43.120 --> 00:13:46.069 align:start position:0%
+provide the model the trained model the
+data<00:13:43.600><c> so</c><00:13:44.160><c> providing</c><00:13:44.720><c> test</c><00:13:45.120><c> loader</c><00:13:45.519><c> so</c><00:13:45.760><c> that's</c>
+
+00:13:46.069 --> 00:13:46.079 align:start position:0%
+data so providing test loader so that's
+ 
+
+00:13:46.079 --> 00:13:49.590 align:start position:0%
+data so providing test loader so that's
+basically<00:13:46.399><c> the</c><00:13:46.800><c> u</c><00:13:47.360><c> data</c><00:13:47.760><c> for</c><00:13:48.320><c> uh</c><00:13:48.480><c> for</c><00:13:48.880><c> test</c><00:13:49.360><c> for</c>
+
+00:13:49.590 --> 00:13:49.600 align:start position:0%
+basically the u data for uh for test for
+ 
+
+00:13:49.600 --> 00:13:51.990 align:start position:0%
+basically the u data for uh for test for
+testing<00:13:50.399><c> then</c><00:13:50.639><c> we</c><00:13:50.800><c> have</c><00:13:50.880><c> the</c><00:13:51.120><c> scalar</c><00:13:51.839><c> the</c>
+
+00:13:51.990 --> 00:13:52.000 align:start position:0%
+testing then we have the scalar the
+ 
+
+00:13:52.000 --> 00:13:54.550 align:start position:0%
+testing then we have the scalar the
+featured<00:13:52.480><c> columns</c><00:13:53.200><c> the</c><00:13:53.440><c> target</c><00:13:53.839><c> column</c><00:13:54.320><c> which</c>
+
+00:13:54.550 --> 00:13:54.560 align:start position:0%
+featured columns the target column which
+ 
+
+00:13:54.560 --> 00:13:56.790 align:start position:0%
+featured columns the target column which
+is<00:13:55.120><c> three</c><00:13:55.440><c> the</c><00:13:55.600><c> index</c><00:13:55.920><c> of</c><00:13:56.079><c> the</c><00:13:56.240><c> target</c><00:13:56.480><c> column</c>
+
+00:13:56.790 --> 00:13:56.800 align:start position:0%
+is three the index of the target column
+ 
+
+00:13:56.800 --> 00:13:58.710 align:start position:0%
+is three the index of the target column
+which<00:13:56.959><c> is</c><00:13:57.120><c> three</c><00:13:57.440><c> because</c><00:13:57.600><c> we're</c><00:13:58.240><c> targeting</c>
+
+00:13:58.710 --> 00:13:58.720 align:start position:0%
+which is three because we're targeting
+ 
+
+00:13:58.720 --> 00:14:02.069 align:start position:0%
+which is three because we're targeting
+the<00:13:59.120><c> closing</c><00:13:59.639><c> price</c><00:14:00.639><c> the</c><00:14:00.880><c> window</c><00:14:01.199><c> width</c><00:14:01.600><c> which</c>
+
+00:14:02.069 --> 00:14:02.079 align:start position:0%
+the closing price the window width which
+ 
+
+00:14:02.079 --> 00:14:05.670 align:start position:0%
+the closing price the window width which
+is<00:14:02.320><c> by</c><00:14:02.560><c> default</c><00:14:02.959><c> 10</c><00:14:03.279><c> so</c><00:14:03.440><c> it</c><00:14:03.680><c> could</c><00:14:03.839><c> be</c><00:14:04.320><c> 30</c><00:14:04.880><c> or</c><00:14:05.199><c> 60</c>
+
+00:14:05.670 --> 00:14:05.680 align:start position:0%
+is by default 10 so it could be 30 or 60
+ 
+
+00:14:05.680 --> 00:14:08.470 align:start position:0%
+is by default 10 so it could be 30 or 60
+as<00:14:05.920><c> you</c><00:14:06.079><c> may</c><00:14:06.240><c> have</c><00:14:06.399><c> seen</c><00:14:06.959><c> before</c><00:14:07.839><c> the</c><00:14:08.079><c> starting</c>
+
+00:14:08.470 --> 00:14:08.480 align:start position:0%
+as you may have seen before the starting
+ 
+
+00:14:08.480 --> 00:14:11.750 align:start position:0%
+as you may have seen before the starting
+index<00:14:09.199><c> zero</c><00:14:09.680><c> the</c><00:14:10.160><c> prediction</c><00:14:10.720><c> length</c><00:14:11.279><c> is</c>
+
+00:14:11.750 --> 00:14:11.760 align:start position:0%
+index zero the prediction length is
+ 
+
+00:14:11.760 --> 00:14:14.150 align:start position:0%
+index zero the prediction length is
+still<00:14:12.079><c> one</c><00:14:12.320><c> and</c><00:14:12.560><c> the</c><00:14:12.720><c> device</c><00:14:13.040><c> is</c><00:14:13.279><c> still</c><00:14:13.600><c> the</c><00:14:14.000><c> uh</c>
+
+00:14:14.150 --> 00:14:14.160 align:start position:0%
+still one and the device is still the uh
+ 
+
+00:14:14.160 --> 00:14:16.389 align:start position:0%
+still one and the device is still the uh
+CPU<00:14:14.959><c> and</c><00:14:15.199><c> this</c><00:14:15.360><c> function</c><00:14:15.680><c> is</c><00:14:15.920><c> actually</c><00:14:16.240><c> going</c>
+
+00:14:16.389 --> 00:14:16.399 align:start position:0%
+CPU and this function is actually going
+ 
+
+00:14:16.399 --> 00:14:19.350 align:start position:0%
+CPU and this function is actually going
+to<00:14:16.560><c> take</c><00:14:16.720><c> the</c><00:14:16.959><c> model</c><00:14:17.680><c> a</c><00:14:18.000><c> new</c><00:14:18.160><c> set</c><00:14:18.399><c> of</c><00:14:18.560><c> data</c><00:14:19.120><c> and</c>
+
+00:14:19.350 --> 00:14:19.360 align:start position:0%
+to take the model a new set of data and
+ 
+
+00:14:19.360 --> 00:14:22.230 align:start position:0%
+to take the model a new set of data and
+it's<00:14:19.600><c> going</c><00:14:19.839><c> to</c><00:14:20.560><c> provide</c><00:14:20.959><c> the</c><00:14:21.199><c> model</c><00:14:21.519><c> with</c><00:14:21.839><c> the</c>
+
+00:14:22.230 --> 00:14:22.240 align:start position:0%
+it's going to provide the model with the
+ 
+
+00:14:22.240 --> 00:14:26.230 align:start position:0%
+it's going to provide the model with the
+a<00:14:22.399><c> length</c><00:14:22.639><c> of</c><00:14:22.880><c> sequence</c><00:14:23.839><c> 30</c><00:14:24.600><c> or</c><00:14:25.600><c> 60</c><00:14:26.079><c> rows</c>
+
+00:14:26.230 --> 00:14:26.240 align:start position:0%
+a length of sequence 30 or 60 rows
+ 
+
+00:14:26.240 --> 00:14:28.870 align:start position:0%
+a length of sequence 30 or 60 rows
+depending<00:14:26.639><c> on</c><00:14:26.800><c> how</c><00:14:27.040><c> we've</c><00:14:27.519><c> trained</c><00:14:27.839><c> the</c><00:14:28.000><c> model</c>
+
+00:14:28.870 --> 00:14:28.880 align:start position:0%
+depending on how we've trained the model
+ 
+
+00:14:28.880 --> 00:14:30.949 align:start position:0%
+depending on how we've trained the model
+and<00:14:29.040><c> then</c><00:14:29.199><c> it's</c><00:14:29.440><c> going</c><00:14:29.519><c> to</c><00:14:29.680><c> ask</c><00:14:29.920><c> the</c><00:14:30.079><c> model</c><00:14:30.480><c> to</c>
+
+00:14:30.949 --> 00:14:30.959 align:start position:0%
+and then it's going to ask the model to
+ 
+
+00:14:30.959 --> 00:14:33.829 align:start position:0%
+and then it's going to ask the model to
+try<00:14:31.279><c> to</c><00:14:31.440><c> predict</c><00:14:32.320><c> the</c><00:14:32.560><c> very</c><00:14:32.880><c> next</c><00:14:33.120><c> value</c><00:14:33.680><c> the</c>
+
+00:14:33.829 --> 00:14:33.839 align:start position:0%
+try to predict the very next value the
+ 
+
+00:14:33.839 --> 00:14:35.990 align:start position:0%
+try to predict the very next value the
+very<00:14:34.079><c> next</c><00:14:34.480><c> closing</c><00:14:34.959><c> price</c><00:14:35.440><c> it's</c><00:14:35.680><c> going</c><00:14:35.839><c> to</c>
+
+00:14:35.990 --> 00:14:36.000 align:start position:0%
+very next closing price it's going to
+ 
+
+00:14:36.000 --> 00:14:38.069 align:start position:0%
+very next closing price it's going to
+compare<00:14:36.240><c> compare</c><00:14:36.639><c> this</c><00:14:36.880><c> price</c><00:14:37.360><c> with</c><00:14:37.680><c> the</c>
+
+00:14:38.069 --> 00:14:38.079 align:start position:0%
+compare compare this price with the
+ 
+
+00:14:38.079 --> 00:14:40.230 align:start position:0%
+compare compare this price with the
+ground<00:14:38.399><c> trth</c><00:14:38.880><c> price</c><00:14:39.279><c> like</c><00:14:39.600><c> what</c><00:14:39.920><c> really</c>
+
+00:14:40.230 --> 00:14:40.240 align:start position:0%
+ground trth price like what really
+ 
+
+00:14:40.240 --> 00:14:43.430 align:start position:0%
+ground trth price like what really
+happened<00:14:41.199><c> and</c><00:14:41.519><c> what</c><00:14:41.839><c> the</c><00:14:42.000><c> model</c><00:14:42.639><c> predicted</c>
+
+00:14:43.430 --> 00:14:43.440 align:start position:0%
+happened and what the model predicted
+ 
+
+00:14:43.440 --> 00:14:44.949 align:start position:0%
+happened and what the model predicted
+and<00:14:43.680><c> we're</c><00:14:43.920><c> going</c><00:14:44.000><c> to</c><00:14:44.240><c> compare</c><00:14:44.560><c> these</c>
+
+00:14:44.949 --> 00:14:44.959 align:start position:0%
+and we're going to compare these
+ 
+
+00:14:44.959 --> 00:14:46.870 align:start position:0%
+and we're going to compare these
+together.<00:14:45.760><c> So</c><00:14:46.000><c> obviously</c><00:14:46.399><c> it's</c><00:14:46.639><c> going</c><00:14:46.720><c> to</c>
+
+00:14:46.870 --> 00:14:46.880 align:start position:0%
+together. So obviously it's going to
+ 
+
+00:14:46.880 --> 00:14:49.590 align:start position:0%
+together. So obviously it's going to
+give<00:14:47.040><c> us</c><00:14:47.199><c> some</c><00:14:47.440><c> metrics</c><00:14:48.320><c> but</c><00:14:48.800><c> mostly</c><00:14:49.279><c> we're</c>
+
+00:14:49.590 --> 00:14:49.600 align:start position:0%
+give us some metrics but mostly we're
+ 
+
+00:14:49.600 --> 00:14:52.750 align:start position:0%
+give us some metrics but mostly we're
+going<00:14:49.760><c> to</c><00:14:50.000><c> plot</c><00:14:50.800><c> the</c><00:14:51.199><c> predicted</c><00:14:51.760><c> closing</c>
+
+00:14:52.750 --> 00:14:52.760 align:start position:0%
+going to plot the predicted closing
+ 
+
+00:14:52.760 --> 00:14:57.150 align:start position:0%
+going to plot the predicted closing
+prices<00:14:53.760><c> and</c><00:14:54.480><c> the</c><00:14:54.880><c> uh</c><00:14:55.120><c> real</c><00:14:55.519><c> closing</c><00:14:55.920><c> prices</c>
+
+00:14:57.150 --> 00:14:57.160 align:start position:0%
+prices and the uh real closing prices
+ 
+
+00:14:57.160 --> 00:14:59.750 align:start position:0%
+prices and the uh real closing prices
+together.<00:14:58.160><c> And</c><00:14:58.320><c> now</c><00:14:58.560><c> we</c><00:14:58.800><c> have</c><00:14:58.959><c> all</c><00:14:59.199><c> the</c><00:14:59.440><c> sets</c>
+
+00:14:59.750 --> 00:14:59.760 align:start position:0%
+together. And now we have all the sets
+ 
+
+00:14:59.760 --> 00:15:02.310 align:start position:0%
+together. And now we have all the sets
+of<00:15:00.079><c> functions</c><00:15:00.639><c> that</c><00:15:01.040><c> we'll</c><00:15:01.279><c> be</c><00:15:01.680><c> uh</c><00:15:01.920><c> using</c>
+
+00:15:02.310 --> 00:15:02.320 align:start position:0%
+of functions that we'll be uh using
+ 
+
+00:15:02.320 --> 00:15:03.990 align:start position:0%
+of functions that we'll be uh using
+actually<00:15:02.639><c> to</c><00:15:02.880><c> train</c><00:15:03.120><c> and</c><00:15:03.360><c> evaluate</c><00:15:03.760><c> the</c>
+
+00:15:03.990 --> 00:15:04.000 align:start position:0%
+actually to train and evaluate the
+ 
+
+00:15:04.000 --> 00:15:05.990 align:start position:0%
+actually to train and evaluate the
+model.<00:15:04.720><c> So</c><00:15:04.959><c> you</c><00:15:05.199><c> don't</c><00:15:05.360><c> have</c><00:15:05.440><c> to</c><00:15:05.680><c> understand</c>
+
+00:15:05.990 --> 00:15:06.000 align:start position:0%
+model. So you don't have to understand
+ 
+
+00:15:06.000 --> 00:15:08.389 align:start position:0%
+model. So you don't have to understand
+all<00:15:06.240><c> the</c><00:15:06.480><c> details.</c><00:15:07.040><c> I</c><00:15:07.199><c> mean</c><00:15:07.360><c> it</c><00:15:07.680><c> takes</c><00:15:07.920><c> a</c><00:15:08.240><c> a</c>
+
+00:15:08.389 --> 00:15:08.399 align:start position:0%
+all the details. I mean it takes a a
+ 
+
+00:15:08.399 --> 00:15:11.590 align:start position:0%
+all the details. I mean it takes a a
+certain<00:15:08.720><c> level</c><00:15:09.040><c> of</c><00:15:09.279><c> expertise</c><00:15:10.079><c> and</c><00:15:10.639><c> um</c><00:15:10.800><c> to</c><00:15:11.040><c> be</c>
+
+00:15:11.590 --> 00:15:11.600 align:start position:0%
+certain level of expertise and um to be
+ 
+
+00:15:11.600 --> 00:15:13.670 align:start position:0%
+certain level of expertise and um to be
+familiar<00:15:12.079><c> with</c><00:15:12.480><c> artificial</c><00:15:12.959><c> intelligence,</c>
+
+00:15:13.670 --> 00:15:13.680 align:start position:0%
+familiar with artificial intelligence,
+ 
+
+00:15:13.680 --> 00:15:15.030 align:start position:0%
+familiar with artificial intelligence,
+machine<00:15:13.920><c> learning,</c><00:15:14.320><c> neural</c><00:15:14.639><c> networks,</c>
+
+00:15:15.030 --> 00:15:15.040 align:start position:0%
+machine learning, neural networks,
+ 
+
+00:15:15.040 --> 00:15:16.949 align:start position:0%
+machine learning, neural networks,
+especially<00:15:15.600><c> transformers.</c><00:15:16.399><c> Actually</c><00:15:16.639><c> these</c>
+
+00:15:16.949 --> 00:15:16.959 align:start position:0%
+especially transformers. Actually these
+ 
+
+00:15:16.959 --> 00:15:18.949 align:start position:0%
+especially transformers. Actually these
+are<00:15:17.600><c> uh</c><00:15:17.760><c> some</c><00:15:18.000><c> kind</c><00:15:18.160><c> of</c><00:15:18.320><c> a</c><00:15:18.560><c> recent</c>
+
+00:15:18.949 --> 00:15:18.959 align:start position:0%
+are uh some kind of a recent
+ 
+
+00:15:18.959 --> 00:15:20.790 align:start position:0%
+are uh some kind of a recent
+architecture.<00:15:19.760><c> It's</c><00:15:20.000><c> working</c><00:15:20.240><c> for</c><00:15:20.480><c> now.</c><00:15:20.639><c> You</c>
+
+00:15:20.790 --> 00:15:20.800 align:start position:0%
+architecture. It's working for now. You
+ 
+
+00:15:20.800 --> 00:15:22.710 align:start position:0%
+architecture. It's working for now. You
+can<00:15:20.880><c> copy</c><00:15:21.120><c> and</c><00:15:21.279><c> paste</c><00:15:21.440><c> the</c><00:15:21.680><c> functions</c><00:15:22.480><c> and</c>
+
+00:15:22.710 --> 00:15:22.720 align:start position:0%
+can copy and paste the functions and
+ 
+
+00:15:22.720 --> 00:15:24.629 align:start position:0%
+can copy and paste the functions and
+this<00:15:22.959><c> is</c><00:15:23.120><c> where</c><00:15:23.360><c> we're</c><00:15:23.680><c> going</c><00:15:23.920><c> to</c><00:15:24.160><c> use</c><00:15:24.399><c> the</c>
+
+00:15:24.629 --> 00:15:24.639 align:start position:0%
+this is where we're going to use the
+ 
+
+00:15:24.639 --> 00:15:26.790 align:start position:0%
+this is where we're going to use the
+functions.<00:15:25.199><c> So</c><00:15:25.360><c> this</c><00:15:25.600><c> is</c><00:15:25.680><c> the</c><00:15:25.920><c> cell</c><00:15:26.240><c> where</c><00:15:26.560><c> we</c>
+
+00:15:26.790 --> 00:15:26.800 align:start position:0%
+functions. So this is the cell where we
+ 
+
+00:15:26.800 --> 00:15:29.430 align:start position:0%
+functions. So this is the cell where we
+call<00:15:27.040><c> the</c><00:15:27.279><c> functions,</c><00:15:28.000><c> tune</c><00:15:28.320><c> the</c><00:15:28.560><c> parameters</c>
+
+00:15:29.430 --> 00:15:29.440 align:start position:0%
+call the functions, tune the parameters
+ 
+
+00:15:29.440 --> 00:15:31.750 align:start position:0%
+call the functions, tune the parameters
+and<00:15:29.680><c> this</c><00:15:29.839><c> is</c><00:15:30.000><c> where</c><00:15:30.320><c> you</c><00:15:30.639><c> can</c><00:15:30.800><c> apply</c><00:15:31.440><c> your</c>
+
+00:15:31.750 --> 00:15:31.760 align:start position:0%
+and this is where you can apply your
+ 
+
+00:15:31.760 --> 00:15:34.550 align:start position:0%
+and this is where you can apply your
+modifications<00:15:32.560><c> as</c><00:15:32.800><c> well.</c><00:15:33.279><c> So</c><00:15:33.600><c> I'm</c><00:15:33.920><c> loading</c><00:15:34.240><c> a</c>
+
+00:15:34.550 --> 00:15:34.560 align:start position:0%
+modifications as well. So I'm loading a
+ 
+
+00:15:34.560 --> 00:15:38.069 align:start position:0%
+modifications as well. So I'm loading a
+Euro<00:15:34.880><c> US</c><00:15:35.199><c> dollar</c><00:15:35.639><c> candlesticks</c><00:15:36.639><c> 1</c><00:15:36.959><c> hour</c><00:15:37.360><c> data</c>
+
+00:15:38.069 --> 00:15:38.079 align:start position:0%
+Euro US dollar candlesticks 1 hour data
+ 
+
+00:15:38.079 --> 00:15:41.509 align:start position:0%
+Euro US dollar candlesticks 1 hour data
+between<00:15:38.560><c> 2020</c><00:15:39.040><c> and</c><00:15:39.360><c> 2023.</c><00:15:40.079><c> It's</c><00:15:40.240><c> a</c><00:15:40.399><c> CSV</c><00:15:40.880><c> file.</c>
+
+00:15:41.509 --> 00:15:41.519 align:start position:0%
+between 2020 and 2023. It's a CSV file.
+ 
+
+00:15:41.519 --> 00:15:43.829 align:start position:0%
+between 2020 and 2023. It's a CSV file.
+I'm<00:15:41.760><c> using</c><00:15:42.000><c> the</c><00:15:42.240><c> load</c><00:15:42.639><c> forex</c><00:15:43.040><c> data</c><00:15:43.360><c> to</c><00:15:43.600><c> load</c>
+
+00:15:43.829 --> 00:15:43.839 align:start position:0%
+I'm using the load forex data to load
+ 
+
+00:15:43.839 --> 00:15:46.389 align:start position:0%
+I'm using the load forex data to load
+this<00:15:44.160><c> file</c><00:15:45.040><c> and</c><00:15:45.279><c> then</c><00:15:45.519><c> I'm</c><00:15:45.839><c> adding</c><00:15:46.160><c> the</c>
+
+00:15:46.389 --> 00:15:46.399 align:start position:0%
+this file and then I'm adding the
+ 
+
+00:15:46.399 --> 00:15:48.790 align:start position:0%
+this file and then I'm adding the
+technical<00:15:46.880><c> indicators</c><00:15:47.600><c> using</c><00:15:47.839><c> the</c><00:15:48.079><c> function.</c>
+
+00:15:48.790 --> 00:15:48.800 align:start position:0%
+technical indicators using the function.
+ 
+
+00:15:48.800 --> 00:15:50.629 align:start position:0%
+technical indicators using the function.
+Now<00:15:48.959><c> you</c><00:15:49.199><c> can</c><00:15:49.279><c> see</c><00:15:49.440><c> how</c><00:15:49.680><c> easy</c><00:15:49.839><c> it</c><00:15:50.000><c> is</c><00:15:50.320><c> calling</c>
+
+00:15:50.629 --> 00:15:50.639 align:start position:0%
+Now you can see how easy it is calling
+ 
+
+00:15:50.639 --> 00:15:52.790 align:start position:0%
+Now you can see how easy it is calling
+the<00:15:50.800><c> functions</c><00:15:51.440><c> providing</c><00:15:51.759><c> the</c><00:15:52.000><c> data</c><00:15:52.320><c> frame</c>
+
+00:15:52.790 --> 00:15:52.800 align:start position:0%
+the functions providing the data frame
+ 
+
+00:15:52.800 --> 00:15:55.749 align:start position:0%
+the functions providing the data frame
+and<00:15:53.759><c> returning</c><00:15:54.160><c> a</c><00:15:54.399><c> data</c><00:15:54.720><c> frame</c><00:15:55.040><c> with</c><00:15:55.279><c> just</c><00:15:55.519><c> the</c>
+
+00:15:55.749 --> 00:15:55.759 align:start position:0%
+and returning a data frame with just the
+ 
+
+00:15:55.759 --> 00:15:58.470 align:start position:0%
+and returning a data frame with just the
+added<00:15:56.160><c> and</c><00:15:56.480><c> scaled</c><00:15:57.600><c> uh</c><00:15:58.000><c> technical</c>
+
+00:15:58.470 --> 00:15:58.480 align:start position:0%
+added and scaled uh technical
+ 
+
+00:15:58.480 --> 00:15:59.829 align:start position:0%
+added and scaled uh technical
+indicators.<00:15:59.120><c> Actually</c><00:15:59.360><c> they</c><00:15:59.519><c> are</c><00:15:59.680><c> not</c>
+
+00:15:59.829 --> 00:15:59.839 align:start position:0%
+indicators. Actually they are not
+ 
+
+00:15:59.839 --> 00:16:01.829 align:start position:0%
+indicators. Actually they are not
+scaled.<00:16:00.240><c> will</c><00:16:00.480><c> be</c><00:16:00.639><c> scaling</c><00:16:01.040><c> these</c><00:16:01.440><c> in</c><00:16:01.680><c> the</c>
+
+00:16:01.829 --> 00:16:01.839 align:start position:0%
+scaled. will be scaling these in the
+ 
+
+00:16:01.839 --> 00:16:03.990 align:start position:0%
+scaled. will be scaling these in the
+next<00:16:02.079><c> function</c><00:16:02.480><c> which</c><00:16:02.720><c> is</c><00:16:02.880><c> select</c><00:16:03.279><c> and</c><00:16:03.600><c> scale</c>
+
+00:16:03.990 --> 00:16:04.000 align:start position:0%
+next function which is select and scale
+ 
+
+00:16:04.000 --> 00:16:07.350 align:start position:0%
+next function which is select and scale
+features<00:16:05.360><c> uh</c><00:16:05.600><c> data</c><00:16:06.000><c> frame.</c><00:16:06.320><c> So</c><00:16:06.399><c> I</c><00:16:06.639><c> left</c><00:16:06.880><c> it</c><00:16:07.120><c> by</c>
+
+00:16:07.350 --> 00:16:07.360 align:start position:0%
+features uh data frame. So I left it by
+ 
+
+00:16:07.360 --> 00:16:09.110 align:start position:0%
+features uh data frame. So I left it by
+default<00:16:07.759><c> it's</c><00:16:08.000><c> going</c><00:16:08.079><c> to</c><00:16:08.240><c> scale</c><00:16:08.560><c> the</c><00:16:08.800><c> nine</c>
+
+00:16:09.110 --> 00:16:09.120 align:start position:0%
+default it's going to scale the nine
+ 
+
+00:16:09.120 --> 00:16:12.550 align:start position:0%
+default it's going to scale the nine
+features<00:16:09.839><c> in</c><00:16:10.079><c> the</c><00:16:10.240><c> data</c><00:16:10.560><c> frame</c><00:16:11.199><c> the</c><00:16:11.680><c> um</c><00:16:12.079><c> target</c>
+
+00:16:12.550 --> 00:16:12.560 align:start position:0%
+features in the data frame the um target
+ 
+
+00:16:12.560 --> 00:16:14.790 align:start position:0%
+features in the data frame the um target
+then<00:16:12.800><c> the</c><00:16:12.959><c> target</c><00:16:13.279><c> column</c><00:16:13.680><c> index</c><00:16:14.079><c> is</c><00:16:14.320><c> equal</c><00:16:14.560><c> to</c>
+
+00:16:14.790 --> 00:16:14.800 align:start position:0%
+then the target column index is equal to
+ 
+
+00:16:14.800 --> 00:16:18.350 align:start position:0%
+then the target column index is equal to
+feature<00:16:15.360><c> columns</c><00:16:15.920><c> dot</c><00:16:16.240><c> index</c><00:16:17.040><c> of</c><00:16:17.360><c> the</c><00:16:17.600><c> column</c>
+
+00:16:18.350 --> 00:16:18.360 align:start position:0%
+feature columns dot index of the column
+ 
+
+00:16:18.360 --> 00:16:20.949 align:start position:0%
+feature columns dot index of the column
+close<00:16:19.360><c> and</c><00:16:19.600><c> we're</c><00:16:19.920><c> going</c><00:16:20.000><c> to</c><00:16:20.160><c> use</c><00:16:20.399><c> this</c><00:16:20.720><c> later</c>
+
+00:16:20.949 --> 00:16:20.959 align:start position:0%
+close and we're going to use this later
+ 
+
+00:16:20.959 --> 00:16:23.670 align:start position:0%
+close and we're going to use this later
+on.<00:16:21.600><c> So</c><00:16:21.839><c> then</c><00:16:22.079><c> we</c><00:16:22.320><c> have</c><00:16:22.480><c> the</c><00:16:22.720><c> sequence</c><00:16:23.120><c> length</c>
+
+00:16:23.670 --> 00:16:23.680 align:start position:0%
+on. So then we have the sequence length
+ 
+
+00:16:23.680 --> 00:16:27.030 align:start position:0%
+on. So then we have the sequence length
+is<00:16:24.000><c> equal</c><00:16:24.240><c> to</c><00:16:24.759><c> 30.</c><00:16:25.759><c> So</c><00:16:26.000><c> I'm</c><00:16:26.320><c> overriding</c><00:16:26.880><c> all</c>
+
+00:16:27.030 --> 00:16:27.040 align:start position:0%
+is equal to 30. So I'm overriding all
+ 
+
+00:16:27.040 --> 00:16:28.790 align:start position:0%
+is equal to 30. So I'm overriding all
+the<00:16:27.279><c> default</c><00:16:27.600><c> values</c><00:16:28.000><c> that</c><00:16:28.240><c> we've</c><00:16:28.480><c> used</c>
+
+00:16:28.790 --> 00:16:28.800 align:start position:0%
+the default values that we've used
+ 
+
+00:16:28.800 --> 00:16:32.310 align:start position:0%
+the default values that we've used
+before.<00:16:29.519><c> prediction</c><00:16:30.079><c> length</c><00:16:30.480><c> is</c><00:16:31.120><c> still</c><00:16:31.519><c> one.</c>
+
+00:16:32.310 --> 00:16:32.320 align:start position:0%
+before. prediction length is still one.
+ 
+
+00:16:32.320 --> 00:16:34.470 align:start position:0%
+before. prediction length is still one.
+We<00:16:32.560><c> just</c><00:16:32.800><c> want</c><00:16:32.880><c> to</c><00:16:33.040><c> make</c><00:16:33.199><c> it</c><00:16:33.440><c> as</c><00:16:33.759><c> simple</c><00:16:34.160><c> as</c>
+
+00:16:34.470 --> 00:16:34.480 align:start position:0%
+We just want to make it as simple as
+ 
+
+00:16:34.480 --> 00:16:36.389 align:start position:0%
+We just want to make it as simple as
+possible.<00:16:34.959><c> You</c><00:16:35.199><c> might</c><00:16:35.360><c> want</c><00:16:35.519><c> to</c><00:16:35.680><c> adjust</c><00:16:36.000><c> it</c><00:16:36.160><c> to</c>
+
+00:16:36.389 --> 00:16:36.399 align:start position:0%
+possible. You might want to adjust it to
+ 
+
+00:16:36.399 --> 00:16:38.069 align:start position:0%
+possible. You might want to adjust it to
+three<00:16:36.720><c> candles</c><00:16:37.040><c> in</c><00:16:37.279><c> the</c><00:16:37.360><c> future</c><00:16:37.600><c> or</c><00:16:37.839><c> five</c>
+
+00:16:38.069 --> 00:16:38.079 align:start position:0%
+three candles in the future or five
+ 
+
+00:16:38.079 --> 00:16:39.990 align:start position:0%
+three candles in the future or five
+candles<00:16:38.480><c> in</c><00:16:38.639><c> the</c><00:16:38.800><c> future,</c><00:16:39.279><c> but</c><00:16:39.519><c> it's</c><00:16:39.680><c> going</c><00:16:39.839><c> to</c>
+
+00:16:39.990 --> 00:16:40.000 align:start position:0%
+candles in the future, but it's going to
+ 
+
+00:16:40.000 --> 00:16:43.829 align:start position:0%
+candles in the future, but it's going to
+be<00:16:40.560><c> a</c><00:16:40.800><c> bit</c><00:16:40.959><c> problematic</c><00:16:41.680><c> to</c><00:16:42.160><c> um</c><00:16:42.720><c> uh</c><00:16:42.880><c> to</c><00:16:43.120><c> compare</c>
+
+00:16:43.829 --> 00:16:43.839 align:start position:0%
+be a bit problematic to um uh to compare
+ 
+
+00:16:43.839 --> 00:16:47.670 align:start position:0%
+be a bit problematic to um uh to compare
+and<00:16:44.079><c> to</c><00:16:44.360><c> evaluate</c><00:16:45.360><c> with</c><00:16:45.680><c> the</c><00:16:45.920><c> future</c><00:16:46.680><c> values.</c>
+
+00:16:47.670 --> 00:16:47.680 align:start position:0%
+and to evaluate with the future values.
+ 
+
+00:16:47.680 --> 00:16:50.150 align:start position:0%
+and to evaluate with the future values.
+Then<00:16:47.920><c> we</c><00:16:48.160><c> have</c><00:16:48.399><c> the</c><00:16:48.639><c> data</c><00:16:49.040><c> set.</c><00:16:49.680><c> We're</c><00:16:49.920><c> going</c>
+
+00:16:50.150 --> 00:16:50.160 align:start position:0%
+Then we have the data set. We're going
+ 
+
+00:16:50.160 --> 00:16:53.189 align:start position:0%
+Then we have the data set. We're going
+to<00:16:50.320><c> use</c><00:16:50.560><c> the</c><00:16:50.720><c> Forex</c><00:16:51.199><c> data</c><00:16:51.519><c> set</c><00:16:52.560><c> uh</c><00:16:52.639><c> that</c><00:16:52.880><c> we've</c>
+
+00:16:53.189 --> 00:16:53.199 align:start position:0%
+to use the Forex data set uh that we've
+ 
+
+00:16:53.199 --> 00:16:55.990 align:start position:0%
+to use the Forex data set uh that we've
+defined<00:16:53.759><c> uh</c><00:16:53.920><c> before.</c><00:16:54.880><c> and</c><00:16:55.120><c> we</c><00:16:55.279><c> provide</c><00:16:55.759><c> all</c>
+
+00:16:55.990 --> 00:16:56.000 align:start position:0%
+defined uh before. and we provide all
+ 
+
+00:16:56.000 --> 00:16:58.230 align:start position:0%
+defined uh before. and we provide all
+the<00:16:56.240><c> parameters</c><00:16:57.040><c> the</c><00:16:57.279><c> required</c><00:16:57.680><c> parameters</c>
+
+00:16:58.230 --> 00:16:58.240 align:start position:0%
+the parameters the required parameters
+ 
+
+00:16:58.240 --> 00:17:01.030 align:start position:0%
+the parameters the required parameters
+that<00:16:58.560><c> we</c><00:16:58.720><c> have</c><00:16:59.040><c> already</c><00:16:59.759><c> then</c><00:17:00.000><c> we</c><00:17:00.240><c> split</c><00:17:00.800><c> the</c>
+
+00:17:01.030 --> 00:17:01.040 align:start position:0%
+that we have already then we split the
+ 
+
+00:17:01.040 --> 00:17:04.789 align:start position:0%
+that we have already then we split the
+data<00:17:01.440><c> into</c><00:17:01.920><c> training</c><00:17:02.880><c> size</c><00:17:03.360><c> so</c><00:17:03.600><c> that's</c><00:17:03.920><c> 80%</c><00:17:04.559><c> of</c>
+
+00:17:04.789 --> 00:17:04.799 align:start position:0%
+data into training size so that's 80% of
+ 
+
+00:17:04.799 --> 00:17:08.309 align:start position:0%
+data into training size so that's 80% of
+the<00:17:04.959><c> CSV</c><00:17:05.520><c> file</c><00:17:06.160><c> euro</c><00:17:06.400><c> US</c><00:17:06.720><c> dollar</c><00:17:06.959><c> that</c><00:17:07.199><c> we</c><00:17:07.360><c> have</c>
+
+00:17:08.309 --> 00:17:08.319 align:start position:0%
+the CSV file euro US dollar that we have
+ 
+
+00:17:08.319 --> 00:17:13.110 align:start position:0%
+the CSV file euro US dollar that we have
+10%<00:17:09.120><c> for</c><00:17:09.720><c> validation</c><00:17:10.720><c> and</c><00:17:11.199><c> another</c><00:17:11.880><c> 10%</c><00:17:12.880><c> for</c>
+
+00:17:13.110 --> 00:17:13.120 align:start position:0%
+10% for validation and another 10% for
+ 
+
+00:17:13.120 --> 00:17:16.549 align:start position:0%
+10% for validation and another 10% for
+the<00:17:13.360><c> testing</c><00:17:13.760><c> size</c><00:17:14.160><c> so</c><00:17:14.480><c> we</c><00:17:14.720><c> have</c><00:17:14.880><c> our</c><00:17:15.559><c> data</c>
+
+00:17:16.549 --> 00:17:16.559 align:start position:0%
+the testing size so we have our data
+ 
+
+00:17:16.559 --> 00:17:20.150 align:start position:0%
+the testing size so we have our data
+we're<00:17:16.880><c> splitting</c><00:17:17.280><c> the</c><00:17:17.679><c> rows</c><00:17:18.199><c> into</c><00:17:19.199><c> 80%</c><00:17:19.839><c> of</c>
+
+00:17:20.150 --> 00:17:20.160 align:start position:0%
+we're splitting the rows into 80% of
+ 
+
+00:17:20.160 --> 00:17:22.390 align:start position:0%
+we're splitting the rows into 80% of
+these<00:17:20.480><c> are</c><00:17:20.799><c> going</c><00:17:20.959><c> to</c><00:17:21.120><c> be</c><00:17:21.280><c> used</c><00:17:21.520><c> to</c><00:17:21.919><c> for</c><00:17:22.240><c> the</c>
+
+00:17:22.390 --> 00:17:22.400 align:start position:0%
+these are going to be used to for the
+ 
+
+00:17:22.400 --> 00:17:25.029 align:start position:0%
+these are going to be used to for the
+learning<00:17:22.880><c> phase</c><00:17:23.199><c> of</c><00:17:23.439><c> the</c><00:17:23.600><c> model</c><00:17:24.400><c> But</c><00:17:24.559><c> then</c><00:17:24.799><c> for</c>
+
+00:17:25.029 --> 00:17:25.039 align:start position:0%
+learning phase of the model But then for
+ 
+
+00:17:25.039 --> 00:17:27.669 align:start position:0%
+learning phase of the model But then for
+the<00:17:25.199><c> validation</c><00:17:26.160><c> we're</c><00:17:26.480><c> going</c><00:17:26.640><c> to</c><00:17:26.880><c> check</c><00:17:27.199><c> for</c>
+
+00:17:27.669 --> 00:17:27.679 align:start position:0%
+the validation we're going to check for
+ 
+
+00:17:27.679 --> 00:17:30.870 align:start position:0%
+the validation we're going to check for
+uh<00:17:27.839><c> 10%</c><00:17:28.480><c> of</c><00:17:28.720><c> these</c><00:17:29.120><c> uh</c><00:17:29.200><c> of</c><00:17:29.440><c> the</c><00:17:29.600><c> data</c><00:17:30.400><c> and</c><00:17:30.640><c> then</c>
+
+00:17:30.870 --> 00:17:30.880 align:start position:0%
+uh 10% of these uh of the data and then
+ 
+
+00:17:30.880 --> 00:17:34.549 align:start position:0%
+uh 10% of these uh of the data and then
+the<00:17:31.120><c> last</c><00:17:31.799><c> 10%</c><00:17:32.799><c> are</c><00:17:33.039><c> for</c><00:17:33.200><c> the</c><00:17:33.440><c> test</c><00:17:33.679><c> size.</c><00:17:34.080><c> So</c>
+
+00:17:34.549 --> 00:17:34.559 align:start position:0%
+the last 10% are for the test size. So
+ 
+
+00:17:34.559 --> 00:17:37.029 align:start position:0%
+the last 10% are for the test size. So
+somehow<00:17:35.039><c> we</c><00:17:35.280><c> are</c><00:17:35.679><c> letting</c><00:17:36.000><c> the</c><00:17:36.240><c> model</c><00:17:36.559><c> learn</c>
+
+00:17:37.029 --> 00:17:37.039 align:start position:0%
+somehow we are letting the model learn
+ 
+
+00:17:37.039 --> 00:17:38.870 align:start position:0%
+somehow we are letting the model learn
+on<00:17:37.360><c> a</c><00:17:37.600><c> big</c><00:17:37.760><c> chunk</c><00:17:38.000><c> of</c><00:17:38.080><c> the</c><00:17:38.240><c> data</c><00:17:38.480><c> but</c><00:17:38.720><c> then</c>
+
+00:17:38.870 --> 00:17:38.880 align:start position:0%
+on a big chunk of the data but then
+ 
+
+00:17:38.880 --> 00:17:42.630 align:start position:0%
+on a big chunk of the data but then
+we're<00:17:39.200><c> testing</c><00:17:39.600><c> it</c><00:17:40.480><c> on</c><00:17:41.120><c> another</c><00:17:41.600><c> 10%</c><00:17:42.320><c> and</c>
+
+00:17:42.630 --> 00:17:42.640 align:start position:0%
+we're testing it on another 10% and
+ 
+
+00:17:42.640 --> 00:17:45.110 align:start position:0%
+we're testing it on another 10% and
+another<00:17:42.960><c> 10%</c><00:17:43.600><c> just</c><00:17:43.840><c> to</c><00:17:44.000><c> evaluate</c><00:17:44.640><c> how</c><00:17:44.880><c> the</c>
+
+00:17:45.110 --> 00:17:45.120 align:start position:0%
+another 10% just to evaluate how the
+ 
+
+00:17:45.120 --> 00:17:47.909 align:start position:0%
+another 10% just to evaluate how the
+model<00:17:45.440><c> would</c><00:17:45.760><c> perform</c><00:17:46.240><c> on</c><00:17:46.640><c> new</c><00:17:47.039><c> and</c><00:17:47.360><c> unseen</c>
+
+00:17:47.909 --> 00:17:47.919 align:start position:0%
+model would perform on new and unseen
+ 
+
+00:17:47.919 --> 00:17:51.029 align:start position:0%
+model would perform on new and unseen
+data<00:17:48.559><c> during</c><00:17:48.880><c> the</c><00:17:49.120><c> training</c><00:17:49.360><c> phase.</c><00:17:50.000><c> Now</c><00:17:50.400><c> I've</c>
+
+00:17:51.029 --> 00:17:51.039 align:start position:0%
+data during the training phase. Now I've
+ 
+
+00:17:51.039 --> 00:17:54.710 align:start position:0%
+data during the training phase. Now I've
+left<00:17:51.919><c> this</c><00:17:52.240><c> line</c><00:17:52.559><c> here</c><00:17:52.960><c> on</c><00:17:53.480><c> purpose.</c><00:17:54.480><c> Just</c>
+
+00:17:54.710 --> 00:17:54.720 align:start position:0%
+left this line here on purpose. Just
+ 
+
+00:17:54.720 --> 00:17:57.750 align:start position:0%
+left this line here on purpose. Just
+don't<00:17:54.960><c> do</c><00:17:55.480><c> this.</c><00:17:56.480><c> This</c><00:17:56.720><c> is</c><00:17:56.960><c> where</c><00:17:57.280><c> we're</c><00:17:57.600><c> going</c>
+
+00:17:57.750 --> 00:17:57.760 align:start position:0%
+don't do this. This is where we're going
+ 
+
+00:17:57.760 --> 00:18:01.909 align:start position:0%
+don't do this. This is where we're going
+to<00:17:58.000><c> split</c><00:17:58.320><c> the</c><00:17:58.559><c> data</c><00:17:59.200><c> actually</c><00:18:00.160><c> into</c><00:18:00.640><c> 80%</c><00:18:01.360><c> 10%</c>
+
+00:18:01.909 --> 00:18:01.919 align:start position:0%
+to split the data actually into 80% 10%
+ 
+
+00:18:01.919 --> 00:18:03.909 align:start position:0%
+to split the data actually into 80% 10%
+and<00:18:02.080><c> 10%.</c><00:18:02.720><c> But</c><00:18:02.880><c> there</c><00:18:03.039><c> are</c><00:18:03.200><c> two</c><00:18:03.360><c> ways</c><00:18:03.600><c> of</c><00:18:03.760><c> doing</c>
+
+00:18:03.909 --> 00:18:03.919 align:start position:0%
+and 10%. But there are two ways of doing
+ 
+
+00:18:03.919 --> 00:18:06.230 align:start position:0%
+and 10%. But there are two ways of doing
+this.<00:18:04.320><c> Either</c><00:18:04.640><c> we</c><00:18:05.360><c> slice</c><00:18:05.840><c> these</c>
+
+00:18:06.230 --> 00:18:06.240 align:start position:0%
+this. Either we slice these
+ 
+
+00:18:06.240 --> 00:18:09.430 align:start position:0%
+this. Either we slice these
+sequentially.<00:18:07.039><c> So</c><00:18:07.280><c> the</c><00:18:07.600><c> first</c><00:18:08.640><c> uh</c><00:18:08.799><c> few</c><00:18:09.280><c> rows</c>
+
+00:18:09.430 --> 00:18:09.440 align:start position:0%
+sequentially. So the first uh few rows
+ 
+
+00:18:09.440 --> 00:18:11.590 align:start position:0%
+sequentially. So the first uh few rows
+are<00:18:09.600><c> the</c><00:18:09.840><c> 80%.</c><00:18:10.559><c> So</c><00:18:10.720><c> these</c><00:18:10.960><c> are</c><00:18:11.039><c> the</c><00:18:11.200><c> training</c>
+
+00:18:11.590 --> 00:18:11.600 align:start position:0%
+are the 80%. So these are the training
+ 
+
+00:18:11.600 --> 00:18:14.230 align:start position:0%
+are the 80%. So these are the training
+set<00:18:12.080><c> and</c><00:18:12.240><c> the</c><00:18:12.480><c> next</c><00:18:12.799><c> is</c><00:18:13.120><c> the</c><00:18:13.360><c> validation</c><00:18:14.080><c> and</c>
+
+00:18:14.230 --> 00:18:14.240 align:start position:0%
+set and the next is the validation and
+ 
+
+00:18:14.240 --> 00:18:17.870 align:start position:0%
+set and the next is the validation and
+then<00:18:14.400><c> the</c><00:18:14.640><c> next</c><00:18:14.799><c> is</c><00:18:15.039><c> the</c><00:18:15.400><c> test.</c><00:18:16.480><c> But</c><00:18:17.280><c> uh</c><00:18:17.440><c> by</c>
+
+00:18:17.870 --> 00:18:17.880 align:start position:0%
+then the next is the test. But uh by
+ 
+
+00:18:17.880 --> 00:18:20.630 align:start position:0%
+then the next is the test. But uh by
+default<00:18:18.880><c> in</c><00:18:19.280><c> machine</c><00:18:19.679><c> learning</c><00:18:20.080><c> we</c><00:18:20.320><c> have</c><00:18:20.480><c> the</c>
+
+00:18:20.630 --> 00:18:20.640 align:start position:0%
+default in machine learning we have the
+ 
+
+00:18:20.640 --> 00:18:23.110 align:start position:0%
+default in machine learning we have the
+habit<00:18:21.039><c> of</c><00:18:21.360><c> random</c><00:18:21.919><c> splitting.</c><00:18:22.480><c> It</c><00:18:22.640><c> means</c><00:18:22.880><c> like</c>
+
+00:18:23.110 --> 00:18:23.120 align:start position:0%
+habit of random splitting. It means like
+ 
+
+00:18:23.120 --> 00:18:26.390 align:start position:0%
+habit of random splitting. It means like
+picking<00:18:23.440><c> up</c><00:18:23.840><c> 80%</c><00:18:24.720><c> randomly</c><00:18:25.280><c> picking</c><00:18:25.600><c> up</c><00:18:25.840><c> 80%</c>
+
+00:18:26.390 --> 00:18:26.400 align:start position:0%
+picking up 80% randomly picking up 80%
+ 
+
+00:18:26.400 --> 00:18:28.710 align:start position:0%
+picking up 80% randomly picking up 80%
+of<00:18:26.559><c> the</c><00:18:26.799><c> of</c><00:18:27.120><c> the</c><00:18:27.280><c> data</c><00:18:27.679><c> points</c><00:18:28.320><c> and</c><00:18:28.559><c> then</c>
+
+00:18:28.710 --> 00:18:28.720 align:start position:0%
+of the of the data points and then
+ 
+
+00:18:28.720 --> 00:18:31.830 align:start position:0%
+of the of the data points and then
+randomly<00:18:29.280><c> picking</c><00:18:29.520><c> up</c><00:18:29.760><c> another</c><00:18:30.360><c> 10%</c><00:18:31.360><c> and</c><00:18:31.679><c> then</c>
+
+00:18:31.830 --> 00:18:31.840 align:start position:0%
+randomly picking up another 10% and then
+ 
+
+00:18:31.840 --> 00:18:34.710 align:start position:0%
+randomly picking up another 10% and then
+another<00:18:32.400><c> 10%</c><00:18:33.039><c> for</c><00:18:33.200><c> the</c><00:18:33.360><c> test</c><00:18:33.600><c> set.</c><00:18:34.320><c> But</c><00:18:34.480><c> that's</c>
+
+00:18:34.710 --> 00:18:34.720 align:start position:0%
+another 10% for the test set. But that's
+ 
+
+00:18:34.720 --> 00:18:36.789 align:start position:0%
+another 10% for the test set. But that's
+not<00:18:34.960><c> the</c><00:18:35.120><c> way</c><00:18:35.440><c> we</c><00:18:35.679><c> should</c><00:18:35.840><c> be</c><00:18:36.000><c> doing</c><00:18:36.160><c> it.</c><00:18:36.480><c> Why?</c>
+
+00:18:36.789 --> 00:18:36.799 align:start position:0%
+not the way we should be doing it. Why?
+ 
+
+00:18:36.799 --> 00:18:40.789 align:start position:0%
+not the way we should be doing it. Why?
+Because<00:18:37.360><c> in</c><00:18:38.160><c> time</c><00:18:38.640><c> series</c><00:18:39.480><c> analysis</c><00:18:40.480><c> the</c>
+
+00:18:40.789 --> 00:18:40.799 align:start position:0%
+Because in time series analysis the
+ 
+
+00:18:40.799 --> 00:18:43.110 align:start position:0%
+Because in time series analysis the
+sequence<00:18:41.679><c> is</c><00:18:41.919><c> very</c><00:18:42.240><c> important.</c><00:18:42.720><c> The</c><00:18:42.960><c> way</c>
+
+00:18:43.110 --> 00:18:43.120 align:start position:0%
+sequence is very important. The way
+ 
+
+00:18:43.120 --> 00:18:45.590 align:start position:0%
+sequence is very important. The way
+things<00:18:43.440><c> are</c><00:18:43.679><c> changing</c><00:18:44.080><c> together</c><00:18:45.039><c> is</c><00:18:45.360><c> very</c>
+
+00:18:45.590 --> 00:18:45.600 align:start position:0%
+things are changing together is very
+ 
+
+00:18:45.600 --> 00:18:48.470 align:start position:0%
+things are changing together is very
+important.<00:18:46.000><c> We</c><00:18:46.240><c> can't</c><00:18:46.480><c> just</c><00:18:47.280><c> pick</c><00:18:47.679><c> points</c>
+
+00:18:48.470 --> 00:18:48.480 align:start position:0%
+important. We can't just pick points
+ 
+
+00:18:48.480 --> 00:18:50.789 align:start position:0%
+important. We can't just pick points
+from<00:18:48.880><c> different</c><00:18:49.360><c> places</c><00:18:49.760><c> or</c><00:18:50.080><c> from</c><00:18:50.400><c> different</c>
+
+00:18:50.789 --> 00:18:50.799 align:start position:0%
+from different places or from different
+ 
+
+00:18:50.799 --> 00:18:53.830 align:start position:0%
+from different places or from different
+times<00:18:51.280><c> of</c><00:18:51.600><c> our</c><00:18:51.919><c> data.</c><00:18:52.400><c> This</c><00:18:52.559><c> is</c><00:18:52.720><c> not</c><00:18:52.960><c> going</c><00:18:53.200><c> to</c>
+
+00:18:53.830 --> 00:18:53.840 align:start position:0%
+times of our data. This is not going to
+ 
+
+00:18:53.840 --> 00:18:56.390 align:start position:0%
+times of our data. This is not going to
+uh<00:18:54.240><c> provide</c><00:18:54.640><c> good</c><00:18:54.880><c> results.</c><00:18:55.760><c> And</c><00:18:55.919><c> moreover,</c>
+
+00:18:56.390 --> 00:18:56.400 align:start position:0%
+uh provide good results. And moreover,
+ 
+
+00:18:56.400 --> 00:18:58.470 align:start position:0%
+uh provide good results. And moreover,
+it's<00:18:56.640><c> going</c><00:18:56.720><c> to</c><00:18:56.880><c> bias</c><00:18:57.360><c> the</c><00:18:57.600><c> results.</c><00:18:58.080><c> Now,</c><00:18:58.240><c> we</c>
+
+00:18:58.470 --> 00:18:58.480 align:start position:0%
+it's going to bias the results. Now, we
+ 
+
+00:18:58.480 --> 00:19:01.750 align:start position:0%
+it's going to bias the results. Now, we
+provide<00:18:58.799><c> batch</c><00:18:59.120><c> size.</c><00:18:59.520><c> It's</c><00:19:00.039><c> 32.</c><00:19:01.039><c> Um</c><00:19:01.440><c> the</c>
+
+00:19:01.750 --> 00:19:01.760 align:start position:0%
+provide batch size. It's 32. Um the
+ 
+
+00:19:01.760 --> 00:19:03.909 align:start position:0%
+provide batch size. It's 32. Um the
+train<00:19:02.080><c> loader</c><00:19:02.480><c> is</c><00:19:02.880><c> we're</c><00:19:03.200><c> going</c><00:19:03.360><c> to</c><00:19:03.520><c> use</c><00:19:03.679><c> the</c>
+
+00:19:03.909 --> 00:19:03.919 align:start position:0%
+train loader is we're going to use the
+ 
+
+00:19:03.919 --> 00:19:06.310 align:start position:0%
+train loader is we're going to use the
+data<00:19:04.160><c> loader</c><00:19:04.559><c> for</c><00:19:04.720><c> the</c><00:19:04.960><c> training</c><00:19:05.360><c> data</c><00:19:05.679><c> set,</c>
+
+00:19:06.310 --> 00:19:06.320 align:start position:0%
+data loader for the training data set,
+ 
+
+00:19:06.320 --> 00:19:07.990 align:start position:0%
+data loader for the training data set,
+for<00:19:06.559><c> the</c><00:19:06.720><c> validation</c><00:19:07.200><c> data</c><00:19:07.520><c> set,</c><00:19:07.679><c> and</c><00:19:07.840><c> the</c>
+
+00:19:07.990 --> 00:19:08.000 align:start position:0%
+for the validation data set, and the
+ 
+
+00:19:08.000 --> 00:19:10.710 align:start position:0%
+for the validation data set, and the
+test<00:19:08.240><c> data</c><00:19:08.559><c> set.</c><00:19:09.360><c> And</c><00:19:09.520><c> then</c><00:19:09.760><c> we</c><00:19:10.000><c> create</c><00:19:10.320><c> and</c>
+
+00:19:10.710 --> 00:19:10.720 align:start position:0%
+test data set. And then we create and
+ 
+
+00:19:10.720 --> 00:19:13.110 align:start position:0%
+test data set. And then we create and
+train<00:19:11.120><c> a</c><00:19:11.440><c> transformer</c><00:19:12.080><c> model</c><00:19:12.400><c> here.</c><00:19:12.720><c> So</c><00:19:12.880><c> we're</c>
+
+00:19:13.110 --> 00:19:13.120 align:start position:0%
+train a transformer model here. So we're
+ 
+
+00:19:13.120 --> 00:19:15.430 align:start position:0%
+train a transformer model here. So we're
+going<00:19:13.280><c> to</c><00:19:13.440><c> define</c><00:19:13.760><c> a</c><00:19:14.000><c> model</c><00:19:14.720><c> time</c><00:19:15.039><c> series</c>
+
+00:19:15.430 --> 00:19:15.440 align:start position:0%
+going to define a model time series
+ 
+
+00:19:15.440 --> 00:19:17.750 align:start position:0%
+going to define a model time series
+transformer<00:19:16.320><c> that</c><00:19:16.640><c> we</c><00:19:16.880><c> have</c><00:19:17.120><c> created.</c><00:19:17.600><c> That's</c>
+
+00:19:17.750 --> 00:19:17.760 align:start position:0%
+transformer that we have created. That's
+ 
+
+00:19:17.760 --> 00:19:19.750 align:start position:0%
+transformer that we have created. That's
+a<00:19:17.919><c> class</c><00:19:18.080><c> that</c><00:19:18.320><c> we</c><00:19:18.480><c> have</c><00:19:18.640><c> created</c><00:19:19.200><c> uh</c>
+
+00:19:19.750 --> 00:19:19.760 align:start position:0%
+a class that we have created uh
+ 
+
+00:19:19.760 --> 00:19:23.390 align:start position:0%
+a class that we have created uh
+previously<00:19:20.160><c> in</c><00:19:20.400><c> this</c><00:19:20.640><c> code.</c><00:19:21.280><c> We</c><00:19:21.600><c> provide</c><00:19:22.160><c> the</c>
+
+00:19:23.390 --> 00:19:23.400 align:start position:0%
+previously in this code. We provide the
+ 
+
+00:19:23.400 --> 00:19:25.430 align:start position:0%
+previously in this code. We provide the
+parameters.<00:19:24.400><c> And</c><00:19:24.640><c> as</c><00:19:24.880><c> you</c><00:19:25.039><c> can</c><00:19:25.120><c> see</c><00:19:25.200><c> the</c>
+
+00:19:25.430 --> 00:19:25.440 align:start position:0%
+parameters. And as you can see the
+ 
+
+00:19:25.440 --> 00:19:27.830 align:start position:0%
+parameters. And as you can see the
+sequence<00:19:26.000><c> length</c><00:19:26.480><c> is</c><00:19:26.799><c> equal</c><00:19:27.120><c> to</c><00:19:27.280><c> the</c><00:19:27.520><c> one</c>
+
+00:19:27.830 --> 00:19:27.840 align:start position:0%
+sequence length is equal to the one
+ 
+
+00:19:27.840 --> 00:19:30.990 align:start position:0%
+sequence length is equal to the one
+defined<00:19:28.240><c> here.</c><00:19:28.640><c> So</c><00:19:28.720><c> that's</c><00:19:29.200><c> 30</c><00:19:29.600><c> for</c>
+
+00:19:30.990 --> 00:19:31.000 align:start position:0%
+defined here. So that's 30 for
+ 
+
+00:19:31.000 --> 00:19:34.390 align:start position:0%
+defined here. So that's 30 for
+now.<00:19:32.000><c> Same</c><00:19:32.240><c> for</c><00:19:32.480><c> the</c><00:19:32.720><c> prediction</c><00:19:33.520><c> length</c><00:19:34.080><c> as</c>
+
+00:19:34.390 --> 00:19:34.400 align:start position:0%
+now. Same for the prediction length as
+ 
+
+00:19:34.400 --> 00:19:37.110 align:start position:0%
+now. Same for the prediction length as
+well.<00:19:35.039><c> It's</c><00:19:35.200><c> equal</c><00:19:35.440><c> to</c><00:19:35.679><c> one.</c><00:19:36.480><c> And</c><00:19:36.720><c> if</c><00:19:36.880><c> we</c><00:19:37.039><c> have</c>
+
+00:19:37.110 --> 00:19:37.120 align:start position:0%
+well. It's equal to one. And if we have
+ 
+
+00:19:37.120 --> 00:19:39.510 align:start position:0%
+well. It's equal to one. And if we have
+a<00:19:37.280><c> GPU,</c><00:19:37.840><c> we're</c><00:19:38.080><c> going</c><00:19:38.240><c> to</c><00:19:38.480><c> use</c><00:19:38.640><c> it.</c><00:19:38.960><c> Otherwise,</c>
+
+00:19:39.510 --> 00:19:39.520 align:start position:0%
+a GPU, we're going to use it. Otherwise,
+ 
+
+00:19:39.520 --> 00:19:42.310 align:start position:0%
+a GPU, we're going to use it. Otherwise,
+we're<00:19:39.760><c> going</c><00:19:39.840><c> to</c><00:19:40.000><c> use</c><00:19:40.160><c> a</c><00:19:40.520><c> CPU.</c><00:19:41.520><c> Uh</c><00:19:41.919><c> trained</c>
+
+00:19:42.310 --> 00:19:42.320 align:start position:0%
+we're going to use a CPU. Uh trained
+ 
+
+00:19:42.320 --> 00:19:45.510 align:start position:0%
+we're going to use a CPU. Uh trained
+model<00:19:42.799><c> is</c><00:19:43.120><c> equal</c><00:19:43.520><c> to</c><00:19:44.320><c> we</c><00:19:44.559><c> apply</c><00:19:44.880><c> the</c><00:19:45.200><c> train</c>
+
+00:19:45.510 --> 00:19:45.520 align:start position:0%
+model is equal to we apply the train
+ 
+
+00:19:45.520 --> 00:19:47.669 align:start position:0%
+model is equal to we apply the train
+transformer<00:19:46.080><c> model.</c><00:19:46.480><c> We</c><00:19:46.640><c> provide</c><00:19:46.880><c> the</c><00:19:47.120><c> model</c>
+
+00:19:47.669 --> 00:19:47.679 align:start position:0%
+transformer model. We provide the model
+ 
+
+00:19:47.679 --> 00:19:50.630 align:start position:0%
+transformer model. We provide the model
+that<00:19:47.919><c> we</c><00:19:48.080><c> have</c><00:19:48.240><c> just</c><00:19:48.480><c> defined</c><00:19:49.440><c> the</c><00:19:49.919><c> um</c><00:19:50.320><c> data,</c>
+
+00:19:50.630 --> 00:19:50.640 align:start position:0%
+that we have just defined the um data,
+ 
+
+00:19:50.640 --> 00:19:52.470 align:start position:0%
+that we have just defined the um data,
+the<00:19:50.960><c> training</c><00:19:51.360><c> data,</c><00:19:51.760><c> the</c><00:19:52.000><c> validation</c>
+
+00:19:52.470 --> 00:19:52.480 align:start position:0%
+the training data, the validation
+ 
+
+00:19:52.480 --> 00:19:55.510 align:start position:0%
+the training data, the validation
+loader,<00:19:53.440><c> the</c><00:19:53.919><c> learning</c><00:19:54.240><c> rate,</c><00:19:55.120><c> number</c><00:19:55.360><c> of</c>
+
+00:19:55.510 --> 00:19:55.520 align:start position:0%
+loader, the learning rate, number of
+ 
+
+00:19:55.520 --> 00:19:57.909 align:start position:0%
+loader, the learning rate, number of
+epochs,<00:19:56.080><c> and</c><00:19:56.320><c> the</c><00:19:56.480><c> device.</c><00:19:57.200><c> And</c><00:19:57.360><c> that's</c><00:19:57.600><c> it.</c>
+
+00:19:57.909 --> 00:19:57.919 align:start position:0%
+epochs, and the device. And that's it.
+ 
+
+00:19:57.919 --> 00:20:00.789 align:start position:0%
+epochs, and the device. And that's it.
+So,<00:19:58.320><c> this</c><00:19:58.559><c> is</c><00:19:58.799><c> going</c><00:19:59.039><c> to</c><00:19:59.200><c> take</c><00:19:59.520><c> a</c><00:19:59.760><c> bit</c><00:19:59.919><c> of</c><00:20:00.160><c> time</c>
+
+00:20:00.789 --> 00:20:00.799 align:start position:0%
+So, this is going to take a bit of time
+ 
+
+00:20:00.799 --> 00:20:03.029 align:start position:0%
+So, this is going to take a bit of time
+depending<00:20:01.200><c> on</c><00:20:01.440><c> how</c><00:20:01.679><c> many</c><00:20:02.000><c> epochs</c><00:20:02.720><c> you're</c>
+
+00:20:03.029 --> 00:20:03.039 align:start position:0%
+depending on how many epochs you're
+ 
+
+00:20:03.039 --> 00:20:06.150 align:start position:0%
+depending on how many epochs you're
+going<00:20:03.280><c> to</c><00:20:03.600><c> uh</c><00:20:03.840><c> use.</c><00:20:04.480><c> So</c><00:20:04.799><c> I</c><00:20:05.039><c> had</c><00:20:05.280><c> to</c><00:20:05.440><c> stop</c><00:20:05.600><c> it</c><00:20:05.919><c> a</c>
+
+00:20:06.150 --> 00:20:06.160 align:start position:0%
+going to uh use. So I had to stop it a
+ 
+
+00:20:06.160 --> 00:20:08.150 align:start position:0%
+going to uh use. So I had to stop it a
+bit<00:20:06.320><c> quickly</c><00:20:06.880><c> just</c><00:20:07.120><c> to</c><00:20:07.280><c> get</c><00:20:07.440><c> on</c><00:20:07.679><c> with</c><00:20:07.919><c> the</c>
+
+00:20:08.150 --> 00:20:08.160 align:start position:0%
+bit quickly just to get on with the
+ 
+
+00:20:08.160 --> 00:20:10.870 align:start position:0%
+bit quickly just to get on with the
+video,<00:20:08.720><c> the</c><00:20:09.000><c> recording</c><00:20:10.000><c> and</c><00:20:10.240><c> to</c><00:20:10.400><c> show</c><00:20:10.559><c> you</c><00:20:10.720><c> how</c>
+
+00:20:10.870 --> 00:20:10.880 align:start position:0%
+video, the recording and to show you how
+ 
+
+00:20:10.880 --> 00:20:12.870 align:start position:0%
+video, the recording and to show you how
+we<00:20:11.039><c> can</c><00:20:11.200><c> use</c><00:20:11.360><c> the</c><00:20:11.600><c> evaluation.</c><00:20:12.240><c> So</c><00:20:12.480><c> then</c><00:20:12.720><c> we</c>
+
+00:20:12.870 --> 00:20:12.880 align:start position:0%
+we can use the evaluation. So then we
+ 
+
+00:20:12.880 --> 00:20:15.110 align:start position:0%
+we can use the evaluation. So then we
+just<00:20:13.120><c> have</c><00:20:13.280><c> to</c><00:20:13.520><c> call</c><00:20:13.760><c> the</c><00:20:14.000><c> evaluate</c><00:20:14.640><c> model</c>
+
+00:20:15.110 --> 00:20:15.120 align:start position:0%
+just have to call the evaluate model
+ 
+
+00:20:15.120 --> 00:20:17.110 align:start position:0%
+just have to call the evaluate model
+function.<00:20:15.679><c> We</c><00:20:15.840><c> provide</c><00:20:16.160><c> the</c><00:20:16.320><c> trained</c><00:20:16.720><c> model,</c>
+
+00:20:17.110 --> 00:20:17.120 align:start position:0%
+function. We provide the trained model,
+ 
+
+00:20:17.120 --> 00:20:21.110 align:start position:0%
+function. We provide the trained model,
+the<00:20:17.360><c> test</c><00:20:18.160><c> data,</c><00:20:18.640><c> the</c><00:20:18.960><c> scalar</c><00:20:19.520><c> and</c><00:20:19.760><c> so</c><00:20:19.919><c> on.</c><00:20:20.799><c> And</c>
+
+00:20:21.110 --> 00:20:21.120 align:start position:0%
+the test data, the scalar and so on. And
+ 
+
+00:20:21.120 --> 00:20:23.990 align:start position:0%
+the test data, the scalar and so on. And
+as<00:20:21.360><c> you</c><00:20:21.520><c> can</c><00:20:21.679><c> see</c><00:20:21.919><c> we</c><00:20:22.160><c> have</c><00:20:22.240><c> two</c><00:20:22.480><c> curves.</c><00:20:23.280><c> So</c>
+
+00:20:23.990 --> 00:20:24.000 align:start position:0%
+as you can see we have two curves. So
+ 
+
+00:20:24.000 --> 00:20:27.029 align:start position:0%
+as you can see we have two curves. So
+this<00:20:24.320><c> one</c><00:20:24.720><c> in</c><00:20:25.039><c> blue</c><00:20:25.679><c> is</c><00:20:25.919><c> the</c><00:20:26.160><c> real</c><00:20:26.640><c> these</c><00:20:26.960><c> are</c>
+
+00:20:27.029 --> 00:20:27.039 align:start position:0%
+this one in blue is the real these are
+ 
+
+00:20:27.039 --> 00:20:30.230 align:start position:0%
+this one in blue is the real these are
+the<00:20:27.280><c> real</c><00:20:27.600><c> closing</c><00:20:28.440><c> prices</c><00:20:29.440><c> and</c><00:20:29.679><c> the</c><00:20:29.919><c> orange</c>
+
+00:20:30.230 --> 00:20:30.240 align:start position:0%
+the real closing prices and the orange
+ 
+
+00:20:30.240 --> 00:20:33.750 align:start position:0%
+the real closing prices and the orange
+one<00:20:31.039><c> are</c><00:20:31.280><c> the</c><00:20:31.600><c> predicted</c><00:20:32.159><c> closing</c><00:20:32.640><c> prices.</c>
+
+00:20:33.750 --> 00:20:33.760 align:start position:0%
+one are the predicted closing prices.
+ 
+
+00:20:33.760 --> 00:20:36.310 align:start position:0%
+one are the predicted closing prices.
+And<00:20:34.000><c> at</c><00:20:34.240><c> first</c><00:20:34.799><c> you</c><00:20:35.039><c> might</c><00:20:35.280><c> say</c><00:20:35.840><c> this</c><00:20:36.080><c> is</c>
+
+00:20:36.310 --> 00:20:36.320 align:start position:0%
+And at first you might say this is
+ 
+
+00:20:36.320 --> 00:20:38.630 align:start position:0%
+And at first you might say this is
+working<00:20:36.720><c> really</c><00:20:37.039><c> great.</c><00:20:37.440><c> I</c><00:20:37.679><c> mean</c><00:20:38.159><c> the</c><00:20:38.480><c> uh</c>
+
+00:20:38.630 --> 00:20:38.640 align:start position:0%
+working really great. I mean the uh
+ 
+
+00:20:38.640 --> 00:20:40.950 align:start position:0%
+working really great. I mean the uh
+predicted<00:20:39.200><c> closing</c><00:20:39.600><c> prices</c><00:20:40.240><c> are</c><00:20:40.480><c> not</c><00:20:40.720><c> very</c>
+
+00:20:40.950 --> 00:20:40.960 align:start position:0%
+predicted closing prices are not very
+ 
+
+00:20:40.960 --> 00:20:45.430 align:start position:0%
+predicted closing prices are not very
+far<00:20:41.280><c> from</c><00:20:42.240><c> the</c><00:20:42.799><c> um</c><00:20:43.280><c> real</c><00:20:43.600><c> closing</c><00:20:44.280><c> prices.</c><00:20:45.280><c> But</c>
+
+00:20:45.430 --> 00:20:45.440 align:start position:0%
+far from the um real closing prices. But
+ 
+
+00:20:45.440 --> 00:20:48.710 align:start position:0%
+far from the um real closing prices. But
+if<00:20:45.679><c> you</c><00:20:45.840><c> look</c><00:20:46.200><c> closely</c><00:20:47.200><c> it</c><00:20:47.440><c> looks</c><00:20:47.679><c> like</c><00:20:48.400><c> the</c>
+
+00:20:48.710 --> 00:20:48.720 align:start position:0%
+if you look closely it looks like the
+ 
+
+00:20:48.720 --> 00:20:52.149 align:start position:0%
+if you look closely it looks like the
+model<00:20:49.039><c> is</c><00:20:49.280><c> a</c><00:20:49.520><c> bit</c><00:20:49.760><c> copying</c><00:20:50.480><c> what</c><00:20:51.159><c> happened</c>
+
+00:20:52.149 --> 00:20:52.159 align:start position:0%
+model is a bit copying what happened
+ 
+
+00:20:52.159 --> 00:20:54.710 align:start position:0%
+model is a bit copying what happened
+before<00:20:52.640><c> in</c><00:20:52.880><c> the</c><00:20:53.039><c> candle</c><00:20:53.440><c> before</c><00:20:53.760><c> that.</c><00:20:54.400><c> So</c>
+
+00:20:54.710 --> 00:20:54.720 align:start position:0%
+before in the candle before that. So
+ 
+
+00:20:54.720 --> 00:20:57.750 align:start position:0%
+before in the candle before that. So
+take<00:20:54.960><c> for</c><00:20:55.159><c> example</c><00:20:56.159><c> this</c><00:20:56.480><c> predicted</c><00:20:57.039><c> value</c>
+
+00:20:57.750 --> 00:20:57.760 align:start position:0%
+take for example this predicted value
+ 
+
+00:20:57.760 --> 00:21:00.950 align:start position:0%
+take for example this predicted value
+almost<00:20:58.480><c> equal</c><00:20:59.120><c> or</c><00:20:59.600><c> a</c><00:20:59.919><c> bit</c><00:21:00.080><c> higher</c><00:21:00.480><c> than</c><00:21:00.640><c> the</c>
+
+00:21:00.950 --> 00:21:00.960 align:start position:0%
+almost equal or a bit higher than the
+ 
+
+00:21:00.960 --> 00:21:03.350 align:start position:0%
+almost equal or a bit higher than the
+previously<00:21:01.760><c> real</c><00:21:02.240><c> value.</c><00:21:02.559><c> the</c><00:21:02.799><c> previous</c><00:21:03.039><c> real</c>
+
+00:21:03.350 --> 00:21:03.360 align:start position:0%
+previously real value. the previous real
+ 
+
+00:21:03.360 --> 00:21:06.470 align:start position:0%
+previously real value. the previous real
+value<00:21:04.240><c> or</c><00:21:04.720><c> even</c><00:21:05.039><c> better</c><00:21:05.440><c> if</c><00:21:05.679><c> you</c><00:21:05.840><c> take</c><00:21:06.159><c> this</c>
+
+00:21:06.470 --> 00:21:06.480 align:start position:0%
+value or even better if you take this
+ 
+
+00:21:06.480 --> 00:21:09.110 align:start position:0%
+value or even better if you take this
+line<00:21:06.880><c> here.</c><00:21:07.360><c> So</c><00:21:07.520><c> how</c><00:21:07.840><c> things</c><00:21:08.240><c> changed</c><00:21:08.799><c> from</c>
+
+00:21:09.110 --> 00:21:09.120 align:start position:0%
+line here. So how things changed from
+ 
+
+00:21:09.120 --> 00:21:11.990 align:start position:0%
+line here. So how things changed from
+this<00:21:09.440><c> point</c><00:21:09.840><c> up</c><00:21:10.080><c> to</c><00:21:10.240><c> this</c><00:21:10.480><c> point</c><00:21:11.200><c> it's</c><00:21:11.440><c> a</c><00:21:11.679><c> copy</c>
+
+00:21:11.990 --> 00:21:12.000 align:start position:0%
+this point up to this point it's a copy
+ 
+
+00:21:12.000 --> 00:21:14.549 align:start position:0%
+this point up to this point it's a copy
+and<00:21:12.320><c> paste</c><00:21:12.799><c> of</c><00:21:13.039><c> how</c><00:21:13.360><c> things</c><00:21:13.679><c> changed</c><00:21:14.159><c> between</c>
+
+00:21:14.549 --> 00:21:14.559 align:start position:0%
+and paste of how things changed between
+ 
+
+00:21:14.559 --> 00:21:18.390 align:start position:0%
+and paste of how things changed between
+these<00:21:14.960><c> two</c><00:21:15.200><c> consecutive</c><00:21:15.960><c> points.</c><00:21:17.000><c> Same</c><00:21:18.000><c> this</c>
+
+00:21:18.390 --> 00:21:18.400 align:start position:0%
+these two consecutive points. Same this
+ 
+
+00:21:18.400 --> 00:21:20.710 align:start position:0%
+these two consecutive points. Same this
+change<00:21:18.720><c> here</c><00:21:19.280><c> is</c><00:21:19.600><c> translated</c><00:21:20.240><c> into</c><00:21:20.480><c> this</c>
+
+00:21:20.710 --> 00:21:20.720 align:start position:0%
+change here is translated into this
+ 
+
+00:21:20.720 --> 00:21:22.950 align:start position:0%
+change here is translated into this
+change<00:21:21.039><c> here.</c><00:21:21.679><c> Then</c><00:21:21.919><c> the</c><00:21:22.080><c> price</c><00:21:22.400><c> dropped</c><00:21:22.799><c> in</c>
+
+00:21:22.950 --> 00:21:22.960 align:start position:0%
+change here. Then the price dropped in
+ 
+
+00:21:22.960 --> 00:21:25.590 align:start position:0%
+change here. Then the price dropped in
+reality<00:21:23.840><c> and</c><00:21:24.080><c> the</c><00:21:24.320><c> transformer</c><00:21:24.960><c> also</c><00:21:25.360><c> dropped</c>
+
+00:21:25.590 --> 00:21:25.600 align:start position:0%
+reality and the transformer also dropped
+ 
+
+00:21:25.600 --> 00:21:29.190 align:start position:0%
+reality and the transformer also dropped
+the<00:21:25.840><c> price.</c><00:21:26.880><c> Now,</c><00:21:27.520><c> it</c><00:21:27.760><c> might</c><00:21:28.000><c> not</c><00:21:28.240><c> be</c><00:21:28.720><c> exactly</c>
+
+00:21:29.190 --> 00:21:29.200 align:start position:0%
+the price. Now, it might not be exactly
+ 
+
+00:21:29.200 --> 00:21:31.909 align:start position:0%
+the price. Now, it might not be exactly
+a<00:21:29.440><c> copy</c><00:21:29.760><c> and</c><00:21:30.000><c> paste</c><00:21:30.559><c> of</c><00:21:30.880><c> what</c><00:21:31.120><c> just</c><00:21:31.440><c> happened</c>
+
+00:21:31.909 --> 00:21:31.919 align:start position:0%
+a copy and paste of what just happened
+ 
+
+00:21:31.919 --> 00:21:34.630 align:start position:0%
+a copy and paste of what just happened
+in<00:21:32.240><c> the</c><00:21:32.480><c> real</c><00:21:32.799><c> price,</c><00:21:33.360><c> but</c><00:21:33.600><c> to</c><00:21:33.760><c> me</c><00:21:34.000><c> it</c><00:21:34.320><c> actually</c>
+
+00:21:34.630 --> 00:21:34.640 align:start position:0%
+in the real price, but to me it actually
+ 
+
+00:21:34.640 --> 00:21:37.669 align:start position:0%
+in the real price, but to me it actually
+looks<00:21:34.960><c> like</c><00:21:35.360><c> the</c><00:21:35.600><c> model</c><00:21:35.919><c> is</c><00:21:36.159><c> just</c><00:21:36.400><c> copying</c><00:21:37.360><c> how</c>
+
+00:21:37.669 --> 00:21:37.679 align:start position:0%
+looks like the model is just copying how
+ 
+
+00:21:37.679 --> 00:21:41.230 align:start position:0%
+looks like the model is just copying how
+the<00:21:37.840><c> price</c><00:21:38.080><c> is</c><00:21:38.480><c> changing</c><00:21:39.760><c> uh</c><00:21:39.919><c> very</c><00:21:40.240><c> recently</c>
+
+00:21:41.230 --> 00:21:41.240 align:start position:0%
+the price is changing uh very recently
+ 
+
+00:21:41.240 --> 00:21:44.470 align:start position:0%
+the price is changing uh very recently
+and<00:21:42.240><c> just</c><00:21:42.640><c> replicating</c><00:21:43.280><c> this</c><00:21:43.679><c> in</c><00:21:43.919><c> the</c><00:21:44.080><c> future</c>
+
+00:21:44.470 --> 00:21:44.480 align:start position:0%
+and just replicating this in the future
+ 
+
+00:21:44.480 --> 00:21:47.830 align:start position:0%
+and just replicating this in the future
+step.<00:21:45.360><c> It's</c><00:21:45.840><c> not</c><00:21:46.080><c> really</c><00:21:46.720><c> showing</c><00:21:47.200><c> any</c>
+
+00:21:47.830 --> 00:21:47.840 align:start position:0%
+step. It's not really showing any
+ 
+
+00:21:47.840 --> 00:21:50.230 align:start position:0%
+step. It's not really showing any
+powerful<00:21:48.400><c> predictive</c><00:21:49.120><c> potential.</c><00:21:49.760><c> Now,</c><00:21:50.000><c> to</c>
+
+00:21:50.230 --> 00:21:50.240 align:start position:0%
+powerful predictive potential. Now, to
+ 
+
+00:21:50.240 --> 00:21:52.390 align:start position:0%
+powerful predictive potential. Now, to
+be<00:21:50.320><c> fair,</c><00:21:51.120><c> uh</c><00:21:51.280><c> at</c><00:21:51.440><c> the</c><00:21:51.600><c> same</c><00:21:51.679><c> time,</c><00:21:51.919><c> we</c><00:21:52.159><c> didn't</c>
+
+00:21:52.390 --> 00:21:52.400 align:start position:0%
+be fair, uh at the same time, we didn't
+ 
+
+00:21:52.400 --> 00:21:54.669 align:start position:0%
+be fair, uh at the same time, we didn't
+provide<00:21:52.799><c> much</c><00:21:53.120><c> for</c><00:21:53.280><c> the</c><00:21:53.520><c> model.</c><00:21:54.000><c> Remember</c>
+
+00:21:54.669 --> 00:21:54.679 align:start position:0%
+provide much for the model. Remember
+ 
+
+00:21:54.679 --> 00:21:59.029 align:start position:0%
+provide much for the model. Remember
+that<00:21:55.679><c> for</c><00:21:56.240><c> the</c><00:21:56.799><c> um</c><00:21:57.520><c> technical</c><00:21:58.000><c> indicators</c><00:21:58.799><c> we</c>
+
+00:21:59.029 --> 00:21:59.039 align:start position:0%
+that for the um technical indicators we
+ 
+
+00:21:59.039 --> 00:22:00.590 align:start position:0%
+that for the um technical indicators we
+provided<00:21:59.520><c> two</c><00:21:59.760><c> or</c><00:21:59.919><c> three</c><00:22:00.159><c> technical</c>
+
+00:22:00.590 --> 00:22:00.600 align:start position:0%
+provided two or three technical
+ 
+
+00:22:00.600 --> 00:22:03.590 align:start position:0%
+provided two or three technical
+indicators,<00:22:01.600><c> we</c><00:22:01.919><c> provided</c><00:22:02.400><c> the</c><00:22:02.799><c> uh</c><00:22:03.200><c> closing</c>
+
+00:22:03.590 --> 00:22:03.600 align:start position:0%
+indicators, we provided the uh closing
+ 
+
+00:22:03.600 --> 00:22:06.470 align:start position:0%
+indicators, we provided the uh closing
+prices<00:22:04.000><c> and</c><00:22:04.240><c> so</c><00:22:04.400><c> on.</c><00:22:05.039><c> So</c><00:22:05.360><c> it's</c><00:22:05.679><c> not</c><00:22:05.840><c> enough</c><00:22:06.159><c> to</c>
+
+00:22:06.470 --> 00:22:06.480 align:start position:0%
+prices and so on. So it's not enough to
+ 
+
+00:22:06.480 --> 00:22:07.990 align:start position:0%
+prices and so on. So it's not enough to
+actually<00:22:06.799><c> come</c><00:22:06.960><c> up</c><00:22:07.120><c> with</c><00:22:07.200><c> a</c><00:22:07.440><c> prediction.</c><00:22:07.840><c> And</c>
+
+00:22:07.990 --> 00:22:08.000 align:start position:0%
+actually come up with a prediction. And
+ 
+
+00:22:08.000 --> 00:22:10.470 align:start position:0%
+actually come up with a prediction. And
+the<00:22:08.159><c> main</c><00:22:08.400><c> reason</c><00:22:08.960><c> neural</c><00:22:09.440><c> networks</c><00:22:10.000><c> always</c>
+
+00:22:10.470 --> 00:22:10.480 align:start position:0%
+the main reason neural networks always
+ 
+
+00:22:10.480 --> 00:22:13.590 align:start position:0%
+the main reason neural networks always
+fail<00:22:10.960><c> in</c><00:22:11.280><c> this</c><00:22:11.520><c> task</c><00:22:12.080><c> is</c><00:22:12.400><c> because</c><00:22:13.039><c> you</c><00:22:13.280><c> have</c><00:22:13.440><c> a</c>
+
+00:22:13.590 --> 00:22:13.600 align:start position:0%
+fail in this task is because you have a
+ 
+
+00:22:13.600 --> 00:22:16.870 align:start position:0%
+fail in this task is because you have a
+lot<00:22:13.760><c> of</c><00:22:13.960><c> noise</c><00:22:14.960><c> in</c><00:22:15.280><c> trading</c><00:22:15.760><c> data.</c><00:22:16.400><c> The</c><00:22:16.640><c> price</c>
+
+00:22:16.870 --> 00:22:16.880 align:start position:0%
+lot of noise in trading data. The price
+ 
+
+00:22:16.880 --> 00:22:19.510 align:start position:0%
+lot of noise in trading data. The price
+is<00:22:17.280><c> very</c><00:22:17.600><c> jumpy.</c><00:22:18.080><c> It's</c><00:22:18.320><c> going</c><00:22:18.559><c> up</c><00:22:18.799><c> and</c><00:22:19.039><c> down.</c>
+
+00:22:19.510 --> 00:22:19.520 align:start position:0%
+is very jumpy. It's going up and down.
+ 
+
+00:22:19.520 --> 00:22:21.590 align:start position:0%
+is very jumpy. It's going up and down.
+It's<00:22:19.760><c> not</c><00:22:20.000><c> showing</c><00:22:20.320><c> clear</c><00:22:20.640><c> patterns,</c><00:22:21.280><c> no</c>
+
+00:22:21.590 --> 00:22:21.600 align:start position:0%
+It's not showing clear patterns, no
+ 
+
+00:22:21.600 --> 00:22:25.029 align:start position:0%
+It's not showing clear patterns, no
+repetitive<00:22:22.240><c> patterns.</c><00:22:22.880><c> And</c><00:22:23.360><c> so</c><00:22:24.320><c> any</c><00:22:24.720><c> model</c>
+
+00:22:25.029 --> 00:22:25.039 align:start position:0%
+repetitive patterns. And so any model
+ 
+
+00:22:25.039 --> 00:22:28.149 align:start position:0%
+repetitive patterns. And so any model
+that<00:22:25.360><c> would</c><00:22:25.840><c> somehow</c><00:22:26.320><c> capture</c><00:22:26.960><c> the</c><00:22:27.280><c> details</c>
+
+00:22:28.149 --> 00:22:28.159 align:start position:0%
+that would somehow capture the details
+ 
+
+00:22:28.159 --> 00:22:30.630 align:start position:0%
+that would somehow capture the details
+will<00:22:28.400><c> capture</c><00:22:28.799><c> noise</c><00:22:29.679><c> and</c><00:22:29.919><c> it's</c><00:22:30.159><c> going</c><00:22:30.240><c> to</c><00:22:30.400><c> be</c>
+
+00:22:30.630 --> 00:22:30.640 align:start position:0%
+will capture noise and it's going to be
+ 
+
+00:22:30.640 --> 00:22:33.990 align:start position:0%
+will capture noise and it's going to be
+very<00:22:30.960><c> hard</c><00:22:31.280><c> for</c><00:22:31.600><c> the</c><00:22:31.760><c> model</c><00:22:32.480><c> to</c><00:22:33.200><c> make</c><00:22:33.520><c> accurate</c>
+
+00:22:33.990 --> 00:22:34.000 align:start position:0%
+very hard for the model to make accurate
+ 
+
+00:22:34.000 --> 00:22:36.149 align:start position:0%
+very hard for the model to make accurate
+predictions<00:22:34.640><c> because</c><00:22:34.960><c> it's</c><00:22:35.440><c> really</c><00:22:35.760><c> drowned</c>
+
+00:22:36.149 --> 00:22:36.159 align:start position:0%
+predictions because it's really drowned
+ 
+
+00:22:36.159 --> 00:22:37.830 align:start position:0%
+predictions because it's really drowned
+and<00:22:36.400><c> lost</c><00:22:36.640><c> in</c><00:22:36.880><c> the</c><00:22:37.039><c> noise.</c><00:22:37.360><c> It's</c><00:22:37.520><c> trying</c><00:22:37.679><c> to</c>
+
+00:22:37.830 --> 00:22:37.840 align:start position:0%
+and lost in the noise. It's trying to
+ 
+
+00:22:37.840 --> 00:22:40.070 align:start position:0%
+and lost in the noise. It's trying to
+fit<00:22:38.080><c> noise</c><00:22:38.480><c> basically</c><00:22:39.120><c> more</c><00:22:39.360><c> than</c><00:22:39.679><c> trying</c><00:22:39.919><c> to</c>
+
+00:22:40.070 --> 00:22:40.080 align:start position:0%
+fit noise basically more than trying to
+ 
+
+00:22:40.080 --> 00:22:43.750 align:start position:0%
+fit noise basically more than trying to
+fit<00:22:40.320><c> a</c><00:22:40.559><c> signal.</c><00:22:41.440><c> This</c><00:22:41.679><c> is</c><00:22:41.840><c> why</c><00:22:42.240><c> simpler</c><00:22:42.799><c> models</c>
+
+00:22:43.750 --> 00:22:43.760 align:start position:0%
+fit a signal. This is why simpler models
+ 
+
+00:22:43.760 --> 00:22:46.070 align:start position:0%
+fit a signal. This is why simpler models
+tend<00:22:44.080><c> to</c><00:22:44.240><c> perform</c><00:22:44.640><c> better</c><00:22:44.960><c> in</c><00:22:45.280><c> trading.</c><00:22:45.760><c> Now</c>
+
+00:22:46.070 --> 00:22:46.080 align:start position:0%
+tend to perform better in trading. Now
+ 
+
+00:22:46.080 --> 00:22:48.149 align:start position:0%
+tend to perform better in trading. Now
+there's<00:22:46.320><c> a</c><00:22:46.559><c> lot</c><00:22:46.640><c> to</c><00:22:46.880><c> be</c><00:22:47.039><c> improved</c><00:22:47.440><c> in</c><00:22:47.679><c> here.</c>
+
+00:22:48.149 --> 00:22:48.159 align:start position:0%
+there's a lot to be improved in here.
+ 
+
+00:22:48.159 --> 00:22:51.270 align:start position:0%
+there's a lot to be improved in here.
+First<00:22:48.400><c> of</c><00:22:48.480><c> all,</c><00:22:48.799><c> adding</c><00:22:49.679><c> the</c><00:22:50.159><c> um</c><00:22:50.960><c> more</c>
+
+00:22:51.270 --> 00:22:51.280 align:start position:0%
+First of all, adding the um more
+ 
+
+00:22:51.280 --> 00:22:53.350 align:start position:0%
+First of all, adding the um more
+technical<00:22:51.679><c> indicators</c><00:22:52.400><c> or</c><00:22:52.720><c> custom</c>
+
+00:22:53.350 --> 00:22:53.360 align:start position:0%
+technical indicators or custom
+ 
+
+00:22:53.360 --> 00:22:55.830 align:start position:0%
+technical indicators or custom
+indicators<00:22:54.080><c> if</c><00:22:54.320><c> you</c><00:22:54.400><c> want.</c><00:22:55.120><c> Uh</c><00:22:55.520><c> maybe</c>
+
+00:22:55.830 --> 00:22:55.840 align:start position:0%
+indicators if you want. Uh maybe
+ 
+
+00:22:55.840 --> 00:22:58.470 align:start position:0%
+indicators if you want. Uh maybe
+changing<00:22:56.240><c> the</c><00:22:56.760><c> sequence,</c><00:22:57.760><c> maybe</c><00:22:58.080><c> changing</c>
+
+00:22:58.470 --> 00:22:58.480 align:start position:0%
+changing the sequence, maybe changing
+ 
+
+00:22:58.480 --> 00:23:00.549 align:start position:0%
+changing the sequence, maybe changing
+some<00:22:58.720><c> of</c><00:22:58.799><c> these</c><00:22:59.200><c> hyperparameters</c><00:23:00.159><c> of</c><00:23:00.400><c> the</c>
+
+00:23:00.549 --> 00:23:00.559 align:start position:0%
+some of these hyperparameters of the
+ 
+
+00:23:00.559 --> 00:23:02.950 align:start position:0%
+some of these hyperparameters of the
+model<00:23:01.440><c> when</c><00:23:01.679><c> you</c><00:23:01.840><c> are</c><00:23:02.000><c> training</c><00:23:02.320><c> the</c><00:23:02.640><c> when</c><00:23:02.880><c> you</c>
+
+00:23:02.950 --> 00:23:02.960 align:start position:0%
+model when you are training the when you
+ 
+
+00:23:02.960 --> 00:23:04.789 align:start position:0%
+model when you are training the when you
+are<00:23:03.120><c> training</c><00:23:03.360><c> the</c><00:23:03.600><c> model</c><00:23:03.840><c> or</c><00:23:04.080><c> evaluating</c><00:23:04.559><c> the</c>
+
+00:23:04.789 --> 00:23:04.799 align:start position:0%
+are training the model or evaluating the
+ 
+
+00:23:04.799 --> 00:23:07.830 align:start position:0%
+are training the model or evaluating the
+model<00:23:05.039><c> and</c><00:23:05.280><c> so</c><00:23:05.440><c> on.</c><00:23:06.000><c> So</c><00:23:06.640><c> it's</c><00:23:06.880><c> a</c><00:23:07.039><c> lot</c><00:23:07.200><c> to</c><00:23:07.520><c> be</c>
+
+00:23:07.830 --> 00:23:07.840 align:start position:0%
+model and so on. So it's a lot to be
+ 
+
+00:23:07.840 --> 00:23:11.190 align:start position:0%
+model and so on. So it's a lot to be
+done<00:23:08.559><c> maybe</c><00:23:08.880><c> testing</c><00:23:09.280><c> this</c><00:23:09.600><c> on</c><00:23:09.919><c> stocks</c><00:23:10.720><c> data</c>
+
+00:23:11.190 --> 00:23:11.200 align:start position:0%
+done maybe testing this on stocks data
+ 
+
+00:23:11.200 --> 00:23:13.830 align:start position:0%
+done maybe testing this on stocks data
+rather<00:23:11.520><c> than</c><00:23:12.080><c> forex</c><00:23:12.640><c> data</c><00:23:13.120><c> providing</c><00:23:13.520><c> the</c>
+
+00:23:13.830 --> 00:23:13.840 align:start position:0%
+rather than forex data providing the
+ 
+
+00:23:13.840 --> 00:23:16.070 align:start position:0%
+rather than forex data providing the
+volume<00:23:14.320><c> centralized</c><00:23:14.960><c> volume</c><00:23:15.280><c> data</c><00:23:15.760><c> and</c><00:23:15.919><c> so</c>
+
+00:23:16.070 --> 00:23:16.080 align:start position:0%
+volume centralized volume data and so
+ 
+
+00:23:16.080 --> 00:23:19.510 align:start position:0%
+volume centralized volume data and so
+on.<00:23:16.559><c> So</c><00:23:16.960><c> there's</c><00:23:17.200><c> a</c><00:23:17.360><c> lot</c><00:23:17.520><c> you</c><00:23:17.840><c> can</c><00:23:18.640><c> change</c><00:23:19.120><c> and</c>
+
+00:23:19.510 --> 00:23:19.520 align:start position:0%
+on. So there's a lot you can change and
+ 
+
+00:23:19.520 --> 00:23:21.830 align:start position:0%
+on. So there's a lot you can change and
+try<00:23:19.679><c> to</c><00:23:19.840><c> improve</c><00:23:20.240><c> with.</c><00:23:21.039><c> Don't</c><00:23:21.280><c> forget</c><00:23:21.520><c> to</c>
+
+00:23:21.830 --> 00:23:21.840 align:start position:0%
+try to improve with. Don't forget to
+ 
+
+00:23:21.840 --> 00:23:24.070 align:start position:0%
+try to improve with. Don't forget to
+download<00:23:22.400><c> the</c><00:23:22.720><c> code</c><00:23:23.200><c> if</c><00:23:23.440><c> you</c><00:23:23.600><c> are</c><00:23:23.679><c> interested</c>
+
+00:23:24.070 --> 00:23:24.080 align:start position:0%
+download the code if you are interested
+ 
+
+00:23:24.080 --> 00:23:27.110 align:start position:0%
+download the code if you are interested
+in<00:23:24.320><c> this</c><00:23:24.559><c> part</c><00:23:25.200><c> and</c><00:23:25.520><c> try</c><00:23:25.679><c> to</c><00:23:25.919><c> use</c><00:23:26.159><c> it</c><00:23:26.799><c> uh</c><00:23:26.880><c> for</c>
+
+00:23:27.110 --> 00:23:27.120 align:start position:0%
+in this part and try to use it uh for
+ 
+
+00:23:27.120 --> 00:23:28.950 align:start position:0%
+in this part and try to use it uh for
+your<00:23:27.280><c> own</c><00:23:27.440><c> experiments.</c><00:23:28.159><c> And</c><00:23:28.320><c> that's</c><00:23:28.480><c> it</c><00:23:28.720><c> for</c>
+
+00:23:28.950 --> 00:23:28.960 align:start position:0%
+your own experiments. And that's it for
+ 
+
+00:23:28.960 --> 00:23:30.870 align:start position:0%
+your own experiments. And that's it for
+this<00:23:29.120><c> one.</c><00:23:29.360><c> I</c><00:23:29.600><c> think</c><00:23:29.679><c> it</c><00:23:30.000><c> was</c><00:23:30.240><c> one</c><00:23:30.559><c> of</c><00:23:30.640><c> the</c>
+
+00:23:30.870 --> 00:23:30.880 align:start position:0%
+this one. I think it was one of the
+ 
+
+00:23:30.880 --> 00:23:33.830 align:start position:0%
+this one. I think it was one of the
+hardest<00:23:31.520><c> videos</c><00:23:32.080><c> I</c><00:23:32.400><c> struggled</c><00:23:32.799><c> to</c><00:23:33.120><c> explain</c>
+
+00:23:33.830 --> 00:23:33.840 align:start position:0%
+hardest videos I struggled to explain
+ 
+
+00:23:33.840 --> 00:23:36.390 align:start position:0%
+hardest videos I struggled to explain
+online,<00:23:34.480><c> but</c><00:23:34.799><c> I</c><00:23:35.120><c> hope</c><00:23:35.280><c> that</c><00:23:35.600><c> it</c><00:23:35.840><c> still</c><00:23:36.159><c> brought</c>
+
+00:23:36.390 --> 00:23:36.400 align:start position:0%
+online, but I hope that it still brought
+ 
+
+00:23:36.400 --> 00:23:39.270 align:start position:0%
+online, but I hope that it still brought
+you<00:23:36.640><c> some</c><00:23:36.880><c> value</c><00:23:37.440><c> and</c><00:23:38.159><c> sparked</c><00:23:38.559><c> your</c><00:23:38.799><c> interest</c>
+
+00:23:39.270 --> 00:23:39.280 align:start position:0%
+you some value and sparked your interest
+ 
+
+00:23:39.280 --> 00:23:41.750 align:start position:0%
+you some value and sparked your interest
+in<00:23:39.600><c> those</c><00:23:40.000><c> in</c><00:23:40.240><c> this</c><00:23:40.480><c> kind</c><00:23:40.640><c> of</c><00:23:40.880><c> algorithms.</c>
+
+00:23:41.750 --> 00:23:41.760 align:start position:0%
+in those in this kind of algorithms.
+ 
+
+00:23:41.760 --> 00:23:44.230 align:start position:0%
+in those in this kind of algorithms.
+Until<00:23:42.080><c> our</c><00:23:42.240><c> next</c><00:23:42.480><c> one,</c><00:23:42.880><c> trade</c><00:23:43.280><c> safe</c><00:23:43.840><c> and</c><00:23:44.080><c> see</c>
+
+00:23:44.230 --> 00:23:44.240 align:start position:0%
+Until our next one, trade safe and see
+ 
+
+00:23:44.240 --> 00:23:47.039 align:start position:0%
+Until our next one, trade safe and see
+you<00:23:44.400><c> next</c><00:23:44.640><c> time.</c>
+

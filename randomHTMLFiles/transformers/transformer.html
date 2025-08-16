@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Advanced Stock Forecaster</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #03070C;
+            --primary-color: #00f8d5;
+            --secondary-color: #3498db;
+            --warning-color: #f39c12;
+            --glow-color: rgba(0, 248, 213, 0.5);
+            --border-color: rgba(0, 248, 213, 0.3);
+            --text-color: #EAEAEA;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background: rgba(10, 25, 47, 0.3);
+            padding: 2px;
+            border: 1px solid var(--border-color);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.5);
+        }
+        .inner-container {
+            border: 1px solid rgba(0,0,0,0.8);
+            padding: 25px;
+            background: var(--bg-color);
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 25px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: var(--primary-color);
+            text-shadow: 0 0 5px var(--glow-color);
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .controls-panel { display: flex; flex-direction: column; gap: 15px; }
+        .control-group { display:flex; flex-direction:column; }
+        .date-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        label { 
+            margin-bottom: 8px; 
+            font-size: 0.9em; 
+            text-transform: uppercase;
+            color: var(--primary-color);
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            background-color: rgba(0, 248, 213, 0.05);
+            color: var(--text-color);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1em;
+            width: 100%;
+        }
+        textarea { height: 80px; resize: vertical; }
+        button {
+            padding: 12px 20px;
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            cursor: pointer;
+            font-size: 1.1em;
+            font-family: 'Share Tech Mono', monospace;
+            transition: all 0.2s;
+            text-transform: uppercase;
+        }
+        button:hover:not(:disabled) { 
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-shadow: 0 0 5px var(--bg-color);
+        }
+        button.secondary {
+            color: var(--warning-color);
+            border-color: var(--warning-color);
+        }
+        button.secondary:hover:not(:disabled) {
+             background-color: var(--warning-color);
+             color: var(--bg-color);
+        }
+        button:disabled { 
+            border-color: #555;
+            color: #555;
+            cursor: not-allowed; 
+        }
+        .button-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .status, .disclaimer {
+            padding: 15px;
+            background: rgba(0, 248, 213, 0.05);
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #chart { width:100%; height:520px; }
+        #metrics { margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--border-color); line-height: 1.6; }
+        #metrics strong { color: var(--primary-color); }
+        progress { width: 100%; height: 5px; margin-top: 10px; appearance: none; border: none; background-color: rgba(0, 248, 213, 0.2); }
+        progress::-webkit-progress-bar { background-color: rgba(0, 248, 213, 0.1); }
+        progress::-webkit-progress-value { background-color: var(--primary-color); }
+        #file-input, #data-file-input { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="inner-container">
+        <div class="header">
+          <h1>Multi-Asset Forecaster // LSTM</h1>
+        </div>
+
+        <div class="main-grid">
+            <div class="results-panel">
+                <div id="status" class="status" style="display:none;"></div>
+                <progress id="progressBar" value="0" max="100" style="display:none;"></progress>
+                <div id="results" class="results" style="display:none;">
+                    <div id="chart"></div>
+                    <div id="metrics"></div>
+                </div>
+            </div>
+
+            <div class="controls-panel">
+                <div class="control-group">
+                    <label for="apiKey">Alpaca API Key</label>
+                    <input type="password" id="apiKey" placeholder="LIVE_API_KEY (or load data)">
+                </div>
+                <div class="control-group">
+                    <label for="secretKey">Alpaca Secret Key</label>
+                    <input type="password" id="secretKey" placeholder="LIVE_SECRET_KEY (or load data)">
+                </div>
+                 <div class="button-group">
+                    <button id="saveDataButton" class="secondary" disabled>Save Data</button>
+                    <button id="loadDataButton" class="secondary">Load Data</button>
+                    <input type="file" id="data-file-input" accept=".json">
+                </div>
+                <hr style="border-color: var(--border-color); border-style: dashed; margin: 5px 0;">
+                <div class="control-group">
+                    <label for="symbols">Stock Symbols (comma-separated)</label>
+                    <textarea id="symbols">AAPL,MSFT,NVDA,GOOG</textarea>
+                </div>
+                <div class="date-group">
+                    <div class="control-group">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" id="startDate">
+                    </div>
+                    <div class="control-group">
+                        <label for="endDate">End Date</label>
+                        <input type="date" id="endDate">
+                    </div>
+                </div>
+                 <div class="control-group">
+                    <label for="timeframe">Time Interval</label>
+                    <select id="timeframe">
+                        <option value="1Day" selected>1 Day</option>
+                        <option value="1Hour">1 Hour</option>
+                        <option value="30Min">30 Minutes</option>
+                        <option value="15Min">15 Minutes</option>
+                    </select>
+                </div>
+                <div id="epochs-group" class="control-group">
+                    <label for="epochs">Training Epochs</label>
+                    <input type="number" id="epochs" value="20" min="1" max="200">
+                </div>
+                <button id="runButton">Initiate Forecast</button>
+                <div class="button-group">
+                    <button id="saveModelButton" class="secondary" disabled>Save Model</button>
+                    <button id="loadModelButton" class="secondary">Load Model</button>
+                    <input type="file" id="model-file-input" accept=".json,.bin" multiple>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+/* ========= GLOBAL AND ELEMENTS ========= */
+let model = null;
+let loadedData = null; // Holds data loaded from a file
+const runButton = document.getElementById('runButton');
+const saveModelButton = document.getElementById('saveModelButton');
+const loadModelButton = document.getElementById('loadModelButton');
+const modelFileInput = document.getElementById('model-file-input');
+const statusDiv = document.getElementById('status');
+const progressBar = document.getElementById('progressBar');
+const resultsDiv = document.getElementById('results');
+const apiKeyInput = document.getElementById('apiKey'), secretKeyInput = document.getElementById('secretKey'), symbolsInput = document.getElementById('symbols'), startDateInput = document.getElementById('startDate'), endDateInput = document.getElementById('endDate'), timeframeInput = document.getElementById('timeframe'), epochsInput = document.getElementById('epochs'), chartDiv = document.getElementById('chart'), metricsDiv = document.getElementById('metrics'), epochsGroup = document.getElementById('epochs-group');
+// New Data I/O elements
+const saveDataButton = document.getElementById('saveDataButton');
+const loadDataButton = document.getElementById('loadDataButton');
+const dataFileInput = document.getElementById('data-file-input');
+
+
+/* ====== INITIALIZATION ====== */
+document.addEventListener('DOMContentLoaded', () => {
+    // Set default dates
+    const today = new Date();
+    const oneYearAgo = new Date();
+    oneYearAgo.setFullYear(today.getFullYear() - 1);
+    endDateInput.value = today.toISOString().split('T')[0];
+    startDateInput.value = oneYearAgo.toISOString().split('T')[0];
+    
+    // Load saved API keys
+    const savedApiKey = localStorage.getItem('alpacaApiKey');
+    const savedSecretKey = localStorage.getItem('alpacaSecretKey');
+    if (savedApiKey) apiKeyInput.value = savedApiKey;
+    if (savedSecretKey) secretKeyInput.value = savedSecretKey;
+});
+
+/* ====== EVENT LISTENERS ====== */
+runButton.addEventListener('click', runForecast);
+saveModelButton.addEventListener('click', saveModelWeights);
+loadModelButton.addEventListener('click', () => modelFileInput.click());
+modelFileInput.addEventListener('change', loadModelWeights);
+// New Data I/O listeners
+saveDataButton.addEventListener('click', saveDataToFile);
+loadDataButton.addEventListener('click', () => dataFileInput.click());
+dataFileInput.addEventListener('change', loadDataFromFile);
+
+
+/* ====== MAIN FORECAST FUNCTION ====== */
+async function runForecast() {
+    setUiState('working');
+    let barsToProcess;
+    // Determine if we need to train a new model or use a loaded one
+    const isTraining = model === null;
+
+    try {
+        // STEP 1: GET DATA
+        if (loadedData) {
+            barsToProcess = loadedData;
+            statusDiv.textContent = `[1/${isTraining ? 5 : 3}] Using data loaded from file...`;
+            loadedData = null; // Clear after use
+        } else {
+            const apiKey = apiKeyInput.value.trim();
+            const secretKey = secretKeyInput.value.trim();
+            const symbols = symbolsInput.value.split(',').map(s => s.trim().toUpperCase()).filter(Boolean);
+            if (!apiKey || !secretKey || symbols.length === 0) {
+                throw new Error('API Keys and at least one stock symbol are required.');
+            }
+            localStorage.setItem('alpacaApiKey', apiKey);
+            localStorage.setItem('alpacaSecretKey', secretKey);
+            
+            statusDiv.textContent = `[1/${isTraining ? 5 : 3}] Fetching data for ${symbols.length} asset(s)...`;
+            barsToProcess = await fetchAlpacaData(apiKey, secretKey, symbols, startDateInput.value, endDateInput.value, timeframeInput.value);
+            
+            saveDataButton.disabled = false;
+            saveDataButton.onclick = () => saveDataToFile(barsToProcess);
+        }
+
+        if (Object.keys(barsToProcess).length === 0) {
+            throw new Error('No data returned or loaded for the given symbols and date range.');
+        }
+        
+        const symbols = Object.keys(barsToProcess);
+        const primarySymbol = symbols[0];
+
+        // STEP 2: PREPARE DATA
+        statusDiv.textContent = `[2/${isTraining ? 5 : 3}] Preparing data for model...`;
+        const { trainX, trainY, forecastData } = prepareData(barsToProcess, primarySymbol);
+        
+        // STEP 3 & 4: BUILD AND TRAIN (or skip if model is loaded)
+        if (isTraining) {
+            statusDiv.textContent = '[3/5] Building neural network model...';
+            model = buildModel(forecastData.sequenceLength, trainX.shape[2] || 1);
+
+            statusDiv.textContent = '[4/5] Training model...';
+            const epochs = Math.max(1, parseInt(epochsInput.value, 10));
+            progressBar.max = epochs;
+            await trainModel(model, trainX, trainY, epochs);
+        } else {
+            statusDiv.textContent = 'Pre-trained model found. Skipping training.';
+            await tf.nextFrame(); // Allow UI to update
+        }
+
+        // STEP 5 (or 3): FORECAST
+        statusDiv.textContent = `[${isTraining ? 5 : 3}/${isTraining ? 5 : 3}] Generating forecast for ${primarySymbol}...`;
+        const { predictions, futureForecast } = await makeForecast(model, forecastData.testX, forecastData.scaler, forecastData.sequenceLength);
+
+        displayResults(forecastData.dates, forecastData.prices, predictions, futureForecast, forecastData.testX.shape[0], primarySymbol);
+        setUiState('finished');
+
+        trainX.dispose();
+        trainY.dispose();
+        forecastData.testX.dispose();
+
+    } catch (err) {
+        model = null; // Reset model on error
+        setUiState('error', err.message);
+        console.error(err);
+    }
+}
+
+/* ====== DATA I/O FUNCTIONS ====== */
+function saveDataToFile(dataToSave) {
+    if (!dataToSave || Object.keys(dataToSave).length === 0) {
+        setUiState('error', 'No data has been fetched to save.');
+        return;
+    }
+    const dataStr = JSON.stringify(dataToSave, null, 2);
+    const blob = new Blob([dataStr], {type: "application/json"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const date = new Date().toISOString().split('T')[0];
+    a.href = url;
+    a.download = `alpaca-bars-${date}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    statusDiv.textContent = 'Data saved to file successfully.';
+    statusDiv.style.display = 'block';
+}
+
+function loadDataFromFile(event) {
+    if (!event.target.files || event.target.files.length === 0) return;
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+        try {
+            const data = JSON.parse(e.target.result);
+            if(typeof data !== 'object' || data === null || Object.keys(data).length === 0) {
+                 throw new Error("Invalid or empty JSON data file.");
+            }
+            loadedData = data;
+            const symbols = Object.keys(data);
+            symbolsInput.value = symbols.join(',');
+            const firstSymbolBars = data[symbols[0]];
+            if(firstSymbolBars && firstSymbolBars.length > 0) {
+                 startDateInput.value = firstSymbolBars[0].t.split('T')[0];
+                 endDateInput.value = firstSymbolBars[firstSymbolBars.length - 1].t.split('T')[0];
+            }
+            setUiState('data_loaded');
+        } catch (err) {
+            setUiState('error', `Failed to load or parse data file: ${err.message}`);
+            loadedData = null;
+        }
+    };
+    reader.onerror = () => {
+         setUiState('error', 'Error reading the data file.');
+         loadedData = null;
+    };
+    reader.readAsText(file);
+    event.target.value = ''; // Reset file input
+}
+
+
+/* ====== DATA FETCHING (with Pagination) ====== */
+async function fetchAlpacaData(apiKey, secretKey, symbols, startDate, endDate, timeframe) {
+    const allBars = {};
+    const url = `https://data.alpaca.markets/v2/stocks/bars`;
+
+    for (const symbol of symbols) {
+        let nextToken = null;
+        allBars[symbol] = [];
+        do {
+            const params = new URLSearchParams({
+                symbols: symbol,
+                timeframe: timeframe,
+                start: new Date(startDate).toISOString(),
+                end: new Date(endDate).toISOString(),
+                limit: 10000,
+                adjustment: 'raw',
+                feed: 'iex',
+                sort: 'asc'
+            });
+            if (nextToken) {
+                params.append('page_token', nextToken);
+            }
+            const response = await fetch(`${url}?${params.toString()}`, {
+                headers: { 'APCA-API-KEY-ID': apiKey, 'APCA-API-SECRET-KEY': secretKey }
+            });
+            if (!response.ok) throw new Error(`Alpaca API Error for ${symbol}: ${response.statusText}`);
+            
+            const data = await response.json();
+            if(data.bars && data.bars[symbol]) {
+                allBars[symbol].push(...data.bars[symbol]);
+            }
+            nextToken = data.next_page_token;
+        } while (nextToken);
+        if (allBars[symbol].length === 0) {
+            console.warn(`No data found for symbol: ${symbol}`);
+            delete allBars[symbol];
+        }
+    }
+    return allBars;
+}
+
+/* ====== DATA PREPARATION (for Multiple Stocks) ====== */
+function prepareData(allBars, primarySymbol) {
+    const sequenceLength = 30;
+    const trainTestSplit = 0.85;
+    let allTrainX = [], allTrainY = [];
+    let forecastData = {};
+
+    for (const symbol in allBars) {
+        const prices = allBars[symbol].map(bar => bar.c);
+        if (prices.length <= sequenceLength) continue;
+
+        const priceTensor = tf.tensor1d(prices);
+        const minPrice = priceTensor.min().dataSync()[0];
+        const maxPrice = priceTensor.max().dataSync()[0];
+        const scaler = { min: minPrice, max: maxPrice };
+        
+        const scaledPrices = Array.from(priceTensor.sub(tf.scalar(minPrice)).div(tf.scalar(maxPrice - minPrice)).dataSync());
+        priceTensor.dispose();
+
+        const sequences = [], labels = [];
+        for (let i = 0; i < scaledPrices.length - sequenceLength; i++) {
+            sequences.push(scaledPrices.slice(i, i + sequenceLength).map(v => [v]));
+            labels.push(scaledPrices[i + sequenceLength]);
+        }
+        
+        const splitIndex = Math.floor(sequences.length * trainTestSplit);
+        const trainSequences = sequences.slice(0, splitIndex);
+        const trainLabels = labels.slice(0, splitIndex);
+        
+        allTrainX.push(tf.tensor3d(trainSequences));
+        allTrainY.push(tf.tensor2d(trainLabels, [trainLabels.length, 1]));
+
+        if (symbol === primarySymbol) {
+            const testSequences = sequences.slice(splitIndex);
+            forecastData = {
+                testX: tf.tensor3d(testSequences),
+                scaler: scaler,
+                sequenceLength: sequenceLength,
+                prices: prices,
+                dates: allBars[symbol].map(bar => bar.t.split('T')[0])
+            };
+        }
+    }
+
+    if(allTrainX.length === 0) throw new Error("Not enough data to create training sequences.");
+
+    const trainX = tf.concat(allTrainX);
+    const trainY = tf.concat(allTrainY);
+    
+    // Dispose intermediate tensors
+    allTrainX.forEach(t => t.dispose());
+    allTrainY.forEach(t => t.dispose());
+
+    return { trainX, trainY, forecastData };
+}
+
+/* ====== MODEL BUILD & TRAIN ====== */
+function buildModel(sequenceLength, features) {
+    const newModel = tf.sequential();
+    newModel.add(tf.layers.lstm({ units: 50, returnSequences: true, inputShape: [sequenceLength, features] }));
+    newModel.add(tf.layers.dropout({ rate: 0.2 }));
+    newModel.add(tf.layers.lstm({ units: 50, returnSequences: false }));
+    newModel.add(tf.layers.dropout({ rate: 0.2 }));
+    newModel.add(tf.layers.dense({ units: 1 }));
+    newModel.compile({ optimizer: 'adam', loss: 'meanSquaredError' });
+    return newModel;
+}
+
+async function trainModel(model, trainX, trainY, epochs) {
+    await model.fit(trainX, trainY, {
+        epochs,
+        batchSize: 64, // Larger batch size for more data
+        shuffle: true,
+        callbacks: {
+            onEpochEnd: async (epoch, logs) => {
+                statusDiv.textContent = `[4/5] Training... Epoch ${epoch + 1}/${epochs} — Loss: ${logs.loss.toFixed(6)}`;
+                progressBar.value = epoch + 1;
+                await tf.nextFrame();
+            }
+        }
+    });
+}
+
+
+/* ====== FORECAST & DISPLAY ====== */
+async function makeForecast(model, testX, scaler, sequenceLength) {
+    const predsTensor = tf.tidy(() => model.predict(testX));
+    const preds = Array.from(predsTensor.dataSync());
+    predsTensor.dispose();
+    
+    const futureForecastScaled = [];
+    let lastSequence = testX.slice([testX.shape[0] - 1, 0, 0], [1, sequenceLength, 1]).clone();
+    
+    for (let i = 0; i < 30; i++) { // 30-day forecast
+        const nextPredTensor = tf.tidy(() => model.predict(lastSequence));
+        const nextPred = nextPredTensor.dataSync()[0];
+        futureForecastScaled.push(nextPred);
+        
+        const newSeqTensor = tf.tidy(() => lastSequence.slice([0, 1, 0]).concat(tf.tensor3d([[[nextPred]]], [1, 1, 1]), 1));
+        lastSequence.dispose();
+        lastSequence = newSeqTensor;
+    }
+    lastSequence.dispose();
+    
+    const unScale = (val) => val * (scaler.max - scaler.min) + scaler.min;
+    return {
+        predictions: preds.map(unScale),
+        futureForecast: futureForecastScaled.map(unScale)
+    };
+}
+
+function displayResults(dates, prices, predictions, futureForecast, testDataSize, symbol) {
+    const trainSize = prices.length - testDataSize;
+    const traceActual = { x: dates, y: prices, mode: 'lines', name: 'Actual Price', line: { color: '#3498db', width: 2 }};
+    const tracePredictions = { x: dates.slice(trainSize), y: predictions, mode: 'lines', name: 'Model Prediction', line: { color: '#00f8d5', dash: 'dash' } };
+
+    const lastDate = new Date(dates[dates.length - 1]);
+    const futureDates = futureForecast.map((_, i) => {
+        const d = new Date(lastDate);
+        d.setDate(lastDate.getDate() + i + 1);
+        return d.toISOString().split('T')[0];
+    });
+    const traceForecast = { x: futureDates, y: futureForecast, mode: 'lines', name: '30-Period Forecast', line: { color: '#f39c12', dash: 'dot' }};
+
+    const layout = {
+        title: `Forecast for ${symbol} (Trained on Multiple Assets)`,
+        paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0.2)',
+        font: { color: '#EAEAEA', family: 'Share Tech Mono, monospace' },
+        xaxis: { gridcolor: 'rgba(0, 248, 213, 0.15)', linecolor: 'rgba(0, 248, 213, 0.3)' },
+        yaxis: { title: 'Price (USD)', gridcolor: 'rgba(0, 248, 213, 0.15)', linecolor: 'rgba(0, 248, 213, 0.3)'},
+        legend: { orientation: 'h', y: 1.15, x: 0.5, xanchor: 'center' },
+    };
+    Plotly.newPlot(chartDiv, [traceActual, tracePredictions, traceForecast], layout, {responsive: true});
+
+    const actualTensor = tf.tensor1d(prices.slice(trainSize));
+    const predTensor = tf.tensor1d(predictions);
+    const mae = tf.metrics.meanAbsoluteError(actualTensor, predTensor).dataSync()[0];
+    const rmse = Math.sqrt(tf.metrics.meanSquaredError(actualTensor, predTensor).dataSync()[0]);
+    actualTensor.dispose(); predTensor.dispose();
+
+    metricsDiv.innerHTML = `<strong>Performance on ${symbol} Test Data:</strong><br>MAE: $${mae.toFixed(2)}, RMSE: $${rmse.toFixed(2)}`;
+}
+
+
+/* ====== MODEL WEIGHT MANAGEMENT ====== */
+async function saveModelWeights() {
+    if (!model) {
+        setUiState('error', 'No model trained or loaded to save.');
+        return;
+    }
+    await model.save('downloads://model-checkpoint');
+    statusDiv.textContent = 'Model saved successfully.';
+    statusDiv.style.display = 'block';
+}
+
+async function loadModelWeights(event) {
+    if (!event.target.files || event.target.files.length !== 2) {
+        setUiState('error', 'Please select both the .json and .bin model files.');
+        return;
+    }
+    try {
+        setUiState('working', 'Loading model...');
+        const files = event.target.files;
+        const jsonFile = Array.from(files).find(file => file.name.endsWith('.json'));
+        const weightsFile = Array.from(files).find(file => file.name.endsWith('.bin'));
+        
+        if (!jsonFile || !weightsFile) throw new Error("Both a .json and .bin file must be selected.");
+
+        model = await tf.loadLayersModel(tf.io.browserFiles([jsonFile, weightsFile]));
+        setUiState('model_loaded');
+    } catch (err) {
+        model = null; // Ensure model is null if loading fails
+        setUiState('error', `Failed to load model: ${err.message}`);
+    }
+    event.target.value = ''; // Reset file input
+}
+
+
+/* ====== UI STATE HELPER ====== */
+function setUiState(state, message = '') {
+    // Reset all elements to a default idle state first
+    runButton.disabled = false;
+    runButton.textContent = 'Initiate Forecast';
+    saveModelButton.disabled = true;
+    saveDataButton.disabled = true;
+    apiKeyInput.disabled = false;
+    secretKeyInput.disabled = false;
+    epochsGroup.style.display = 'flex'; // Show epochs by default
+
+    switch (state) {
+        case 'working':
+            runButton.disabled = true;
+            runButton.textContent = 'Processing...';
+            statusDiv.textContent = message || 'Working...';
+            statusDiv.style.display = 'block';
+            resultsDiv.style.display = 'none';
+            progressBar.style.display = model ? 'none' : 'block'; // Only show progress bar if training
+            progressBar.value = 0;
+            break;
+        case 'finished':
+            runButton.disabled = false;
+            saveModelButton.disabled = false; // A model now exists to be saved
+            statusDiv.style.display = 'none';
+            progressBar.style.display = 'none';
+            resultsDiv.style.display = 'block';
+            break;
+        case 'model_loaded':
+             saveModelButton.disabled = false; // A model is loaded, so it can be saved again
+             runButton.textContent = 'Forecast with Loaded Model';
+             statusDiv.textContent = 'Model loaded. Training will be skipped. Load data and run forecast.';
+             statusDiv.style.display = 'block';
+             progressBar.style.display = 'none';
+             resultsDiv.style.display = 'none';
+             epochsGroup.style.display = 'none'; // Hide epochs group as it's not needed
+            break;
+        case 'data_loaded':
+            statusDiv.textContent = 'Data loaded from file. Adjust parameters and initiate forecast.';
+            statusDiv.style.display = 'block';
+            progressBar.style.display = 'none';
+            resultsDiv.style.display = 'none';
+            apiKeyInput.disabled = true;
+            secretKeyInput.disabled = true;
+            break;
+        case 'error':
+            statusDiv.textContent = `Error: ${message}`;
+            statusDiv.style.display = 'block';
+            progressBar.style.display = 'none';
+            // Reset to default/idle state on error
+            runButton.textContent = 'Initiate Forecast';
+            epochsGroup.style.display = 'flex';
+            model = null; // Clear any potentially broken model state
+            break;
+        default: // Default/idle state
+            statusDiv.style.display = 'none';
+            progressBar.style.display = 'none';
+            resultsDiv.style.display = 'none';
+            break;
+    }
+}
+
+</script>
+</body>
+</html>

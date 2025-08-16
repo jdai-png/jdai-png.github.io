@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option Pricing Distribution Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        #chart-container {
+            position: relative;
+            height: 500px;
+            width: 100%;
+        }
+        .description {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        .legend-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Option Pricing Distribution Visualizer</h1>
+        <p class="description">
+            This visualization compares two historical models for pricing options: the **Bachelier model** (assuming a normal distribution of stock prices) and the **Black-Scholes model** (assuming a lognormal distribution). It also illustrates the payoff of a call option at a specified strike price.
+        </p>
+        <div class="legend-box">
+            <div class="legend-item"><div class="legend-color" style="background-color: #1f77b4;"></div>Normal Distribution (Bachelier)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #ff7f0e;"></div>Lognormal Distribution (Black-Scholes)</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #2ca02c;"></div>Call Option Payoff</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #d62728;"></div>Strike Price (K)</div>
+        </div>
+        <div id="chart-container"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Parameters
+            const S0 = 100;    // Initial stock price
+            const sigma = 0.3; // Volatility
+            const T = 1;       // Time to expiration in years
+            const K = 110;     // Strike price
+            const r = 0.02;    // Risk-free rate
+            const mu = r;      // Mean drift for Black-Scholes (risk-neutral)
+
+            // Helper function to calculate a normal PDF
+            function normalPDF(x, mean, stdDev) {
+                return (1 / (stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * Math.pow((x - mean) / stdDev, 2));
+            }
+
+            // Helper function to calculate a lognormal PDF
+            function lognormalPDF(x, mean, stdDev) {
+                if (x <= 0) return 0;
+                const m = Math.log(mean) - (stdDev * stdDev) / 2;
+                return (1 / (x * stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * Math.pow((Math.log(x) - m) / stdDev, 2));
+            }
+
+            // Generate data points
+            const x = [];
+            const normalData = [];
+            const lognormalData = [];
+            const payoffData = [];
+
+            const stdDev = sigma * Math.sqrt(T);
+            const numPoints = 200;
+            const minX = S0 - 3 * stdDev; // Start at ~3 std deviations below the mean
+            const maxX = S0 + 4 * stdDev; // End at ~4 std deviations above the mean
+
+            for (let i = 0; i < numPoints; i++) {
+                const currentX = minX + (i / (numPoints - 1)) * (maxX - minX);
+                x.push(currentX);
+
+                // Normal distribution data (Bachelier)
+                normalData.push(normalPDF(currentX, S0 * Math.exp(r * T), stdDev * S0)); // Using S0*sigma for std dev
+
+                // Lognormal distribution data (Black-Scholes)
+                lognormalData.push(lognormalPDF(currentX, S0 * Math.exp(mu * T), stdDev));
+
+                // Call option payoff
+                payoffData.push(Math.max(currentX - K, 0));
+            }
+
+            // Create Plotly traces
+            const traceNormal = {
+                x: x,
+                y: normalData,
+                mode: 'lines',
+                name: 'Normal Distribution (Bachelier)',
+                line: { color: '#1f77b4' }
+            };
+
+            const traceLognormal = {
+                x: x,
+                y: lognormalData,
+                mode: 'lines',
+                name: 'Lognormal Distribution (Black-Scholes)',
+                line: { color: '#ff7f0e' }
+            };
+
+            const tracePayoff = {
+                x: x,
+                y: payoffData,
+                mode: 'lines',
+                name: 'Call Option Payoff',
+                line: { color: '#2ca02c', width: 3 }
+            };
+
+            const traceStrike = {
+                x: [K, K],
+                y: [0, Math.max(...normalData, ...lognormalData)],
+                mode: 'lines',
+                name: `Strike Price (K=${K})`,
+                line: { color: '#d62728', dash: 'dot', width: 2 }
+            };
+
+            const data = [traceNormal, traceLognormal, tracePayoff, traceStrike];
+
+            const layout = {
+                title: 'Stock Price Distribution and Call Option Payoff',
+                xaxis: {
+                    title: 'Stock Price at Expiration',
+                    range: [0, 200]
+                },
+                yaxis: {
+                    title: 'Probability Density / Payoff',
+                    range: [0, Math.max(...normalData, ...lognormalData, ...payoffData) * 1.1]
+                },
+                autosize: true,
+                legend: {
+                    x: 0.8,
+                    y: 1,
+                    traceorder: 'normal'
+                }
+            };
+
+            Plotly.newPlot('chart-container', data, layout, { responsive: true });
+        });
+    </script>
+</body>
+</html>
