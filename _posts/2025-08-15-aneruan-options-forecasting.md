@@ -1,5 +1,3 @@
-Of course. Here is the formatted text.
-
 # American Option Pricing Under Time-Varying Rough Volatility: A Signature-Based Hybrid Framework
 
 **Roshan Shah**
